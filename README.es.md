@@ -1,4 +1,4 @@
-# Simplificado Conciliación Bancaria
+# Conciliación Bancaria Simplificada
 
 ![Python](https://img.shields.io/badge/Python-3.12+-blue?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?style=flat&logo=fastapi&logoColor=white)

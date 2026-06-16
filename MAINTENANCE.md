@@ -1,6 +1,6 @@
 # Maintenance Guide
 
-This guide covers routine maintenance tasks for the Simplicado Conciliacion Bancaria project.
+This guide covers routine maintenance tasks for the Conciliacion Bancaria Simplificada project.
 
 ---
 

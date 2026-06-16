@@ -1,4 +1,4 @@
-# Simplicado Conciliación Bancaria
+# Conciliación Bancaria Simplificada
 
 ![Python](https://img.shields.io/badge/Python-3.12+-blue?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?style=flat&logo=fastapi&logoColor=white)
@@ -72,7 +72,7 @@
 
 ```bash
 git clone <repo-url>
-cd simplicado-conciliacion-bancaria
+cd simplificada-conciliacion-bancaria
 pip install -r requirements.txt
 ```
 
