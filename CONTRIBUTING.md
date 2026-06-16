@@ -40,7 +40,7 @@ Please be respectful and constructive in all interactions. We strive to maintain
 
 ```bash
 git clone <repo-url>
-cd simplificado-conciliacion-bancaria
+cd simplificada-conciliacion-bancaria
 python -m venv .venv
 source .venv/bin/activate   # Linux/Mac
 # .venv\Scripts\activate    # Windows

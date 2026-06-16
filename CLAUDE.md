@@ -17,7 +17,7 @@ Single-endpoint FastAPI microservice for bank statement reconciliation. No datab
 ## Code structure
 
 ```
-simplificado-conciliacion-bancaria/
+simplificada-conciliacion-bancaria/
 ├── main.py              # FastAPI app + /api/v1/conciliaciones/procesar endpoint
 ├── concilia_engine/     # Copy from parent project — DO NOT EDIT here
 │   ├── pipeline.py      # execute_pipeline(): parse → match → report

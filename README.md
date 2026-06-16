@@ -306,7 +306,7 @@ flowchart TB
 ## Project Structure
 
 ```
-simplificado-conciliacion-bancaria/
+simplificada-conciliacion-bancaria/
 ├── main.py                          # FastAPI app — single POST endpoint
 ├── requirements.txt                 # 7 core + 4 optional dependencies
 ├── Dockerfile                       # Non-root, health check, CVE-patched

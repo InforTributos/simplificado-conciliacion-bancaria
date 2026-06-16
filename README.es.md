@@ -72,7 +72,7 @@
 
 ```bash
 git clone <repo-url>
-cd simplificado-conciliacion-bancaria
+cd simplificada-conciliacion-bancaria
 pip install -r requirements.txt
 ```
 
@@ -306,7 +306,7 @@ flowchart TB
 ## Estructura del Proyecto
 
 ```
-simplificado-conciliacion-bancaria/
+simplificada-conciliacion-bancaria/
 ├── main.py                          # App FastAPI — endpoint POST único
 ├── requirements.txt                 # 7 dependencias core + 4 opcionales
 ├── Dockerfile                       # Non-root, health check, CVEs parcheados
