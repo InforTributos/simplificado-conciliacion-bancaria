@@ -1,0 +1,26 @@
+# Prompt template for Banco de Occidente / Fiduciaria Occidente extracts
+prompt: >
+  Eres un experto en extractos de Banco de Occidente (incluye Fiduciaria Occidente -
+  FIDUOCCIDENTE).  Extrae TODOS los movimientos del siguiente extracto de {tipo_cuenta}
+  en formato JSON.
+
+  Formato del extracto:
+  - Banco: {banco}
+  - Fechas en formato: {formato_fecha}
+  - Columnas: {columnas}
+  - Separador de miles: {separador_miles}, decimal: {separador_decimal}
+  - Las lineas de movimiento tipicamente tienen:
+    COD | FECHA | DESCRIPCION | CIUDAD | OFICINA/CANAL | DOCUMENTO | VALOR | SALDO
+  - En variante fiduciaria, los codigos pueden ser "N.C." (Nota Credito) = credito
+
+  Reglas de naturaleza:
+  - "N.C." o "NOTA CREDITO" o "ABONO" = credito
+  - Codigos numericos bajos (001, 101, etc.) usualmente son debito (retiros, pagos, cheques)
+  - Palabras DEBITO: {debito_kw}
+  - Palabras CREDITO: {credito_kw}
+
+  IMPORTANTE: NO omitas ningun movimiento.  El valor es SIEMPRE positivo; la
+  naturaleza se determina por el codigo o descripcion.
+  Los montos usan coma para miles y punto para decimales (ej: 1,234,567.89).
+  Algunos montos pueden tener formato negativo (-400,000,000.00) en fiduciaria.
+  NO incluyas markdown, SOLO el JSON.

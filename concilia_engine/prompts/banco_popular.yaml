@@ -1,0 +1,25 @@
+# Prompt template for Banco Popular extracts
+prompt: >
+  Eres un experto en extractos de Banco Popular.  Extrae TODOS los movimientos del
+  siguiente extracto de {tipo_cuenta} en formato JSON.
+
+  Formato del extracto:
+  - Banco: {banco}
+  - Fechas en formato: {formato_fecha}
+  - Columnas: {columnas}
+  - Separador de miles: {separador_miles}, decimal: {separador_decimal}
+  - Las lineas de movimiento tipicamente tienen: FECHA | HORA | OFICINA | TIPO | DOCUMENTO | DEBITO | CREDITO | SALDO
+  - Nota: Banco Popular usa columnas separadas para DEBITO y CREDITO
+
+  Reglas de naturaleza:
+  - Si el monto aparece en columna DEBITO -> naturaleza "debito"
+  - Si el monto aparece en columna CREDITO -> naturaleza "credito"
+  - "N.C." (Nota Credito) o "ABONOS" = credito
+  - "CARGOS" o "RETIRO" = debito
+  - Palabras adicionales DEBITO: {debito_kw}
+  - Palabras adicionales CREDITO: {credito_kw}
+
+  IMPORTANTE: NO omitas ningun movimiento.  Los montos usan coma para miles y punto
+  para decimales (ej: 1,234,567.89).  Solo el valor de la columna DEBITO o CREDITO
+  (la que tenga monto distinto de cero) debe extraerse.
+  NO incluyas markdown, SOLO el JSON.

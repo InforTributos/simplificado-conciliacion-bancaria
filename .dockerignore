@@ -1,0 +1,24 @@
+# Git
+.git/
+.gitignore
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Tests
+tests/
+.pytest_cache/
+
+# Docs / config
+AGENTS.md
+CLAUDE.md
+pyproject.toml
+
+# Env
+.env.example
+
+# Docker
+Dockerfile
+.dockerignore

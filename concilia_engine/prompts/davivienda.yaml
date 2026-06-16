@@ -1,0 +1,31 @@
+# Prompt template for Davivienda extracts
+prompt: >
+  Eres un experto en extractos de Davivienda.  Extrae TODOS los movimientos del
+  siguiente extracto de {tipo_cuenta} en formato JSON.
+
+  Formato del extracto:
+  - Banco: {banco}
+  - Fechas en formato: {formato_fecha}
+  - Columnas: {columnas}
+  - Separador de miles: {separador_miles}, decimal: {separador_decimal}
+  - Hay DOS variantes de formato Davivienda:
+    1. "DD MM $AMT+ DOC DESCRIPCION OFICINA" - montos con signo + (credito) o - (debito)
+    2. Tabla: FECHA | VALOR | DOC | CLASE MOVIMIENTO | OFICINA
+
+  Reglas de naturaleza (variante 1):
+  - Monto con sufijo "+" = credito
+  - Monto con sufijo "-" = debito
+  Reglas de naturaleza (variante 2):
+  - Palabras DEBITO/cargo: {debito_kw}
+  - Palabras CREDITO/abono: {credito_kw}
+
+  Para cada movimiento:
+  - fecha: convertir a YYYY-MM-DD
+  - descripcion: texto descriptivo sin el valor
+  - valor: monto numerico SIEMPRE positivo (el signo +/- va en naturaleza)
+  - naturaleza: "debito" o "credito"
+
+  IMPORTANTE: NO omitas ningun movimiento.  Los montos en Davivienda pueden usar coma
+  para miles y punto para decimales, O punto para miles y coma para decimales.
+  Identifica cual se usa en este extracto.
+  NO incluyas markdown, SOLO el JSON.

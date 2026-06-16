@@ -1,0 +1,52 @@
+# Generic prompt template — usado cuando no hay template especifico para el banco
+prompt: >
+  Eres un experto en extractos bancarios colombianos.  Analiza el siguiente texto
+  extraido de un PDF bancario y extrae TODOS los movimientos en formato JSON.
+
+  Informacion del extracto detectada automaticamente:
+  - Banco: {banco}
+  - Tipo de cuenta: {tipo_cuenta}
+  - Formato de fecha: {formato_fecha}
+  - Columnas detectadas: {columnas}
+  - Separador de miles: {separador_miles}
+  - Separador de decimal: {separador_decimal}
+
+  Para cada movimiento extrae:
+  - fecha: en formato YYYY-MM-DD
+  - descripcion: texto descriptivo del movimiento (sin el monto)
+  - valor: monto numerico (SIEMPRE positivo)
+  - naturaleza: "debito" si es cargo/salida/retiro, "credito" si es abono/entrada/consignacion
+
+  Palabras clave DEBITO: {debito_kw}
+  Palabras clave CREDITO: {credito_kw}
+
+  Tambien extrae la informacion del extracto:
+  - banco: nombre del banco
+  - numero_cuenta: numero de cuenta
+  - periodo_inicio: fecha inicio del periodo (YYYY-MM-DD)
+  - periodo_fin: fecha fin del periodo (YYYY-MM-DD)
+  - saldo_anterior: saldo al inicio (numerico)
+  - saldo_final: saldo al final (numerico)
+
+  Responde UNICAMENTE con JSON valido:
+  {{
+    "info": {{
+      "banco": "string",
+      "numero_cuenta": "string",
+      "periodo_inicio": "YYYY-MM-DD",
+      "periodo_fin": "YYYY-MM-DD",
+      "saldo_anterior": 0.00,
+      "saldo_final": 0.00
+    }},
+    "movimientos": [
+      {{
+        "fecha": "YYYY-MM-DD",
+        "descripcion": "string",
+        "valor": 0.00,
+        "naturaleza": "debito|credito"
+      }}
+    ]
+  }}
+
+  IMPORTANTE: Extrae TODOS los movimientos, no omitas ninguno.
+  NO incluyas markdown ni texto adicional, SOLO el JSON.

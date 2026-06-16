@@ -1,0 +1,24 @@
+# Prompt template for Bancoomeva extracts
+prompt: >
+  Eres un experto en extractos de Bancoomeva.  Extrae TODOS los movimientos del
+  siguiente extracto de {tipo_cuenta} en formato JSON.
+
+  Formato del extracto:
+  - Banco: {banco}
+  - Fechas en formato: {formato_fecha}
+  - Columnas: {columnas}
+  - Separador de miles: {separador_miles}, decimal: {separador_decimal}
+  - Las lineas de movimiento tipicamente tienen: FECHA | OFICINA | DESCRIPCION | VALOR DEBITO | VALOR CREDITO | SALDO
+  - Nota: Bancoomeva usa columnas separadas DEBITO y CREDITO con prefijo $
+
+  Reglas de naturaleza:
+  - Si el monto aparece en columna VALOR DEBITO -> naturaleza "debito"
+  - Si el monto aparece en columna VALOR CREDITO -> naturaleza "credito"
+  - "N/C" (Nota Credito) o "INTERESES" o "RENDIMIENTOS" = credito
+  - Palabras adicionales DEBITO: {debito_kw}
+  - Palabras adicionales CREDITO: {credito_kw}
+
+  IMPORTANTE: NO omitas ningun movimiento.  Los montos usan coma para miles y punto
+  para decimales con prefijo $ (ej: $ 1,234,567.89).  Solo el valor distinto de cero
+  entre DEBITO y CREDITO debe extraerse.
+  NO incluyas markdown, SOLO el JSON.

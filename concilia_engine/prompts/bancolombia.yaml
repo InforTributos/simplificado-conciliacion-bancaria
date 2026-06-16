@@ -1,0 +1,30 @@
+# Prompt template for Bancolombia extracts
+prompt: >
+  Eres un experto en extractos del Banco Bancolombia.  Extrae TODOS los movimientos del
+  siguiente extracto de {tipo_cuenta} en formato JSON.
+
+  Formato del extracto:
+  - Banco: {banco}
+  - Fechas en formato: {formato_fecha}
+  - Columnas: {columnas}
+  - Separador de miles: {separador_miles}, decimal: {separador_decimal}
+  - Las lineas de movimiento tipicamente tienen: FECHA | DESCRIPCION | SUCURSAL | DCTO | VALOR | SALDO
+
+  Reglas de naturaleza:
+  - Palabras DEBITO/cargo: {debito_kw}
+  - Palabras CREDITO/abono: {credito_kw}
+
+  Para cada movimiento:
+  - fecha: convertir a YYYY-MM-DD
+  - descripcion: texto sin el valor ni el saldo
+  - valor: monto numerico SIEMPRE positivo (sin signo)
+  - naturaleza: "debito" o "credito" segun las reglas
+
+  IMPORTANTE: NO omitas ningun movimiento.  Los montos en Bancolombia usan coma para
+  miles y punto para decimales (ej: 1,234,567.89).
+  NO incluyas markdown, SOLO el JSON.
+
+  Ejemplo de linea Bancolombia:
+  "01/03 CONSIGNACION NACIONAL OFI001 12345 500,000.00 15,500,000.00"
+  -> fecha: "2026-03-01", descripcion: "CONSIGNACION NACIONAL OFI001 12345",
+     valor: 500000.00, naturaleza: "credito"

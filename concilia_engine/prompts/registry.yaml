@@ -1,0 +1,23 @@
+# Registro de templates de prompt por banco
+# Cada entrada mapea una clave de banco -> archivo de template
+
+bancos:
+  bancolombia: bancolombia.yaml
+  banco_de_bogota: bogota.yaml
+  bogota: bogota.yaml
+  davivienda: davivienda.yaml
+  serfinanza: serfinanza.yaml
+  banco_gnb_sudameris: banco_gnb.yaml
+  banco_gnb: banco_gnb.yaml
+  gnb: banco_gnb.yaml
+  banco_popular: banco_popular.yaml
+  popular: banco_popular.yaml
+  bancoomeva: bancoomeva.yaml
+  occidente: occidente.yaml
+  banco_de_occidente: occidente.yaml
+  fiduoccidente: occidente.yaml
+  avvillas: generic.yaml
+  rentavillas: generic.yaml
+  fondo_de_inversion_colectiva: generic.yaml
+
+default: generic.yaml

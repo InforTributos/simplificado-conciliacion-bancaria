@@ -1,0 +1,22 @@
+# Prompt template for Banco de Bogota extracts
+prompt: >
+  Eres un experto en extractos de Banco de Bogota.  Extrae TODOS los movimientos del
+  siguiente extracto de {tipo_cuenta} en formato JSON.
+
+  Formato del extracto:
+  - Banco: {banco}
+  - Fechas en formato: {formato_fecha}
+  - Columnas: {columnas}
+  - Separador de miles: {separador_miles}, decimal: {separador_decimal}
+  - Las lineas de movimiento tipicamente tienen formato similar a Occidente:
+    CODIGO | FECHA | DESCRIPCION | CIUDAD | OFICINA | DOCUMENTO | VALOR | SALDO
+
+  Reglas de naturaleza:
+  - Codigo N.C. / NOTA CREDITO = credito
+  - Codigos numericos como 001, 101 = debito
+  - Palabras DEBITO: {debito_kw}
+  - Palabras CREDITO: {credito_kw}
+
+  IMPORTANTE: NO omitas ningun movimiento.  Los montos usan coma para miles y punto
+  para decimales (ej: 1,234,567.89).
+  NO incluyas markdown, SOLO el JSON.

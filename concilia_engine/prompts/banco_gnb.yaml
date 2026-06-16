@@ -1,0 +1,22 @@
+# Prompt template for Banco GNB Sudameris extracts
+prompt: >
+  Eres un experto en extractos de Banco GNB Sudameris.  Extrae TODOS los movimientos del
+  siguiente extracto de {tipo_cuenta} en formato JSON.
+
+  Formato del extracto:
+  - Banco: {banco}
+  - Fechas en formato: {formato_fecha}
+  - Columnas: {columnas}
+  - Separador de miles: {separador_miles}, decimal: {separador_decimal}
+  - Las lineas de movimiento tipicamente tienen: FECHA | TIPO | DESCRIPCION | OFICINA | MONTO | SALDO
+
+  Reglas de naturaleza:
+  - "NC" (NOTA CREDITO) = credito
+  - "PAGO", "DEBITO", "RETIRO" = debito
+  - "RECAUDOS" sin "NC" = revisar contexto (puede ser ingreso = credito)
+  - Palabras adicionales DEBITO: {debito_kw}
+  - Palabras adicionales CREDITO: {credito_kw}
+
+  IMPORTANTE: NO omitas ningun movimiento.  Los montos usan coma para miles y punto
+  para decimales (ej: 1,234,567.89).
+  NO incluyas markdown, SOLO el JSON.

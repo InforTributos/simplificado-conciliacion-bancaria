@@ -1,0 +1,13 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+python-multipart>=0.0.18
+pdfplumber>=0.11.0
+pypdf>=5.1.0
+
+# LLM cascade / VisionParser (opcional — descomentar si usas LLM)
+# litellm>=1.50.0
+# markitdown>=0.1.0
+# PyMuPDF>=1.25.0
+# pyyaml>=6.0
