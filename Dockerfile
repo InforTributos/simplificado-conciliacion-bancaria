@@ -1,4 +1,4 @@
-FROM python:3.12-slim
+FROM python:3.14-slim
 
 # Configurable port and host
 ARG APP_PORT=8000
@@ -16,6 +16,7 @@ WORKDIR /app
 
 # Dependencies first (better layer caching)
 COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip setuptools wheel
 RUN pip install --no-cache-dir -r requirements.txt
 
 # App code
