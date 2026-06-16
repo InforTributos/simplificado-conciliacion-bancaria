@@ -1,0 +1,26 @@
+[
+  {
+    "fecha": "05-03-2026",
+    "codigo_movimiento": "2026002351",
+    "debito": 358131214.0,
+    "credito": 0.0,
+    "saldo": 23672429775.08,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026002325",
+    "debito": 73468096.75,
+    "credito": 0.0,
+    "saldo": 23745897871.83,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026002453",
+    "debito": 0.0,
+    "credito": 67624396.61,
+    "saldo": 23678273475.22,
+    "conciliado": false
+  }
+]

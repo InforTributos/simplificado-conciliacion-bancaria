@@ -104,34 +104,79 @@ curl -X POST http://localhost:8000/api/v1/conciliaciones/procesar \
 
 ## Docker
 
-### Construir
+### Requisitos
+
+- Docker Desktop instalado y corriendo.
+
+### 1. Construir la imagen (primera vez, o después de cambios en el código)
 
 ```bash
-docker build -t procesar-api:latest .
-
-# Puerto default personalizado al construir
-docker build --build-arg APP_PORT=8080 -t procesar-api:latest .
+docker build -t procesar-api .
 ```
 
-### Ejecutar
+### 2. Iniciar el contenedor
 
 ```bash
-# Puerto default 8000
-docker run -d --name procesar-api -p 8000:8000 --restart unless-stopped procesar-api:latest
-
-# Puerto personalizado al ejecutar
-docker run -d --name procesar-api -e APP_PORT=8080 -p 8080:8080 --restart unless-stopped procesar-api:latest
-
-# Host + puerto + red personalizados
-docker run -d --name procesar-api -e APP_HOST=127.0.0.1 -e APP_PORT=3000 -p 3000:3000 --network mi-red procesar-api:latest
+docker run -d --name procesar-api -p 8000:8000 procesar-api
 ```
 
-### Health Check
+La API queda disponible en http://localhost:8000/docs
 
-El contenedor incluye `HEALTHCHECK` en `/docs` usando el `APP_PORT` configurado. Verifica:
+### 3. Verificar que está corriendo
 
 ```bash
-docker ps --filter name=procesar-api
+docker ps
+```
+
+Debe aparecer `procesar-api` con estado `Up`.
+
+### 4. Probar con un extracto real
+
+```bash
+curl -X POST http://localhost:8000/api/v1/conciliaciones/procesar \
+  -F "extracto=@/ruta/al/extracto.pdf" \
+  -F 'movimientos_detalle=[{"fecha":"01-03-2026","codigo_movimiento":"TRX001","debito":0,"credito":250000,"saldo":1750000,"conciliado":false}]'
+```
+
+### 5. Ver logs (para depurar errores)
+
+```bash
+docker logs procesar-api
+```
+
+### 6. Detener el contenedor
+
+```bash
+docker stop procesar-api
+```
+
+### 7. Reconstruir después de cambios
+
+```bash
+docker stop procesar-api && docker rm procesar-api
+docker build -t procesar-api .
+docker run -d --name procesar-api -p 8000:8000 procesar-api
+```
+
+### 8. Ejecutar tests unitarios
+
+```bash
+docker exec procesar-api pytest tests/ -v -q
+```
+
+### Solución de problemas
+
+```bash
+# ¿Qué contenedores están corriendo?
+docker ps
+
+# ¿El puerto 8000 ya está ocupado?
+netstat -ano | findstr :8000    # Windows
+lsof -i :8000                   # Mac / Linux
+
+# Error "port is already allocated" → usar otro puerto:
+docker run -d --name procesar-api -p 8001:8000 procesar-api
+# La API queda en http://localhost:8001/docs
 ```
 
 La imagen usa un **usuario no-root** (`appuser`) y ejecuta `apt-get upgrade` durante el build para parchear CVEs.

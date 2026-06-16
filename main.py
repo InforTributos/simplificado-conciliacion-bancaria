@@ -228,6 +228,14 @@ async def procesar_conciliacion(
             },
         )
 
+    # Extract saldo_libros from last movement's saldo (closing balance)
+    saldo_libros = None
+    if movs_raw:
+        try:
+            saldo_libros = float(movs_raw[-1].get("saldo", 0))
+        except (TypeError, ValueError):
+            saldo_libros = None
+
     # Build default configs (no DB, no empresa-level overrides)
     llm_config = LLMConfig(
         api_key=settings.LLM_API_KEY,
@@ -255,6 +263,7 @@ async def procesar_conciliacion(
             periodo=periodo,
             config=config,
             llm_config=llm_config,
+            saldo_libros=saldo_libros,
         )
     except ValueError as e:
         raise HTTPException(

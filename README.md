@@ -104,34 +104,79 @@ curl -X POST http://localhost:8000/api/v1/conciliaciones/procesar \
 
 ## Docker
 
-### Build
+### Prerequisites
+
+- Docker Desktop installed and running.
+
+### 1. Build the image (first time, or after code changes)
 
 ```bash
-docker build -t procesar-api:latest .
-
-# Custom default port at build time
-docker build --build-arg APP_PORT=8080 -t procesar-api:latest .
+docker build -t procesar-api .
 ```
 
-### Run
+### 2. Start the container
 
 ```bash
-# Default port 8000
-docker run -d --name procesar-api -p 8000:8000 --restart unless-stopped procesar-api:latest
-
-# Custom port at runtime
-docker run -d --name procesar-api -e APP_PORT=8080 -p 8080:8080 --restart unless-stopped procesar-api:latest
-
-# Custom host + port + network
-docker run -d --name procesar-api -e APP_HOST=127.0.0.1 -e APP_PORT=3000 -p 3000:3000 --network mi-red procesar-api:latest
+docker run -d --name procesar-api -p 8000:8000 procesar-api
 ```
 
-### Health Check
+The API is now available at http://localhost:8000/docs
 
-The container includes a `HEALTHCHECK` at `/docs` using the configured `APP_PORT`. Verify:
+### 3. Check it's running
 
 ```bash
-docker ps --filter name=procesar-api
+docker ps
+```
+
+You should see `procesar-api` with status `Up`.
+
+### 4. Test with a real bank extract
+
+```bash
+curl -X POST http://localhost:8000/api/v1/conciliaciones/procesar \
+  -F "extracto=@/path/to/extract.pdf" \
+  -F 'movimientos_detalle=[{"fecha":"01-03-2026","codigo_movimiento":"TRX001","debito":0,"credito":250000,"saldo":1750000,"conciliado":false}]'
+```
+
+### 5. View logs (to debug errors)
+
+```bash
+docker logs procesar-api
+```
+
+### 6. Stop the container
+
+```bash
+docker stop procesar-api
+```
+
+### 7. Rebuild after code changes
+
+```bash
+docker stop procesar-api && docker rm procesar-api
+docker build -t procesar-api .
+docker run -d --name procesar-api -p 8000:8000 procesar-api
+```
+
+### 8. Run unit tests
+
+```bash
+docker exec procesar-api pytest tests/ -v -q
+```
+
+### Troubleshooting
+
+```bash
+# What containers are running?
+docker ps
+
+# Is port 8000 already in use?
+netstat -ano | findstr :8000    # Windows
+lsof -i :8000                   # Mac / Linux
+
+# "Port is already allocated" error → use a different port:
+docker run -d --name procesar-api -p 8001:8000 procesar-api
+# API is now at http://localhost:8001/docs
 ```
 
 The image uses a **non-root user** (`appuser`) and runs `apt-get upgrade` during build to patch CVEs.

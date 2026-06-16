@@ -1,0 +1,170 @@
+[
+  {
+    "fecha": "04-03-2026",
+    "codigo_movimiento": "2026002044",
+    "debito": 8836067.5,
+    "credito": 0.0,
+    "saldo": 11168621.0,
+    "conciliado": false
+  },
+  {
+    "fecha": "16-03-2026",
+    "codigo_movimiento": "2026001883",
+    "debito": 393732.18,
+    "credito": 0.0,
+    "saldo": 11562353.18,
+    "conciliado": false
+  },
+  {
+    "fecha": "16-03-2026",
+    "codigo_movimiento": "2026001875",
+    "debito": 75970.0,
+    "credito": 0.0,
+    "saldo": 11638323.18,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-03-2026",
+    "codigo_movimiento": "2026001872",
+    "debito": 75970.0,
+    "credito": 0.0,
+    "saldo": 11714293.18,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-03-2026",
+    "codigo_movimiento": "2026001865",
+    "debito": 96025903.45,
+    "credito": 0.0,
+    "saldo": 107740196.63,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-03-2026",
+    "codigo_movimiento": "2026001874",
+    "debito": 0.0,
+    "credito": 75970.0,
+    "saldo": 107664226.63,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-03-2026",
+    "codigo_movimiento": "2026001879",
+    "debito": 2652415.7,
+    "credito": 0.0,
+    "saldo": 110316642.33,
+    "conciliado": false
+  },
+  {
+    "fecha": "25-03-2026",
+    "codigo_movimiento": "2026001888",
+    "debito": 0.0,
+    "credito": 100000000.0,
+    "saldo": 10316642.33,
+    "conciliado": false
+  },
+  {
+    "fecha": "30-03-2026",
+    "codigo_movimiento": "2026002029",
+    "debito": 46464465.29,
+    "credito": 0.0,
+    "saldo": 56781107.62,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026002337",
+    "debito": 2050200.83,
+    "credito": 0.0,
+    "saldo": 58831308.45,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026002337",
+    "debito": 2374586.15,
+    "credito": 0.0,
+    "saldo": 61205894.6,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026002337",
+    "debito": 3978643.0,
+    "credito": 0.0,
+    "saldo": 65184537.6,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026002337",
+    "debito": 58018.37,
+    "credito": 0.0,
+    "saldo": 65242555.97,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026002337",
+    "debito": 134820.0,
+    "credito": 0.0,
+    "saldo": 65377375.97,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026001842",
+    "debito": 0.0,
+    "credito": 189056.0,
+    "saldo": 65188319.97,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026001861",
+    "debito": 3983.0,
+    "credito": 0.0,
+    "saldo": 65192302.97,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026002337",
+    "debito": 169488.0,
+    "credito": 0.0,
+    "saldo": 65361790.97,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026002337",
+    "debito": 71732.8,
+    "credito": 0.0,
+    "saldo": 65433523.77,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026002337",
+    "debito": 6350326.14,
+    "credito": 0.0,
+    "saldo": 71783849.91,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026002337",
+    "debito": 91324.5,
+    "credito": 0.0,
+    "saldo": 71875174.41,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026002337",
+    "debito": 894751.89,
+    "credito": 0.0,
+    "saldo": 72769926.3,
+    "conciliado": false
+  }
+]

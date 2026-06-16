@@ -1,0 +1,58 @@
+[
+  {
+    "fecha": "12-03-2026",
+    "codigo_movimiento": "2026002415",
+    "debito": 5000000000.0,
+    "credito": 0.0,
+    "saldo": 5000000000.0,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-03-2026",
+    "codigo_movimiento": "2026002375",
+    "debito": 3000000000.0,
+    "credito": 0.0,
+    "saldo": 8000000000.0,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-03-2026",
+    "codigo_movimiento": "2026002307",
+    "debito": 11000000000.0,
+    "credito": 0.0,
+    "saldo": 19000000000.0,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-03-2026",
+    "codigo_movimiento": "2026002308",
+    "debito": 1000000000.0,
+    "credito": 0.0,
+    "saldo": 20000000000.0,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026002377",
+    "debito": 0.0,
+    "credito": 24624.0,
+    "saldo": 19999975376.0,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026002376",
+    "debito": 17342694.27,
+    "credito": 0.0,
+    "saldo": 20017318070.27,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-03-2026",
+    "codigo_movimiento": "2026002377",
+    "debito": 0.0,
+    "credito": 129600.0,
+    "saldo": 20017188470.27,
+    "conciliado": false
+  }
+]

@@ -71,6 +71,21 @@ def ejecutar_pipeline_conciliacion(
     if saldo_libros is None:
         saldo_libros = parse_result.info_extracto.saldo_anterior
 
+    # Fallback: when the PDF parser can't extract saldos (0 with movements),
+    # reconstruct from movements. If saldo_anterior is also missing (0),
+    # derive it from saldo_libros so the cuadre can reach 0.
+    info_ext = parse_result.info_extracto
+    if info_ext.saldo_final == 0 and parse_result.movimientos:
+        total_cred = sum(m.valor for m in parse_result.movimientos if m.naturaleza == "credito")
+        total_deb = sum(m.valor for m in parse_result.movimientos if m.naturaleza == "debito")
+        if info_ext.saldo_anterior == 0 and saldo_libros and saldo_libros != 0:
+            info_ext.saldo_anterior = saldo_libros - total_cred + total_deb
+            info_ext.saldo_final = saldo_libros
+        else:
+            computed = info_ext.saldo_anterior + total_cred - total_deb
+            if computed != 0:
+                info_ext.saldo_final = computed
+
     # Execute matching
     engine = MatchingEngine()
     match_result = engine.conciliar(

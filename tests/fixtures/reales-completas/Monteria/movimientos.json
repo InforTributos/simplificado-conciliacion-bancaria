@@ -1,0 +1,7410 @@
+[
+  {
+    "fecha": "06-02-2025",
+    "codigo_movimiento": "2025000056",
+    "debito": 13000.0,
+    "credito": 0.0,
+    "saldo": 46446668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 129000.0,
+    "credito": 0.0,
+    "saldo": 46575668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 13000.0,
+    "credito": 0.0,
+    "saldo": 46588668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 18000.0,
+    "credito": 0.0,
+    "saldo": 46606668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 908000.0,
+    "credito": 0.0,
+    "saldo": 47514668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 7000.0,
+    "credito": 0.0,
+    "saldo": 47521668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 2728000.0,
+    "credito": 0.0,
+    "saldo": 50249668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 3155000.0,
+    "credito": 0.0,
+    "saldo": 53404668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 148000.0,
+    "credito": 0.0,
+    "saldo": 53552668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 124000.0,
+    "credito": 0.0,
+    "saldo": 53676668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 1168000.0,
+    "credito": 0.0,
+    "saldo": 54844668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 99000.0,
+    "credito": 0.0,
+    "saldo": 54943668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 148000.0,
+    "credito": 0.0,
+    "saldo": 55091668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 4730000.0,
+    "credito": 0.0,
+    "saldo": 59821668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 2979000.0,
+    "credito": 0.0,
+    "saldo": 62800668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 2311000.0,
+    "credito": 0.0,
+    "saldo": 65111668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 129000.0,
+    "credito": 0.0,
+    "saldo": 65240668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 50000.0,
+    "credito": 0.0,
+    "saldo": 65290668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 113400.0,
+    "credito": 0.0,
+    "saldo": 65404068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 2890000.0,
+    "credito": 0.0,
+    "saldo": 68294068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 3396000.0,
+    "credito": 0.0,
+    "saldo": 71690068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 3053000.0,
+    "credito": 0.0,
+    "saldo": 74743068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 39000.0,
+    "credito": 0.0,
+    "saldo": 74782068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "07-02-2025",
+    "codigo_movimiento": "2025000057",
+    "debito": 148000.0,
+    "credito": 0.0,
+    "saldo": 74930068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "08-02-2025",
+    "codigo_movimiento": "2025000058",
+    "debito": 298200.0,
+    "credito": 0.0,
+    "saldo": 75228268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "08-02-2025",
+    "codigo_movimiento": "2025000058",
+    "debito": 179000.0,
+    "credito": 0.0,
+    "saldo": 75407268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "08-02-2025",
+    "codigo_movimiento": "2025000058",
+    "debito": 602000.0,
+    "credito": 0.0,
+    "saldo": 76009268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "08-02-2025",
+    "codigo_movimiento": "2025000058",
+    "debito": 142700.0,
+    "credito": 0.0,
+    "saldo": 76151968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "08-02-2025",
+    "codigo_movimiento": "2025000058",
+    "debito": 248000.0,
+    "credito": 0.0,
+    "saldo": 76399968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "08-02-2025",
+    "codigo_movimiento": "2025000058",
+    "debito": 593000.0,
+    "credito": 0.0,
+    "saldo": 76992968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "08-02-2025",
+    "codigo_movimiento": "2025000058",
+    "debito": 3392000.0,
+    "credito": 0.0,
+    "saldo": 80384968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "08-02-2025",
+    "codigo_movimiento": "2025000058",
+    "debito": 30000.0,
+    "credito": 0.0,
+    "saldo": 80414968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "08-02-2025",
+    "codigo_movimiento": "2025000058",
+    "debito": 1560000.0,
+    "credito": 0.0,
+    "saldo": 81974968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "08-02-2025",
+    "codigo_movimiento": "2025000058",
+    "debito": 150000.0,
+    "credito": 0.0,
+    "saldo": 82124968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 133000.0,
+    "credito": 0.0,
+    "saldo": 82257968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 3073000.0,
+    "credito": 0.0,
+    "saldo": 85330968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 29000.0,
+    "credito": 0.0,
+    "saldo": 85359968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 186000.0,
+    "credito": 0.0,
+    "saldo": 85545968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 99000.0,
+    "credito": 0.0,
+    "saldo": 85644968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 1495000.0,
+    "credito": 0.0,
+    "saldo": 87139968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 1329000.0,
+    "credito": 0.0,
+    "saldo": 88468968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 150000.0,
+    "credito": 0.0,
+    "saldo": 88618968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 361000.0,
+    "credito": 0.0,
+    "saldo": 88979968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 6374000.0,
+    "credito": 0.0,
+    "saldo": 95353968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 3946000.0,
+    "credito": 0.0,
+    "saldo": 99299968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 186000.0,
+    "credito": 0.0,
+    "saldo": 99485968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 568000.0,
+    "credito": 0.0,
+    "saldo": 100053968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 2456000.0,
+    "credito": 0.0,
+    "saldo": 102509968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 13000.0,
+    "credito": 0.0,
+    "saldo": 102522968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 124000.0,
+    "credito": 0.0,
+    "saldo": 102646968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 1127000.0,
+    "credito": 0.0,
+    "saldo": 103773968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 1495000.0,
+    "credito": 0.0,
+    "saldo": 105268968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 1930000.0,
+    "credito": 0.0,
+    "saldo": 107198968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 611000.0,
+    "credito": 0.0,
+    "saldo": 107809968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 4174000.0,
+    "credito": 0.0,
+    "saldo": 111983968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 1143000.0,
+    "credito": 0.0,
+    "saldo": 113126968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 7389000.0,
+    "credito": 0.0,
+    "saldo": 120515968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 6185000.0,
+    "credito": 0.0,
+    "saldo": 126700968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 915000.0,
+    "credito": 0.0,
+    "saldo": 127615968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 4660000.0,
+    "credito": 0.0,
+    "saldo": 132275968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 1497000.0,
+    "credito": 0.0,
+    "saldo": 133772968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 14821000.0,
+    "credito": 0.0,
+    "saldo": 148593968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 2680000.0,
+    "credito": 0.0,
+    "saldo": 151273968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 1955000.0,
+    "credito": 0.0,
+    "saldo": 153228968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 1422000.0,
+    "credito": 0.0,
+    "saldo": 154650968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 14000.0,
+    "credito": 0.0,
+    "saldo": 154664968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 4479000.0,
+    "credito": 0.0,
+    "saldo": 159143968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 329000.0,
+    "credito": 0.0,
+    "saldo": 159472968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 68000.0,
+    "credito": 0.0,
+    "saldo": 159540968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 908000.0,
+    "credito": 0.0,
+    "saldo": 160448968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 3290000.0,
+    "credito": 0.0,
+    "saldo": 163738968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 15570000.0,
+    "credito": 0.0,
+    "saldo": 179308968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 819000.0,
+    "credito": 0.0,
+    "saldo": 180127968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 3178000.0,
+    "credito": 0.0,
+    "saldo": 183305968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 1156000.0,
+    "credito": 0.0,
+    "saldo": 184461968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 162000.0,
+    "credito": 0.0,
+    "saldo": 184623968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-02-2025",
+    "codigo_movimiento": "2025000060",
+    "debito": 25000.0,
+    "credito": 0.0,
+    "saldo": 184648968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 101000.0,
+    "credito": 0.0,
+    "saldo": 184749968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 281000.0,
+    "credito": 0.0,
+    "saldo": 185030968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 777000.0,
+    "credito": 0.0,
+    "saldo": 185807968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 198000.0,
+    "credito": 0.0,
+    "saldo": 186005968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 117000.0,
+    "credito": 0.0,
+    "saldo": 186122968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 78000.0,
+    "credito": 0.0,
+    "saldo": 186200968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 2622000.0,
+    "credito": 0.0,
+    "saldo": 188822968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 62000.0,
+    "credito": 0.0,
+    "saldo": 188884968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 99000.0,
+    "credito": 0.0,
+    "saldo": 188983968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 749000.0,
+    "credito": 0.0,
+    "saldo": 189732968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 56000.0,
+    "credito": 0.0,
+    "saldo": 189788968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 488000.0,
+    "credito": 0.0,
+    "saldo": 190276968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 72000.0,
+    "credito": 0.0,
+    "saldo": 190348968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 1655000.0,
+    "credito": 0.0,
+    "saldo": 192003968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 181000.0,
+    "credito": 0.0,
+    "saldo": 192184968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 773000.0,
+    "credito": 0.0,
+    "saldo": 192957968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 305000.0,
+    "credito": 0.0,
+    "saldo": 193262968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 346000.0,
+    "credito": 0.0,
+    "saldo": 193608968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 728000.0,
+    "credito": 0.0,
+    "saldo": 194336968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 7879000.0,
+    "credito": 0.0,
+    "saldo": 202215968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 20000.0,
+    "credito": 0.0,
+    "saldo": 202235968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 33000.0,
+    "credito": 0.0,
+    "saldo": 202268968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 522000.0,
+    "credito": 0.0,
+    "saldo": 202790968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 17000.0,
+    "credito": 0.0,
+    "saldo": 202807968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 6100.0,
+    "credito": 0.0,
+    "saldo": 202814068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 1895000.0,
+    "credito": 0.0,
+    "saldo": 204709068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 29000.0,
+    "credito": 0.0,
+    "saldo": 204738068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 582000.0,
+    "credito": 0.0,
+    "saldo": 205320068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 246000.0,
+    "credito": 0.0,
+    "saldo": 205566068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 1767200.0,
+    "credito": 0.0,
+    "saldo": 207333268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 1421000.0,
+    "credito": 0.0,
+    "saldo": 208754268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 19000.0,
+    "credito": 0.0,
+    "saldo": 208773268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 792000.0,
+    "credito": 0.0,
+    "saldo": 209565268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 978200.0,
+    "credito": 0.0,
+    "saldo": 210543468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 1862000.0,
+    "credito": 0.0,
+    "saldo": 212405468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 823000.0,
+    "credito": 0.0,
+    "saldo": 213228468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 372000.0,
+    "credito": 0.0,
+    "saldo": 213600468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 120000.0,
+    "credito": 0.0,
+    "saldo": 213720468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 1438000.0,
+    "credito": 0.0,
+    "saldo": 215158468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 81200.0,
+    "credito": 0.0,
+    "saldo": 215239668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 239000.0,
+    "credito": 0.0,
+    "saldo": 215478668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 978000.0,
+    "credito": 0.0,
+    "saldo": 216456668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 1507000.0,
+    "credito": 0.0,
+    "saldo": 217963668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 281000.0,
+    "credito": 0.0,
+    "saldo": 218244668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 67000.0,
+    "credito": 0.0,
+    "saldo": 218311668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 1586000.0,
+    "credito": 0.0,
+    "saldo": 219897668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 327000.0,
+    "credito": 0.0,
+    "saldo": 220224668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 1411000.0,
+    "credito": 0.0,
+    "saldo": 221635668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 6046000.0,
+    "credito": 0.0,
+    "saldo": 227681668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "11-02-2025",
+    "codigo_movimiento": "2025000061",
+    "debito": 2440000.0,
+    "credito": 0.0,
+    "saldo": 230121668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 791000.0,
+    "credito": 0.0,
+    "saldo": 230912668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 1829500.0,
+    "credito": 0.0,
+    "saldo": 232742168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 605000.0,
+    "credito": 0.0,
+    "saldo": 233347168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 3142300.0,
+    "credito": 0.0,
+    "saldo": 236489468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 47000.0,
+    "credito": 0.0,
+    "saldo": 236536468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 151000.0,
+    "credito": 0.0,
+    "saldo": 236687468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 187000.0,
+    "credito": 0.0,
+    "saldo": 236874468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 113000.0,
+    "credito": 0.0,
+    "saldo": 236987468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 5847000.0,
+    "credito": 0.0,
+    "saldo": 242834468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 43000.0,
+    "credito": 0.0,
+    "saldo": 242877468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 846800.0,
+    "credito": 0.0,
+    "saldo": 243724268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 2419000.0,
+    "credito": 0.0,
+    "saldo": 246143268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 3064000.0,
+    "credito": 0.0,
+    "saldo": 249207268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 962000.0,
+    "credito": 0.0,
+    "saldo": 250169268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 335000.0,
+    "credito": 0.0,
+    "saldo": 250504268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 1606000.0,
+    "credito": 0.0,
+    "saldo": 252110268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 1912700.0,
+    "credito": 0.0,
+    "saldo": 254022968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 118000.0,
+    "credito": 0.0,
+    "saldo": 254140968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 29000.0,
+    "credito": 0.0,
+    "saldo": 254169968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 5866000.0,
+    "credito": 0.0,
+    "saldo": 260035968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 2293000.0,
+    "credito": 0.0,
+    "saldo": 262328968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 1000.0,
+    "credito": 0.0,
+    "saldo": 262329968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 1284400.0,
+    "credito": 0.0,
+    "saldo": 263614368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 1498000.0,
+    "credito": 0.0,
+    "saldo": 265112368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 20000.0,
+    "credito": 0.0,
+    "saldo": 265132368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 1385000.0,
+    "credito": 0.0,
+    "saldo": 266517368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 875700.0,
+    "credito": 0.0,
+    "saldo": 267393068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 6000.0,
+    "credito": 0.0,
+    "saldo": 267399068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 6000.0,
+    "credito": 0.0,
+    "saldo": 267405068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 24000.0,
+    "credito": 0.0,
+    "saldo": 267429068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 2018600.0,
+    "credito": 0.0,
+    "saldo": 269447668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 47000.0,
+    "credito": 0.0,
+    "saldo": 269494668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 1427000.0,
+    "credito": 0.0,
+    "saldo": 270921668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 20000.0,
+    "credito": 0.0,
+    "saldo": 270941668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 5075100.0,
+    "credito": 0.0,
+    "saldo": 276016768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 10856000.0,
+    "credito": 0.0,
+    "saldo": 286872768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 2018600.0,
+    "credito": 0.0,
+    "saldo": 288891368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 873400.0,
+    "credito": 0.0,
+    "saldo": 289764768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 86000.0,
+    "credito": 0.0,
+    "saldo": 289850768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 17000.0,
+    "credito": 0.0,
+    "saldo": 289867768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 47000.0,
+    "credito": 0.0,
+    "saldo": 289914768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 1222200.0,
+    "credito": 0.0,
+    "saldo": 291136968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 74000.0,
+    "credito": 0.0,
+    "saldo": 291210968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 874300.0,
+    "credito": 0.0,
+    "saldo": 292085268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 19000.0,
+    "credito": 0.0,
+    "saldo": 292104268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 1763000.0,
+    "credito": 0.0,
+    "saldo": 293867268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 279000.0,
+    "credito": 0.0,
+    "saldo": 294146268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 1616100.0,
+    "credito": 0.0,
+    "saldo": 295762368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 32000.0,
+    "credito": 0.0,
+    "saldo": 295794368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 120000.0,
+    "credito": 0.0,
+    "saldo": 295914368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 191000.0,
+    "credito": 0.0,
+    "saldo": 296105368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 969900.0,
+    "credito": 0.0,
+    "saldo": 297075268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 229000.0,
+    "credito": 0.0,
+    "saldo": 297304268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 1635000.0,
+    "credito": 0.0,
+    "saldo": 298939268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 5731300.0,
+    "credito": 0.0,
+    "saldo": 304670568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 1606000.0,
+    "credito": 0.0,
+    "saldo": 306276568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 6162000.0,
+    "credito": 0.0,
+    "saldo": 312438568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 118000.0,
+    "credito": 0.0,
+    "saldo": 312556568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "12-02-2025",
+    "codigo_movimiento": "2025000062",
+    "debito": 511000.0,
+    "credito": 0.0,
+    "saldo": 313067568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 1143000.0,
+    "credito": 0.0,
+    "saldo": 314210568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 348000.0,
+    "credito": 0.0,
+    "saldo": 314558568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 6000.0,
+    "credito": 0.0,
+    "saldo": 314564568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 1185000.0,
+    "credito": 0.0,
+    "saldo": 315749568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 10000.0,
+    "credito": 0.0,
+    "saldo": 315759568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 3064400.0,
+    "credito": 0.0,
+    "saldo": 318823968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 3315000.0,
+    "credito": 0.0,
+    "saldo": 322138968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 768000.0,
+    "credito": 0.0,
+    "saldo": 322906968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 238000.0,
+    "credito": 0.0,
+    "saldo": 323144968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 2139000.0,
+    "credito": 0.0,
+    "saldo": 325283968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 2125000.0,
+    "credito": 0.0,
+    "saldo": 327408968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 296700.0,
+    "credito": 0.0,
+    "saldo": 327705668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 899000.0,
+    "credito": 0.0,
+    "saldo": 328604668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 979000.0,
+    "credito": 0.0,
+    "saldo": 329583668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 1927800.0,
+    "credito": 0.0,
+    "saldo": 331511468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 56000.0,
+    "credito": 0.0,
+    "saldo": 331567468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 1444000.0,
+    "credito": 0.0,
+    "saldo": 333011468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 5314000.0,
+    "credito": 0.0,
+    "saldo": 338325468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 7787000.0,
+    "credito": 0.0,
+    "saldo": 346112468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 312000.0,
+    "credito": 0.0,
+    "saldo": 346424468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 20000.0,
+    "credito": 0.0,
+    "saldo": 346444468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "13-02-2025",
+    "codigo_movimiento": "2025000063",
+    "debito": 2647000.0,
+    "credito": 0.0,
+    "saldo": 349091468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 255000.0,
+    "credito": 0.0,
+    "saldo": 349346468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 2522000.0,
+    "credito": 0.0,
+    "saldo": 351868468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 18000.0,
+    "credito": 0.0,
+    "saldo": 351886468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 930000.0,
+    "credito": 0.0,
+    "saldo": 352816468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 83000.0,
+    "credito": 0.0,
+    "saldo": 352899468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 4513000.0,
+    "credito": 0.0,
+    "saldo": 357412468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 79000.0,
+    "credito": 0.0,
+    "saldo": 357491468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 816000.0,
+    "credito": 0.0,
+    "saldo": 358307468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 548000.0,
+    "credito": 0.0,
+    "saldo": 358855468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 1821000.0,
+    "credito": 0.0,
+    "saldo": 360676468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 370000.0,
+    "credito": 0.0,
+    "saldo": 361046468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 181000.0,
+    "credito": 0.0,
+    "saldo": 361227468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 4000.0,
+    "credito": 0.0,
+    "saldo": 361231468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 13000.0,
+    "credito": 0.0,
+    "saldo": 361244468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 58000.0,
+    "credito": 0.0,
+    "saldo": 361302468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 152000.0,
+    "credito": 0.0,
+    "saldo": 361454468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 294000.0,
+    "credito": 0.0,
+    "saldo": 361748468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 1709000.0,
+    "credito": 0.0,
+    "saldo": 363457468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 1725000.0,
+    "credito": 0.0,
+    "saldo": 365182468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 93000.0,
+    "credito": 0.0,
+    "saldo": 365275468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 2092000.0,
+    "credito": 0.0,
+    "saldo": 367367468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 205000.0,
+    "credito": 0.0,
+    "saldo": 367572468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 72000.0,
+    "credito": 0.0,
+    "saldo": 367644468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 1038000.0,
+    "credito": 0.0,
+    "saldo": 368682468.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 997700.0,
+    "credito": 0.0,
+    "saldo": 369680168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 5194000.0,
+    "credito": 0.0,
+    "saldo": 374874168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 1137000.0,
+    "credito": 0.0,
+    "saldo": 376011168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 929000.0,
+    "credito": 0.0,
+    "saldo": 376940168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 1038000.0,
+    "credito": 0.0,
+    "saldo": 377978168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 978000.0,
+    "credito": 0.0,
+    "saldo": 378956168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 18000.0,
+    "credito": 0.0,
+    "saldo": 378974168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 5555000.0,
+    "credito": 0.0,
+    "saldo": 384529168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 1074000.0,
+    "credito": 0.0,
+    "saldo": 385603168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 631000.0,
+    "credito": 0.0,
+    "saldo": 386234168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 1096000.0,
+    "credito": 0.0,
+    "saldo": 387330168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 965000.0,
+    "credito": 0.0,
+    "saldo": 388295168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 79000.0,
+    "credito": 0.0,
+    "saldo": 388374168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 5118000.0,
+    "credito": 0.0,
+    "saldo": 393492168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 8000.0,
+    "credito": 0.0,
+    "saldo": 393500168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 26000.0,
+    "credito": 0.0,
+    "saldo": 393526168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 108000.0,
+    "credito": 0.0,
+    "saldo": 393634168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 1843000.0,
+    "credito": 0.0,
+    "saldo": 395477168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 83000.0,
+    "credito": 0.0,
+    "saldo": 395560168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 473000.0,
+    "credito": 0.0,
+    "saldo": 396033168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 324000.0,
+    "credito": 0.0,
+    "saldo": 396357168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 300000.0,
+    "credito": 0.0,
+    "saldo": 396657168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 2558000.0,
+    "credito": 0.0,
+    "saldo": 399215168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 83000.0,
+    "credito": 0.0,
+    "saldo": 399298168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 93000.0,
+    "credito": 0.0,
+    "saldo": 399391168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 93000.0,
+    "credito": 0.0,
+    "saldo": 399484168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 136000.0,
+    "credito": 0.0,
+    "saldo": 399620168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 890700.0,
+    "credito": 0.0,
+    "saldo": 400510868.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 203000.0,
+    "credito": 0.0,
+    "saldo": 400713868.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "14-02-2025",
+    "codigo_movimiento": "2025000064",
+    "debito": 54700.0,
+    "credito": 0.0,
+    "saldo": 400768568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "15-02-2025",
+    "codigo_movimiento": "2025000065",
+    "debito": 325000.0,
+    "credito": 0.0,
+    "saldo": 401093568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "15-02-2025",
+    "codigo_movimiento": "2025000065",
+    "debito": 143000.0,
+    "credito": 0.0,
+    "saldo": 401236568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "15-02-2025",
+    "codigo_movimiento": "2025000065",
+    "debito": 167000.0,
+    "credito": 0.0,
+    "saldo": 401403568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "15-02-2025",
+    "codigo_movimiento": "2025000065",
+    "debito": 1048000.0,
+    "credito": 0.0,
+    "saldo": 402451568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 63000.0,
+    "credito": 0.0,
+    "saldo": 402514568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 1052000.0,
+    "credito": 0.0,
+    "saldo": 403566568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 148000.0,
+    "credito": 0.0,
+    "saldo": 403714568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 3234600.0,
+    "credito": 0.0,
+    "saldo": 406949168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 236000.0,
+    "credito": 0.0,
+    "saldo": 407185168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 1738000.0,
+    "credito": 0.0,
+    "saldo": 408923168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 233000.0,
+    "credito": 0.0,
+    "saldo": 409156168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 60000.0,
+    "credito": 0.0,
+    "saldo": 409216168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 103000.0,
+    "credito": 0.0,
+    "saldo": 409319168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 7000.0,
+    "credito": 0.0,
+    "saldo": 409326168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 112000.0,
+    "credito": 0.0,
+    "saldo": 409438168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 83000.0,
+    "credito": 0.0,
+    "saldo": 409521168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 870000.0,
+    "credito": 0.0,
+    "saldo": 410391168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 833000.0,
+    "credito": 0.0,
+    "saldo": 411224168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 1570000.0,
+    "credito": 0.0,
+    "saldo": 412794168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 701000.0,
+    "credito": 0.0,
+    "saldo": 413495168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 6000.0,
+    "credito": 0.0,
+    "saldo": 413501168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 77000.0,
+    "credito": 0.0,
+    "saldo": 413578168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 81000.0,
+    "credito": 0.0,
+    "saldo": 413659168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 301000.0,
+    "credito": 0.0,
+    "saldo": 413960168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 983000.0,
+    "credito": 0.0,
+    "saldo": 414943168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 1608000.0,
+    "credito": 0.0,
+    "saldo": 416551168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 2757000.0,
+    "credito": 0.0,
+    "saldo": 419308168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 275000.0,
+    "credito": 0.0,
+    "saldo": 419583168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 1259000.0,
+    "credito": 0.0,
+    "saldo": 420842168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 566000.0,
+    "credito": 0.0,
+    "saldo": 421408168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 64000.0,
+    "credito": 0.0,
+    "saldo": 421472168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 181000.0,
+    "credito": 0.0,
+    "saldo": 421653168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 124000.0,
+    "credito": 0.0,
+    "saldo": 421777168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 293000.0,
+    "credito": 0.0,
+    "saldo": 422070168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 302000.0,
+    "credito": 0.0,
+    "saldo": 422372168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 1000000.0,
+    "credito": 0.0,
+    "saldo": 423372168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 17000.0,
+    "credito": 0.0,
+    "saldo": 423389168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 71000.0,
+    "credito": 0.0,
+    "saldo": 423460168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 55000.0,
+    "credito": 0.0,
+    "saldo": 423515168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 5065000.0,
+    "credito": 0.0,
+    "saldo": 428580168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 3000.0,
+    "credito": 0.0,
+    "saldo": 428583168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 1080000.0,
+    "credito": 0.0,
+    "saldo": 429663168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 901000.0,
+    "credito": 0.0,
+    "saldo": 430564168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 1035000.0,
+    "credito": 0.0,
+    "saldo": 431599168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 1161000.0,
+    "credito": 0.0,
+    "saldo": 432760168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 45000.0,
+    "credito": 0.0,
+    "saldo": 432805168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 870000.0,
+    "credito": 0.0,
+    "saldo": 433675168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 768000.0,
+    "credito": 0.0,
+    "saldo": 434443168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 39000.0,
+    "credito": 0.0,
+    "saldo": 434482168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 416600.0,
+    "credito": 0.0,
+    "saldo": 434898768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 6000.0,
+    "credito": 0.0,
+    "saldo": 434904768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 61000.0,
+    "credito": 0.0,
+    "saldo": 434965768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 1455000.0,
+    "credito": 0.0,
+    "saldo": 436420768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 28000.0,
+    "credito": 0.0,
+    "saldo": 436448768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 938000.0,
+    "credito": 0.0,
+    "saldo": 437386768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 274000.0,
+    "credito": 0.0,
+    "saldo": 437660768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 112000.0,
+    "credito": 0.0,
+    "saldo": 437772768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 2823000.0,
+    "credito": 0.0,
+    "saldo": 440595768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 9280000.0,
+    "credito": 0.0,
+    "saldo": 449875768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 112000.0,
+    "credito": 0.0,
+    "saldo": 449987768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 221000.0,
+    "credito": 0.0,
+    "saldo": 450208768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 564000.0,
+    "credito": 0.0,
+    "saldo": 450772768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 535000.0,
+    "credito": 0.0,
+    "saldo": 451307768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 2823000.0,
+    "credito": 0.0,
+    "saldo": 454130768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 33000.0,
+    "credito": 0.0,
+    "saldo": 454163768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 1374000.0,
+    "credito": 0.0,
+    "saldo": 455537768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 837000.0,
+    "credito": 0.0,
+    "saldo": 456374768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 62000.0,
+    "credito": 0.0,
+    "saldo": 456436768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 401000.0,
+    "credito": 0.0,
+    "saldo": 456837768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 74000.0,
+    "credito": 0.0,
+    "saldo": 456911768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 566000.0,
+    "credito": 0.0,
+    "saldo": 457477768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 6000.0,
+    "credito": 0.0,
+    "saldo": 457483768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 4000.0,
+    "credito": 0.0,
+    "saldo": 457487768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 491000.0,
+    "credito": 0.0,
+    "saldo": 457978768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 124000.0,
+    "credito": 0.0,
+    "saldo": 458102768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 382000.0,
+    "credito": 0.0,
+    "saldo": 458484768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 6000.0,
+    "credito": 0.0,
+    "saldo": 458490768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 322000.0,
+    "credito": 0.0,
+    "saldo": 458812768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 326000.0,
+    "credito": 0.0,
+    "saldo": 459138768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 8000.0,
+    "credito": 0.0,
+    "saldo": 459146768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 410000.0,
+    "credito": 0.0,
+    "saldo": 459556768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 1072000.0,
+    "credito": 0.0,
+    "saldo": 460628768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 112000.0,
+    "credito": 0.0,
+    "saldo": 460740768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 326000.0,
+    "credito": 0.0,
+    "saldo": 461066768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 26000.0,
+    "credito": 0.0,
+    "saldo": 461092768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 175000.0,
+    "credito": 0.0,
+    "saldo": 461267768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 326000.0,
+    "credito": 0.0,
+    "saldo": 461593768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 1256000.0,
+    "credito": 0.0,
+    "saldo": 462849768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 1259000.0,
+    "credito": 0.0,
+    "saldo": 464108768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 870000.0,
+    "credito": 0.0,
+    "saldo": 464978768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 437000.0,
+    "credito": 0.0,
+    "saldo": 465415768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 546000.0,
+    "credito": 0.0,
+    "saldo": 465961768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 259000.0,
+    "credito": 0.0,
+    "saldo": 466220768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "17-02-2025",
+    "codigo_movimiento": "2025000067",
+    "debito": 548000.0,
+    "credito": 0.0,
+    "saldo": 466768768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 1224000.0,
+    "credito": 0.0,
+    "saldo": 467992768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 33000.0,
+    "credito": 0.0,
+    "saldo": 468025768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 2474000.0,
+    "credito": 0.0,
+    "saldo": 470499768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 218000.0,
+    "credito": 0.0,
+    "saldo": 470717768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 118000.0,
+    "credito": 0.0,
+    "saldo": 470835768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 451000.0,
+    "credito": 0.0,
+    "saldo": 471286768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 171000.0,
+    "credito": 0.0,
+    "saldo": 471457768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 302000.0,
+    "credito": 0.0,
+    "saldo": 471759768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 2000.0,
+    "credito": 0.0,
+    "saldo": 471761768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 115000.0,
+    "credito": 0.0,
+    "saldo": 471876768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 822000.0,
+    "credito": 0.0,
+    "saldo": 472698768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 621000.0,
+    "credito": 0.0,
+    "saldo": 473319768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 1432000.0,
+    "credito": 0.0,
+    "saldo": 474751768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 1806000.0,
+    "credito": 0.0,
+    "saldo": 476557768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 921000.0,
+    "credito": 0.0,
+    "saldo": 477478768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 1584000.0,
+    "credito": 0.0,
+    "saldo": 479062768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 1074000.0,
+    "credito": 0.0,
+    "saldo": 480136768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 624000.0,
+    "credito": 0.0,
+    "saldo": 480760768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 903000.0,
+    "credito": 0.0,
+    "saldo": 481663768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 30000.0,
+    "credito": 0.0,
+    "saldo": 481693768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 2241000.0,
+    "credito": 0.0,
+    "saldo": 483934768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 215000.0,
+    "credito": 0.0,
+    "saldo": 484149768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 21000.0,
+    "credito": 0.0,
+    "saldo": 484170768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "18-02-2025",
+    "codigo_movimiento": "2025000068",
+    "debito": 7964000.0,
+    "credito": 0.0,
+    "saldo": 492134768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 192000.0,
+    "credito": 0.0,
+    "saldo": 492326768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 236000.0,
+    "credito": 0.0,
+    "saldo": 492562768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 299000.0,
+    "credito": 0.0,
+    "saldo": 492861768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 329000.0,
+    "credito": 0.0,
+    "saldo": 493190768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 10264000.0,
+    "credito": 0.0,
+    "saldo": 503454768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 2311000.0,
+    "credito": 0.0,
+    "saldo": 505765768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 29000.0,
+    "credito": 0.0,
+    "saldo": 505794768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 38000.0,
+    "credito": 0.0,
+    "saldo": 505832768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 1124000.0,
+    "credito": 0.0,
+    "saldo": 506956768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 482000.0,
+    "credito": 0.0,
+    "saldo": 507438768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 196000.0,
+    "credito": 0.0,
+    "saldo": 507634768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 148000.0,
+    "credito": 0.0,
+    "saldo": 507782768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 149000.0,
+    "credito": 0.0,
+    "saldo": 507931768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 593000.0,
+    "credito": 0.0,
+    "saldo": 508524768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 152000.0,
+    "credito": 0.0,
+    "saldo": 508676768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 1134000.0,
+    "credito": 0.0,
+    "saldo": 509810768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 317000.0,
+    "credito": 0.0,
+    "saldo": 510127768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 776000.0,
+    "credito": 0.0,
+    "saldo": 510903768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 23000.0,
+    "credito": 0.0,
+    "saldo": 510926768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 2910000.0,
+    "credito": 0.0,
+    "saldo": 513836768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "19-02-2025",
+    "codigo_movimiento": "2025000069",
+    "debito": 57000.0,
+    "credito": 0.0,
+    "saldo": 513893768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 14000.0,
+    "credito": 0.0,
+    "saldo": 513907768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 17000.0,
+    "credito": 0.0,
+    "saldo": 513924768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 1715000.0,
+    "credito": 0.0,
+    "saldo": 515639768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 326000.0,
+    "credito": 0.0,
+    "saldo": 515965768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 3614000.0,
+    "credito": 0.0,
+    "saldo": 519579768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 74000.0,
+    "credito": 0.0,
+    "saldo": 519653768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 74000.0,
+    "credito": 0.0,
+    "saldo": 519727768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 75000.0,
+    "credito": 0.0,
+    "saldo": 519802768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 211000.0,
+    "credito": 0.0,
+    "saldo": 520013768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 1517000.0,
+    "credito": 0.0,
+    "saldo": 521530768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 644000.0,
+    "credito": 0.0,
+    "saldo": 522174768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 683000.0,
+    "credito": 0.0,
+    "saldo": 522857768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 298000.0,
+    "credito": 0.0,
+    "saldo": 523155768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 99000.0,
+    "credito": 0.0,
+    "saldo": 523254768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 4472000.0,
+    "credito": 0.0,
+    "saldo": 527726768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 5994000.0,
+    "credito": 0.0,
+    "saldo": 533720768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 762000.0,
+    "credito": 0.0,
+    "saldo": 534482768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 5102000.0,
+    "credito": 0.0,
+    "saldo": 539584768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 906000.0,
+    "credito": 0.0,
+    "saldo": 540490768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 764000.0,
+    "credito": 0.0,
+    "saldo": 541254768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 480000.0,
+    "credito": 0.0,
+    "saldo": 541734768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 45000.0,
+    "credito": 0.0,
+    "saldo": 541779768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 18000.0,
+    "credito": 0.0,
+    "saldo": 541797768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 38000.0,
+    "credito": 0.0,
+    "saldo": 541835768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 56000.0,
+    "credito": 0.0,
+    "saldo": 541891768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 375000.0,
+    "credito": 0.0,
+    "saldo": 542266768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "20-02-2025",
+    "codigo_movimiento": "2025000070",
+    "debito": 33000.0,
+    "credito": 0.0,
+    "saldo": 542299768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 230000.0,
+    "credito": 0.0,
+    "saldo": 542529768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 32000.0,
+    "credito": 0.0,
+    "saldo": 542561768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 11000.0,
+    "credito": 0.0,
+    "saldo": 542572768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 29000.0,
+    "credito": 0.0,
+    "saldo": 542601768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 51000.0,
+    "credito": 0.0,
+    "saldo": 542652768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 1499000.0,
+    "credito": 0.0,
+    "saldo": 544151768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 475000.0,
+    "credito": 0.0,
+    "saldo": 544626768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 448000.0,
+    "credito": 0.0,
+    "saldo": 545074768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 493000.0,
+    "credito": 0.0,
+    "saldo": 545567768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 516000.0,
+    "credito": 0.0,
+    "saldo": 546083768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 194000.0,
+    "credito": 0.0,
+    "saldo": 546277768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 549000.0,
+    "credito": 0.0,
+    "saldo": 546826768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 38000.0,
+    "credito": 0.0,
+    "saldo": 546864768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 35000.0,
+    "credito": 0.0,
+    "saldo": 546899768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 123400.0,
+    "credito": 0.0,
+    "saldo": 547023168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 3246000.0,
+    "credito": 0.0,
+    "saldo": 550269168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 367000.0,
+    "credito": 0.0,
+    "saldo": 550636168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 1470000.0,
+    "credito": 0.0,
+    "saldo": 552106168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 19632000.0,
+    "credito": 0.0,
+    "saldo": 571738168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 33000.0,
+    "credito": 0.0,
+    "saldo": 571771168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 16000.0,
+    "credito": 0.0,
+    "saldo": 571787168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 167000.0,
+    "credito": 0.0,
+    "saldo": 571954168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "21-02-2025",
+    "codigo_movimiento": "2025000071",
+    "debito": 4351000.0,
+    "credito": 0.0,
+    "saldo": 576305168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 3671000.0,
+    "credito": 0.0,
+    "saldo": 579976168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 1491000.0,
+    "credito": 0.0,
+    "saldo": 581467168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 168000.0,
+    "credito": 0.0,
+    "saldo": 581635168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 200000.0,
+    "credito": 0.0,
+    "saldo": 581835168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 183000.0,
+    "credito": 0.0,
+    "saldo": 582018168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 162000.0,
+    "credito": 0.0,
+    "saldo": 582180168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 1011000.0,
+    "credito": 0.0,
+    "saldo": 583191168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 263000.0,
+    "credito": 0.0,
+    "saldo": 583454168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 261000.0,
+    "credito": 0.0,
+    "saldo": 583715168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 183000.0,
+    "credito": 0.0,
+    "saldo": 583898168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 235000.0,
+    "credito": 0.0,
+    "saldo": 584133168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 418000.0,
+    "credito": 0.0,
+    "saldo": 584551168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 158000.0,
+    "credito": 0.0,
+    "saldo": 584709168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 982000.0,
+    "credito": 0.0,
+    "saldo": 585691168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 1512000.0,
+    "credito": 0.0,
+    "saldo": 587203168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 849000.0,
+    "credito": 0.0,
+    "saldo": 588052168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 229000.0,
+    "credito": 0.0,
+    "saldo": 588281168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 149100.0,
+    "credito": 0.0,
+    "saldo": 588430268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 59000.0,
+    "credito": 0.0,
+    "saldo": 588489268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 239000.0,
+    "credito": 0.0,
+    "saldo": 588728268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 939000.0,
+    "credito": 0.0,
+    "saldo": 589667268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 403000.0,
+    "credito": 0.0,
+    "saldo": 590070268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 159000.0,
+    "credito": 0.0,
+    "saldo": 590229268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 935000.0,
+    "credito": 0.0,
+    "saldo": 591164268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 4431000.0,
+    "credito": 0.0,
+    "saldo": 595595268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "22-02-2025",
+    "codigo_movimiento": "2025000072",
+    "debito": 174000.0,
+    "credito": 0.0,
+    "saldo": 595769268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 282000.0,
+    "credito": 0.0,
+    "saldo": 596051268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 73000.0,
+    "credito": 0.0,
+    "saldo": 596124268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 76000.0,
+    "credito": 0.0,
+    "saldo": 596200268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 2781000.0,
+    "credito": 0.0,
+    "saldo": 598981268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 244000.0,
+    "credito": 0.0,
+    "saldo": 599225268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 2000.0,
+    "credito": 0.0,
+    "saldo": 599227268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 1783000.0,
+    "credito": 0.0,
+    "saldo": 601010268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 26000.0,
+    "credito": 0.0,
+    "saldo": 601036268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 807000.0,
+    "credito": 0.0,
+    "saldo": 601843268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 542000.0,
+    "credito": 0.0,
+    "saldo": 602385268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 86000.0,
+    "credito": 0.0,
+    "saldo": 602471268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 1144000.0,
+    "credito": 0.0,
+    "saldo": 603615268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 1155000.0,
+    "credito": 0.0,
+    "saldo": 604770268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 75000.0,
+    "credito": 0.0,
+    "saldo": 604845268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 330000.0,
+    "credito": 0.0,
+    "saldo": 605175268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 643000.0,
+    "credito": 0.0,
+    "saldo": 605818268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 35000.0,
+    "credito": 0.0,
+    "saldo": 605853268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 1411000.0,
+    "credito": 0.0,
+    "saldo": 607264268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 88000.0,
+    "credito": 0.0,
+    "saldo": 607352268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 1709000.0,
+    "credito": 0.0,
+    "saldo": 609061268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 115000.0,
+    "credito": 0.0,
+    "saldo": 609176268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 144000.0,
+    "credito": 0.0,
+    "saldo": 609320268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 3453100.0,
+    "credito": 0.0,
+    "saldo": 612773368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 2177000.0,
+    "credito": 0.0,
+    "saldo": 614950368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 510000.0,
+    "credito": 0.0,
+    "saldo": 615460368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 243000.0,
+    "credito": 0.0,
+    "saldo": 615703368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 639300.0,
+    "credito": 0.0,
+    "saldo": 616342668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 830000.0,
+    "credito": 0.0,
+    "saldo": 617172668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 147000.0,
+    "credito": 0.0,
+    "saldo": 617319668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 61000.0,
+    "credito": 0.0,
+    "saldo": 617380668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 2069000.0,
+    "credito": 0.0,
+    "saldo": 619449668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 208000.0,
+    "credito": 0.0,
+    "saldo": 619657668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 83900.0,
+    "credito": 0.0,
+    "saldo": 619741568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 1101000.0,
+    "credito": 0.0,
+    "saldo": 620842568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 73000.0,
+    "credito": 0.0,
+    "saldo": 620915568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 1975000.0,
+    "credito": 0.0,
+    "saldo": 622890568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 35000.0,
+    "credito": 0.0,
+    "saldo": 622925568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 236000.0,
+    "credito": 0.0,
+    "saldo": 623161568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 1080600.0,
+    "credito": 0.0,
+    "saldo": 624242168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 843000.0,
+    "credito": 0.0,
+    "saldo": 625085168.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 1794600.0,
+    "credito": 0.0,
+    "saldo": 626879768.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 12200.0,
+    "credito": 0.0,
+    "saldo": 626891968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 77000.0,
+    "credito": 0.0,
+    "saldo": 626968968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 8000.0,
+    "credito": 0.0,
+    "saldo": 626976968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "24-02-2025",
+    "codigo_movimiento": "2025000074",
+    "debito": 753000.0,
+    "credito": 0.0,
+    "saldo": 627729968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 455000.0,
+    "credito": 0.0,
+    "saldo": 628184968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 247000.0,
+    "credito": 0.0,
+    "saldo": 628431968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 133000.0,
+    "credito": 0.0,
+    "saldo": 628564968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 135000.0,
+    "credito": 0.0,
+    "saldo": 628699968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 125000.0,
+    "credito": 0.0,
+    "saldo": 628824968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 197000.0,
+    "credito": 0.0,
+    "saldo": 629021968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 197000.0,
+    "credito": 0.0,
+    "saldo": 629218968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 561000.0,
+    "credito": 0.0,
+    "saldo": 629779968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 72000.0,
+    "credito": 0.0,
+    "saldo": 629851968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1313000.0,
+    "credito": 0.0,
+    "saldo": 631164968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 102000.0,
+    "credito": 0.0,
+    "saldo": 631266968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 2749000.0,
+    "credito": 0.0,
+    "saldo": 634015968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 80300.0,
+    "credito": 0.0,
+    "saldo": 634096268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 152000.0,
+    "credito": 0.0,
+    "saldo": 634248268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 70000.0,
+    "credito": 0.0,
+    "saldo": 634318268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 723000.0,
+    "credito": 0.0,
+    "saldo": 635041268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 88000.0,
+    "credito": 0.0,
+    "saldo": 635129268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 388000.0,
+    "credito": 0.0,
+    "saldo": 635517268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 13000.0,
+    "credito": 0.0,
+    "saldo": 635530268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 171000.0,
+    "credito": 0.0,
+    "saldo": 635701268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 775000.0,
+    "credito": 0.0,
+    "saldo": 636476268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 394000.0,
+    "credito": 0.0,
+    "saldo": 636870268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 248000.0,
+    "credito": 0.0,
+    "saldo": 637118268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 11743000.0,
+    "credito": 0.0,
+    "saldo": 648861268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 5248000.0,
+    "credito": 0.0,
+    "saldo": 654109268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 434000.0,
+    "credito": 0.0,
+    "saldo": 654543268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 6314000.0,
+    "credito": 0.0,
+    "saldo": 660857268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 256000.0,
+    "credito": 0.0,
+    "saldo": 661113268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 58000.0,
+    "credito": 0.0,
+    "saldo": 661171268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 970000.0,
+    "credito": 0.0,
+    "saldo": 662141268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1138000.0,
+    "credito": 0.0,
+    "saldo": 663279268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 317000.0,
+    "credito": 0.0,
+    "saldo": 663596268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1478000.0,
+    "credito": 0.0,
+    "saldo": 665074268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 182000.0,
+    "credito": 0.0,
+    "saldo": 665256268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 467000.0,
+    "credito": 0.0,
+    "saldo": 665723268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1067000.0,
+    "credito": 0.0,
+    "saldo": 666790268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 12387000.0,
+    "credito": 0.0,
+    "saldo": 679177268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 11049000.0,
+    "credito": 0.0,
+    "saldo": 690226268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 79000.0,
+    "credito": 0.0,
+    "saldo": 690305268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 215000.0,
+    "credito": 0.0,
+    "saldo": 690520268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 8938000.0,
+    "credito": 0.0,
+    "saldo": 699458268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 583000.0,
+    "credito": 0.0,
+    "saldo": 700041268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 984700.0,
+    "credito": 0.0,
+    "saldo": 701025968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 334000.0,
+    "credito": 0.0,
+    "saldo": 701359968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 587000.0,
+    "credito": 0.0,
+    "saldo": 701946968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 880000.0,
+    "credito": 0.0,
+    "saldo": 702826968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 775000.0,
+    "credito": 0.0,
+    "saldo": 703601968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 462000.0,
+    "credito": 0.0,
+    "saldo": 704063968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 555000.0,
+    "credito": 0.0,
+    "saldo": 704618968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 5242000.0,
+    "credito": 0.0,
+    "saldo": 709860968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 4062000.0,
+    "credito": 0.0,
+    "saldo": 713922968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1870000.0,
+    "credito": 0.0,
+    "saldo": 715792968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 71000.0,
+    "credito": 0.0,
+    "saldo": 715863968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 653000.0,
+    "credito": 0.0,
+    "saldo": 716516968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 72000.0,
+    "credito": 0.0,
+    "saldo": 716588968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 887000.0,
+    "credito": 0.0,
+    "saldo": 717475968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 119000.0,
+    "credito": 0.0,
+    "saldo": 717594968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 294000.0,
+    "credito": 0.0,
+    "saldo": 717888968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 84000.0,
+    "credito": 0.0,
+    "saldo": 717972968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1212000.0,
+    "credito": 0.0,
+    "saldo": 719184968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 183600.0,
+    "credito": 0.0,
+    "saldo": 719368568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1459000.0,
+    "credito": 0.0,
+    "saldo": 720827568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 4058000.0,
+    "credito": 0.0,
+    "saldo": 724885568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 397000.0,
+    "credito": 0.0,
+    "saldo": 725282568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 199000.0,
+    "credito": 0.0,
+    "saldo": 725481568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 13000.0,
+    "credito": 0.0,
+    "saldo": 725494568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 55000.0,
+    "credito": 0.0,
+    "saldo": 725549568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 143000.0,
+    "credito": 0.0,
+    "saldo": 725692568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 2657000.0,
+    "credito": 0.0,
+    "saldo": 728349568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 620000.0,
+    "credito": 0.0,
+    "saldo": 728969568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 5387000.0,
+    "credito": 0.0,
+    "saldo": 734356568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 2018000.0,
+    "credito": 0.0,
+    "saldo": 736374568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1901000.0,
+    "credito": 0.0,
+    "saldo": 738275568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 53000.0,
+    "credito": 0.0,
+    "saldo": 738328568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000700",
+    "debito": 0.0,
+    "credito": 400000000.0,
+    "saldo": 338328568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 908000.0,
+    "credito": 0.0,
+    "saldo": 339236568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 163000.0,
+    "credito": 0.0,
+    "saldo": 339399568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 971000.0,
+    "credito": 0.0,
+    "saldo": 340370568.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 448800.0,
+    "credito": 0.0,
+    "saldo": 340819368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 3032000.0,
+    "credito": 0.0,
+    "saldo": 343851368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 20000.0,
+    "credito": 0.0,
+    "saldo": 343871368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 830000.0,
+    "credito": 0.0,
+    "saldo": 344701368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 796000.0,
+    "credito": 0.0,
+    "saldo": 345497368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 151000.0,
+    "credito": 0.0,
+    "saldo": 345648368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 793000.0,
+    "credito": 0.0,
+    "saldo": 346441368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 197000.0,
+    "credito": 0.0,
+    "saldo": 346638368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 237000.0,
+    "credito": 0.0,
+    "saldo": 346875368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 49000.0,
+    "credito": 0.0,
+    "saldo": 346924368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 5656000.0,
+    "credito": 0.0,
+    "saldo": 352580368.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 46600.0,
+    "credito": 0.0,
+    "saldo": 352626968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 667000.0,
+    "credito": 0.0,
+    "saldo": 353293968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 965000.0,
+    "credito": 0.0,
+    "saldo": 354258968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 87000.0,
+    "credito": 0.0,
+    "saldo": 354345968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 483000.0,
+    "credito": 0.0,
+    "saldo": 354828968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 58000.0,
+    "credito": 0.0,
+    "saldo": 354886968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 152000.0,
+    "credito": 0.0,
+    "saldo": 355038968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 116000.0,
+    "credito": 0.0,
+    "saldo": 355154968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1455000.0,
+    "credito": 0.0,
+    "saldo": 356609968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 167000.0,
+    "credito": 0.0,
+    "saldo": 356776968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1255000.0,
+    "credito": 0.0,
+    "saldo": 358031968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 234100.0,
+    "credito": 0.0,
+    "saldo": 358266068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 197000.0,
+    "credito": 0.0,
+    "saldo": 358463068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 11000.0,
+    "credito": 0.0,
+    "saldo": 358474068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 12000.0,
+    "credito": 0.0,
+    "saldo": 358486068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 127000.0,
+    "credito": 0.0,
+    "saldo": 358613068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 96000.0,
+    "credito": 0.0,
+    "saldo": 358709068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 2588000.0,
+    "credito": 0.0,
+    "saldo": 361297068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 2324000.0,
+    "credito": 0.0,
+    "saldo": 363621068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 88000.0,
+    "credito": 0.0,
+    "saldo": 363709068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 538000.0,
+    "credito": 0.0,
+    "saldo": 364247068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 74000.0,
+    "credito": 0.0,
+    "saldo": 364321068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 369000.0,
+    "credito": 0.0,
+    "saldo": 364690068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1195000.0,
+    "credito": 0.0,
+    "saldo": 365885068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 231000.0,
+    "credito": 0.0,
+    "saldo": 366116068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1746000.0,
+    "credito": 0.0,
+    "saldo": 367862068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 5607000.0,
+    "credito": 0.0,
+    "saldo": 373469068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 647000.0,
+    "credito": 0.0,
+    "saldo": 374116068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 135000.0,
+    "credito": 0.0,
+    "saldo": 374251068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 100000.0,
+    "credito": 0.0,
+    "saldo": 374351068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 108000.0,
+    "credito": 0.0,
+    "saldo": 374459068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 71000.0,
+    "credito": 0.0,
+    "saldo": 374530068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1011000.0,
+    "credito": 0.0,
+    "saldo": 375541068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 148000.0,
+    "credito": 0.0,
+    "saldo": 375689068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 63000.0,
+    "credito": 0.0,
+    "saldo": 375752068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 233000.0,
+    "credito": 0.0,
+    "saldo": 375985068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 2000.0,
+    "credito": 0.0,
+    "saldo": 375987068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 213000.0,
+    "credito": 0.0,
+    "saldo": 376200068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 806000.0,
+    "credito": 0.0,
+    "saldo": 377006068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 378000.0,
+    "credito": 0.0,
+    "saldo": 377384068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 197000.0,
+    "credito": 0.0,
+    "saldo": 377581068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 87000.0,
+    "credito": 0.0,
+    "saldo": 377668068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 215000.0,
+    "credito": 0.0,
+    "saldo": 377883068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 38000.0,
+    "credito": 0.0,
+    "saldo": 377921068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1046000.0,
+    "credito": 0.0,
+    "saldo": 378967068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 64000.0,
+    "credito": 0.0,
+    "saldo": 379031068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 150000.0,
+    "credito": 0.0,
+    "saldo": 379181068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 135000.0,
+    "credito": 0.0,
+    "saldo": 379316068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 902000.0,
+    "credito": 0.0,
+    "saldo": 380218068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 685000.0,
+    "credito": 0.0,
+    "saldo": 380903068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 186000.0,
+    "credito": 0.0,
+    "saldo": 381089068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 320000.0,
+    "credito": 0.0,
+    "saldo": 381409068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 343000.0,
+    "credito": 0.0,
+    "saldo": 381752068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 904000.0,
+    "credito": 0.0,
+    "saldo": 382656068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 23000.0,
+    "credito": 0.0,
+    "saldo": 382679068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 2349000.0,
+    "credito": 0.0,
+    "saldo": 385028068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 138000.0,
+    "credito": 0.0,
+    "saldo": 385166068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 135000.0,
+    "credito": 0.0,
+    "saldo": 385301068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1558000.0,
+    "credito": 0.0,
+    "saldo": 386859068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1645000.0,
+    "credito": 0.0,
+    "saldo": 388504068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 908000.0,
+    "credito": 0.0,
+    "saldo": 389412068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1381000.0,
+    "credito": 0.0,
+    "saldo": 390793068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 198000.0,
+    "credito": 0.0,
+    "saldo": 390991068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 197000.0,
+    "credito": 0.0,
+    "saldo": 391188068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 109000.0,
+    "credito": 0.0,
+    "saldo": 391297068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 2953000.0,
+    "credito": 0.0,
+    "saldo": 394250068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 263000.0,
+    "credito": 0.0,
+    "saldo": 394513068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 775000.0,
+    "credito": 0.0,
+    "saldo": 395288068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 380000.0,
+    "credito": 0.0,
+    "saldo": 395668068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1351000.0,
+    "credito": 0.0,
+    "saldo": 397019068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1779000.0,
+    "credito": 0.0,
+    "saldo": 398798068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 552800.0,
+    "credito": 0.0,
+    "saldo": 399350868.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 467000.0,
+    "credito": 0.0,
+    "saldo": 399817868.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 3571000.0,
+    "credito": 0.0,
+    "saldo": 403388868.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 286000.0,
+    "credito": 0.0,
+    "saldo": 403674868.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 47000.0,
+    "credito": 0.0,
+    "saldo": 403721868.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 178000.0,
+    "credito": 0.0,
+    "saldo": 403899868.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 651000.0,
+    "credito": 0.0,
+    "saldo": 404550868.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 82000.0,
+    "credito": 0.0,
+    "saldo": 404632868.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 4138000.0,
+    "credito": 0.0,
+    "saldo": 408770868.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 200000.0,
+    "credito": 0.0,
+    "saldo": 408970868.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 151100.0,
+    "credito": 0.0,
+    "saldo": 409121968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 29000.0,
+    "credito": 0.0,
+    "saldo": 409150968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 7309000.0,
+    "credito": 0.0,
+    "saldo": 416459968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 1072000.0,
+    "credito": 0.0,
+    "saldo": 417531968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 605000.0,
+    "credito": 0.0,
+    "saldo": 418136968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 531000.0,
+    "credito": 0.0,
+    "saldo": 418667968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 551000.0,
+    "credito": 0.0,
+    "saldo": 419218968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 157000.0,
+    "credito": 0.0,
+    "saldo": 419375968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 540000.0,
+    "credito": 0.0,
+    "saldo": 419915968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 2079000.0,
+    "credito": 0.0,
+    "saldo": 421994968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 44000.0,
+    "credito": 0.0,
+    "saldo": 422038968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 15000.0,
+    "credito": 0.0,
+    "saldo": 422053968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 2000.0,
+    "credito": 0.0,
+    "saldo": 422055968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 2000.0,
+    "credito": 0.0,
+    "saldo": 422057968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 648000.0,
+    "credito": 0.0,
+    "saldo": 422705968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 73000.0,
+    "credito": 0.0,
+    "saldo": 422778968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 73000.0,
+    "credito": 0.0,
+    "saldo": 422851968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 86000.0,
+    "credito": 0.0,
+    "saldo": 422937968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "26-02-2025",
+    "codigo_movimiento": "2025000076",
+    "debito": 2312000.0,
+    "credito": 0.0,
+    "saldo": 425249968.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 112700.0,
+    "credito": 0.0,
+    "saldo": 425362668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 1112000.0,
+    "credito": 0.0,
+    "saldo": 426474668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 3000.0,
+    "credito": 0.0,
+    "saldo": 426477668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 38000.0,
+    "credito": 0.0,
+    "saldo": 426515668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 7000.0,
+    "credito": 0.0,
+    "saldo": 426522668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 104000.0,
+    "credito": 0.0,
+    "saldo": 426626668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 167000.0,
+    "credito": 0.0,
+    "saldo": 426793668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 51444000.0,
+    "credito": 0.0,
+    "saldo": 478237668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 526000.0,
+    "credito": 0.0,
+    "saldo": 478763668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 82000.0,
+    "credito": 0.0,
+    "saldo": 478845668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 143000.0,
+    "credito": 0.0,
+    "saldo": 478988668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 167000.0,
+    "credito": 0.0,
+    "saldo": 479155668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 931000.0,
+    "credito": 0.0,
+    "saldo": 480086668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 356000.0,
+    "credito": 0.0,
+    "saldo": 480442668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 269000.0,
+    "credito": 0.0,
+    "saldo": 480711668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 154000.0,
+    "credito": 0.0,
+    "saldo": 480865668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 278000.0,
+    "credito": 0.0,
+    "saldo": 481143668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 1411000.0,
+    "credito": 0.0,
+    "saldo": 482554668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 35000.0,
+    "credito": 0.0,
+    "saldo": 482589668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 459000.0,
+    "credito": 0.0,
+    "saldo": 483048668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 166000.0,
+    "credito": 0.0,
+    "saldo": 483214668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 652000.0,
+    "credito": 0.0,
+    "saldo": 483866668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 2000.0,
+    "credito": 0.0,
+    "saldo": 483868668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 2540000.0,
+    "credito": 0.0,
+    "saldo": 486408668.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 422400.0,
+    "credito": 0.0,
+    "saldo": 486831068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 632000.0,
+    "credito": 0.0,
+    "saldo": 487463068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 46000.0,
+    "credito": 0.0,
+    "saldo": 487509068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 1898000.0,
+    "credito": 0.0,
+    "saldo": 489407068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 35000.0,
+    "credito": 0.0,
+    "saldo": 489442068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 5314000.0,
+    "credito": 0.0,
+    "saldo": 494756068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 15113000.0,
+    "credito": 0.0,
+    "saldo": 509869068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 4429000.0,
+    "credito": 0.0,
+    "saldo": 514298068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 1501000.0,
+    "credito": 0.0,
+    "saldo": 515799068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 48000.0,
+    "credito": 0.0,
+    "saldo": 515847068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 26000.0,
+    "credito": 0.0,
+    "saldo": 515873068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 49000.0,
+    "credito": 0.0,
+    "saldo": 515922068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 520000.0,
+    "credito": 0.0,
+    "saldo": 516442068.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 99926.0,
+    "credito": 0.0,
+    "saldo": 516541994.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 24000.0,
+    "credito": 0.0,
+    "saldo": 516565994.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 67000.0,
+    "credito": 0.0,
+    "saldo": 516632994.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 263000.0,
+    "credito": 0.0,
+    "saldo": 516895994.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 3000.0,
+    "credito": 0.0,
+    "saldo": 516898994.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 154000.0,
+    "credito": 0.0,
+    "saldo": 517052994.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 43000.0,
+    "credito": 0.0,
+    "saldo": 517095994.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 56000.0,
+    "credito": 0.0,
+    "saldo": 517151994.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 146400.0,
+    "credito": 0.0,
+    "saldo": 517298394.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 532000.0,
+    "credito": 0.0,
+    "saldo": 517830394.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 1965000.0,
+    "credito": 0.0,
+    "saldo": 519795394.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 35000.0,
+    "credito": 0.0,
+    "saldo": 519830394.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 326000.0,
+    "credito": 0.0,
+    "saldo": 520156394.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 4141000.0,
+    "credito": 0.0,
+    "saldo": 524297394.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 2963000.0,
+    "credito": 0.0,
+    "saldo": 527260394.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 1176000.0,
+    "credito": 0.0,
+    "saldo": 528436394.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 58500.0,
+    "credito": 0.0,
+    "saldo": 528494894.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 1115000.0,
+    "credito": 0.0,
+    "saldo": 529609894.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 214300.0,
+    "credito": 0.0,
+    "saldo": 529824194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 1883000.0,
+    "credito": 0.0,
+    "saldo": 531707194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 127000.0,
+    "credito": 0.0,
+    "saldo": 531834194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 52000.0,
+    "credito": 0.0,
+    "saldo": 531886194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 192000.0,
+    "credito": 0.0,
+    "saldo": 532078194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 552000.0,
+    "credito": 0.0,
+    "saldo": 532630194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 271000.0,
+    "credito": 0.0,
+    "saldo": 532901194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 1364000.0,
+    "credito": 0.0,
+    "saldo": 534265194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 1347000.0,
+    "credito": 0.0,
+    "saldo": 535612194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 131000.0,
+    "credito": 0.0,
+    "saldo": 535743194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 625000.0,
+    "credito": 0.0,
+    "saldo": 536368194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 712000.0,
+    "credito": 0.0,
+    "saldo": 537080194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 486900.0,
+    "credito": 0.0,
+    "saldo": 537567094.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 199000.0,
+    "credito": 0.0,
+    "saldo": 537766094.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 1031100.0,
+    "credito": 0.0,
+    "saldo": 538797194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 195000.0,
+    "credito": 0.0,
+    "saldo": 538992194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 239000.0,
+    "credito": 0.0,
+    "saldo": 539231194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 199000.0,
+    "credito": 0.0,
+    "saldo": 539430194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 1253000.0,
+    "credito": 0.0,
+    "saldo": 540683194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 630000.0,
+    "credito": 0.0,
+    "saldo": 541313194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 594000.0,
+    "credito": 0.0,
+    "saldo": 541907194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 1155000.0,
+    "credito": 0.0,
+    "saldo": 543062194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 1025000.0,
+    "credito": 0.0,
+    "saldo": 544087194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 3000.0,
+    "credito": 0.0,
+    "saldo": 544090194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 716000.0,
+    "credito": 0.0,
+    "saldo": 544806194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 29000.0,
+    "credito": 0.0,
+    "saldo": 544835194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "27-02-2025",
+    "codigo_movimiento": "2025000077",
+    "debito": 11286000.0,
+    "credito": 0.0,
+    "saldo": 556121194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 221000.0,
+    "credito": 0.0,
+    "saldo": 556342194.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 112300.0,
+    "credito": 0.0,
+    "saldo": 556454494.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 43000.0,
+    "credito": 0.0,
+    "saldo": 556497494.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000471",
+    "debito": 97774.0,
+    "credito": 0.0,
+    "saldo": 556595268.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000961",
+    "debito": 34350.0,
+    "credito": 0.0,
+    "saldo": 556629618.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 374900.0,
+    "credito": 0.0,
+    "saldo": 557004518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 6753000.0,
+    "credito": 0.0,
+    "saldo": 563757518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 142000.0,
+    "credito": 0.0,
+    "saldo": 563899518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 19000.0,
+    "credito": 0.0,
+    "saldo": 563918518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 72000.0,
+    "credito": 0.0,
+    "saldo": 563990518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1708000.0,
+    "credito": 0.0,
+    "saldo": 565698518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1806000.0,
+    "credito": 0.0,
+    "saldo": 567504518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 60100.0,
+    "credito": 0.0,
+    "saldo": 567564618.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 198000.0,
+    "credito": 0.0,
+    "saldo": 567762618.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 94000.0,
+    "credito": 0.0,
+    "saldo": 567856618.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 269000.0,
+    "credito": 0.0,
+    "saldo": 568125618.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 82000.0,
+    "credito": 0.0,
+    "saldo": 568207618.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 67000.0,
+    "credito": 0.0,
+    "saldo": 568274618.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 2012000.0,
+    "credito": 0.0,
+    "saldo": 570286618.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 3399000.0,
+    "credito": 0.0,
+    "saldo": 573685618.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1352000.0,
+    "credito": 0.0,
+    "saldo": 575037618.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 130000.0,
+    "credito": 0.0,
+    "saldo": 575167618.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 3039000.0,
+    "credito": 0.0,
+    "saldo": 578206618.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 3667000.0,
+    "credito": 0.0,
+    "saldo": 581873618.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 48000.0,
+    "credito": 0.0,
+    "saldo": 581921618.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1210800.0,
+    "credito": 0.0,
+    "saldo": 583132418.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 41000.0,
+    "credito": 0.0,
+    "saldo": 583173418.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 744000.0,
+    "credito": 0.0,
+    "saldo": 583917418.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 167000.0,
+    "credito": 0.0,
+    "saldo": 584084418.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 430100.0,
+    "credito": 0.0,
+    "saldo": 584514518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1213000.0,
+    "credito": 0.0,
+    "saldo": 585727518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 698000.0,
+    "credito": 0.0,
+    "saldo": 586425518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 2615000.0,
+    "credito": 0.0,
+    "saldo": 589040518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 5309000.0,
+    "credito": 0.0,
+    "saldo": 594349518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 45000.0,
+    "credito": 0.0,
+    "saldo": 594394518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 228000.0,
+    "credito": 0.0,
+    "saldo": 594622518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1422000.0,
+    "credito": 0.0,
+    "saldo": 596044518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 3652000.0,
+    "credito": 0.0,
+    "saldo": 599696518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 407000.0,
+    "credito": 0.0,
+    "saldo": 600103518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 836000.0,
+    "credito": 0.0,
+    "saldo": 600939518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 263000.0,
+    "credito": 0.0,
+    "saldo": 601202518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1213000.0,
+    "credito": 0.0,
+    "saldo": 602415518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1896000.0,
+    "credito": 0.0,
+    "saldo": 604311518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 792000.0,
+    "credito": 0.0,
+    "saldo": 605103518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 8317000.0,
+    "credito": 0.0,
+    "saldo": 613420518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 6320000.0,
+    "credito": 0.0,
+    "saldo": 619740518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 6194000.0,
+    "credito": 0.0,
+    "saldo": 625934518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 4066000.0,
+    "credito": 0.0,
+    "saldo": 630000518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 231600.0,
+    "credito": 0.0,
+    "saldo": 630232118.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 238000.0,
+    "credito": 0.0,
+    "saldo": 630470118.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1115000.0,
+    "credito": 0.0,
+    "saldo": 631585118.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 77100.0,
+    "credito": 0.0,
+    "saldo": 631662218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 261000.0,
+    "credito": 0.0,
+    "saldo": 631923218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1211000.0,
+    "credito": 0.0,
+    "saldo": 633134218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 13409000.0,
+    "credito": 0.0,
+    "saldo": 646543218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 175000.0,
+    "credito": 0.0,
+    "saldo": 646718218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 723000.0,
+    "credito": 0.0,
+    "saldo": 647441218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 219000.0,
+    "credito": 0.0,
+    "saldo": 647660218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 2464000.0,
+    "credito": 0.0,
+    "saldo": 650124218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 204000.0,
+    "credito": 0.0,
+    "saldo": 650328218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1000.0,
+    "credito": 0.0,
+    "saldo": 650329218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 18423000.0,
+    "credito": 0.0,
+    "saldo": 668752218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 536000.0,
+    "credito": 0.0,
+    "saldo": 669288218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1840000.0,
+    "credito": 0.0,
+    "saldo": 671128218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 103000.0,
+    "credito": 0.0,
+    "saldo": 671231218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1396000.0,
+    "credito": 0.0,
+    "saldo": 672627218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 169000.0,
+    "credito": 0.0,
+    "saldo": 672796218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 7158000.0,
+    "credito": 0.0,
+    "saldo": 679954218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 479000.0,
+    "credito": 0.0,
+    "saldo": 680433218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 44000.0,
+    "credito": 0.0,
+    "saldo": 680477218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 62000.0,
+    "credito": 0.0,
+    "saldo": 680539218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 106000.0,
+    "credito": 0.0,
+    "saldo": 680645218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 181000.0,
+    "credito": 0.0,
+    "saldo": 680826218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 181000.0,
+    "credito": 0.0,
+    "saldo": 681007218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 152000.0,
+    "credito": 0.0,
+    "saldo": 681159218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1260000.0,
+    "credito": 0.0,
+    "saldo": 682419218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1840000.0,
+    "credito": 0.0,
+    "saldo": 684259218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 252000.0,
+    "credito": 0.0,
+    "saldo": 684511218.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 112300.0,
+    "credito": 0.0,
+    "saldo": 684623518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 2979000.0,
+    "credito": 0.0,
+    "saldo": 687602518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 49000.0,
+    "credito": 0.0,
+    "saldo": 687651518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 93000.0,
+    "credito": 0.0,
+    "saldo": 687744518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1421000.0,
+    "credito": 0.0,
+    "saldo": 689165518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 777000.0,
+    "credito": 0.0,
+    "saldo": 689942518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 2735000.0,
+    "credito": 0.0,
+    "saldo": 692677518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 26434000.0,
+    "credito": 0.0,
+    "saldo": 719111518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 921000.0,
+    "credito": 0.0,
+    "saldo": 720032518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 3921000.0,
+    "credito": 0.0,
+    "saldo": 723953518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 202000.0,
+    "credito": 0.0,
+    "saldo": 724155518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 198000.0,
+    "credito": 0.0,
+    "saldo": 724353518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 222000.0,
+    "credito": 0.0,
+    "saldo": 724575518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 12944000.0,
+    "credito": 0.0,
+    "saldo": 737519518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 53000.0,
+    "credito": 0.0,
+    "saldo": 737572518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 20220100.0,
+    "credito": 0.0,
+    "saldo": 757792618.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 321700.0,
+    "credito": 0.0,
+    "saldo": 758114318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 748000.0,
+    "credito": 0.0,
+    "saldo": 758862318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1025000.0,
+    "credito": 0.0,
+    "saldo": 759887318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 40000.0,
+    "credito": 0.0,
+    "saldo": 759927318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 153000.0,
+    "credito": 0.0,
+    "saldo": 760080318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 349000.0,
+    "credito": 0.0,
+    "saldo": 760429318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 2328000.0,
+    "credito": 0.0,
+    "saldo": 762757318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 88000.0,
+    "credito": 0.0,
+    "saldo": 762845318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 14396000.0,
+    "credito": 0.0,
+    "saldo": 777241318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 23540000.0,
+    "credito": 0.0,
+    "saldo": 800781318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 14797000.0,
+    "credito": 0.0,
+    "saldo": 815578318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 5222000.0,
+    "credito": 0.0,
+    "saldo": 820800318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 4916000.0,
+    "credito": 0.0,
+    "saldo": 825716318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1806000.0,
+    "credito": 0.0,
+    "saldo": 827522318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 9946000.0,
+    "credito": 0.0,
+    "saldo": 837468318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 9029000.0,
+    "credito": 0.0,
+    "saldo": 846497318.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 107200.0,
+    "credito": 0.0,
+    "saldo": 846604518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 71000.0,
+    "credito": 0.0,
+    "saldo": 846675518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 7527000.0,
+    "credito": 0.0,
+    "saldo": 854202518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 578000.0,
+    "credito": 0.0,
+    "saldo": 854780518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 722000.0,
+    "credito": 0.0,
+    "saldo": 855502518.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 112300.0,
+    "credito": 0.0,
+    "saldo": 855614818.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 119000.0,
+    "credito": 0.0,
+    "saldo": 855733818.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 64000.0,
+    "credito": 0.0,
+    "saldo": 855797818.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 2492000.0,
+    "credito": 0.0,
+    "saldo": 858289818.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 163000.0,
+    "credito": 0.0,
+    "saldo": 858452818.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1501000.0,
+    "credito": 0.0,
+    "saldo": 859953818.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 104600.0,
+    "credito": 0.0,
+    "saldo": 860058418.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 478000.0,
+    "credito": 0.0,
+    "saldo": 860536418.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 183000.0,
+    "credito": 0.0,
+    "saldo": 860719418.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 37000.0,
+    "credito": 0.0,
+    "saldo": 860756418.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 1840000.0,
+    "credito": 0.0,
+    "saldo": 862596418.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 2199000.0,
+    "credito": 0.0,
+    "saldo": 864795418.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 9000.0,
+    "credito": 0.0,
+    "saldo": 864804418.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 163000.0,
+    "credito": 0.0,
+    "saldo": 864967418.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 51228700.0,
+    "credito": 0.0,
+    "saldo": 916196118.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 20229800.0,
+    "credito": 0.0,
+    "saldo": 936425918.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 487200.0,
+    "credito": 0.0,
+    "saldo": 936913118.5,
+    "conciliado": false
+  },
+  {
+    "fecha": "28-02-2025",
+    "codigo_movimiento": "2025000078",
+    "debito": 51000.0,
+    "credito": 0.0,
+    "saldo": 936964118.5,
+    "conciliado": false
+  }
+]

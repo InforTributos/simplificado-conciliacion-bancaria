@@ -1,0 +1,282 @@
+[
+  {
+    "fecha": "02-01-2024",
+    "codigo_movimiento": "2024000253",
+    "debito": 0.0,
+    "credito": 180758128.65,
+    "saldo": -2123017247.53,
+    "conciliado": false
+  },
+  {
+    "fecha": "02-01-2024",
+    "codigo_movimiento": "2024000249",
+    "debito": 0.0,
+    "credito": 156294809.88,
+    "saldo": -2279312057.41,
+    "conciliado": false
+  },
+  {
+    "fecha": "10-01-2024",
+    "codigo_movimiento": "2024000256",
+    "debito": 0.0,
+    "credito": 400000000.0,
+    "saldo": -2679312057.41,
+    "conciliado": false
+  },
+  {
+    "fecha": "25-01-2024",
+    "codigo_movimiento": "2024000031",
+    "debito": 0.0,
+    "credito": 2104768.0,
+    "saldo": -2681416825.41,
+    "conciliado": false
+  },
+  {
+    "fecha": "25-01-2024",
+    "codigo_movimiento": "2024000033",
+    "debito": 0.0,
+    "credito": 1319969.0,
+    "saldo": -2682736794.41,
+    "conciliado": false
+  },
+  {
+    "fecha": "25-01-2024",
+    "codigo_movimiento": "2024000032",
+    "debito": 0.0,
+    "credito": 1319969.0,
+    "saldo": -2684056763.41,
+    "conciliado": false
+  },
+  {
+    "fecha": "25-01-2024",
+    "codigo_movimiento": "2024000030",
+    "debito": 0.0,
+    "credito": 2104768.0,
+    "saldo": -2686161531.41,
+    "conciliado": false
+  },
+  {
+    "fecha": "25-01-2024",
+    "codigo_movimiento": "2024000035",
+    "debito": 0.0,
+    "credito": 1168089399.0,
+    "saldo": -3854250930.41,
+    "conciliado": false
+  },
+  {
+    "fecha": "25-01-2024",
+    "codigo_movimiento": "2024000001",
+    "debito": 0.0,
+    "credito": 35725237.0,
+    "saldo": -3889976167.41,
+    "conciliado": false
+  },
+  {
+    "fecha": "25-01-2024",
+    "codigo_movimiento": "2024000002",
+    "debito": 0.0,
+    "credito": 418140.0,
+    "saldo": -3890394307.41,
+    "conciliado": false
+  },
+  {
+    "fecha": "25-01-2024",
+    "codigo_movimiento": "2024000026",
+    "debito": 0.0,
+    "credito": 294300.7,
+    "saldo": -3890688608.11,
+    "conciliado": false
+  },
+  {
+    "fecha": "25-01-2024",
+    "codigo_movimiento": "2024000025",
+    "debito": 0.0,
+    "credito": 308642.8,
+    "saldo": -3890997250.91,
+    "conciliado": false
+  },
+  {
+    "fecha": "25-01-2024",
+    "codigo_movimiento": "2024000034",
+    "debito": 0.0,
+    "credito": 3617643.0,
+    "saldo": -3894614893.91,
+    "conciliado": false
+  },
+  {
+    "fecha": "29-01-2024",
+    "codigo_movimiento": "2024001767",
+    "debito": 1000000000.0,
+    "credito": 0.0,
+    "saldo": -2894614893.91,
+    "conciliado": false
+  },
+  {
+    "fecha": "29-01-2024",
+    "codigo_movimiento": "2024000257",
+    "debito": 900000000.0,
+    "credito": 0.0,
+    "saldo": -1994614893.91,
+    "conciliado": false
+  },
+  {
+    "fecha": "29-01-2024",
+    "codigo_movimiento": "2024002534",
+    "debito": 0.0,
+    "credito": 1000000000.0,
+    "saldo": -2994614893.91,
+    "conciliado": false
+  },
+  {
+    "fecha": "29-01-2024",
+    "codigo_movimiento": "2024000259",
+    "debito": 1200000000.0,
+    "credito": 0.0,
+    "saldo": -1794614893.91,
+    "conciliado": false
+  },
+  {
+    "fecha": "29-01-2024",
+    "codigo_movimiento": "2024000258",
+    "debito": 1000000000.0,
+    "credito": 0.0,
+    "saldo": -794614893.91,
+    "conciliado": false
+  },
+  {
+    "fecha": "29-01-2024",
+    "codigo_movimiento": "2024000005",
+    "debito": 0.0,
+    "credito": 840579756.0,
+    "saldo": -1635194649.91,
+    "conciliado": false
+  },
+  {
+    "fecha": "29-01-2024",
+    "codigo_movimiento": "2024000006",
+    "debito": 0.0,
+    "credito": 10000000.0,
+    "saldo": -1645194649.91,
+    "conciliado": false
+  },
+  {
+    "fecha": "29-01-2024",
+    "codigo_movimiento": "2024000004",
+    "debito": 0.0,
+    "credito": 118907317.0,
+    "saldo": -1764101966.91,
+    "conciliado": false
+  },
+  {
+    "fecha": "29-01-2024",
+    "codigo_movimiento": "2024000003",
+    "debito": 0.0,
+    "credito": 249999388.0,
+    "saldo": -2014101354.91,
+    "conciliado": false
+  },
+  {
+    "fecha": "30-01-2024",
+    "codigo_movimiento": "2024000261",
+    "debito": 1200000000.0,
+    "credito": 0.0,
+    "saldo": -814101354.91,
+    "conciliado": false
+  },
+  {
+    "fecha": "30-01-2024",
+    "codigo_movimiento": "2024000260",
+    "debito": 1000000000.0,
+    "credito": 0.0,
+    "saldo": 185898645.09,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-01-2024",
+    "codigo_movimiento": "2024000456",
+    "debito": 32765.0,
+    "credito": 0.0,
+    "saldo": 185931410.09,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-01-2024",
+    "codigo_movimiento": "2024000013",
+    "debito": 0.0,
+    "credito": 50340.0,
+    "saldo": 185881070.09,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-01-2024",
+    "codigo_movimiento": "2024000028",
+    "debito": 0.0,
+    "credito": 218056306.25,
+    "saldo": -32175236.16,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-01-2024",
+    "codigo_movimiento": "2024000011",
+    "debito": 0.0,
+    "credito": 9862216.0,
+    "saldo": -42037452.16,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-01-2024",
+    "codigo_movimiento": "2024000012",
+    "debito": 0.0,
+    "credito": 50322463.0,
+    "saldo": -92359915.16,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-01-2024",
+    "codigo_movimiento": "2024000014",
+    "debito": 0.0,
+    "credito": 400000000.0,
+    "saldo": -492359915.16,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-01-2024",
+    "codigo_movimiento": "2024000036",
+    "debito": 0.0,
+    "credito": 10157840.0,
+    "saldo": -502517755.16,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-01-2024",
+    "codigo_movimiento": "2024000027",
+    "debito": 0.0,
+    "credito": 6063471.08,
+    "saldo": -508581226.24,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-01-2024",
+    "codigo_movimiento": "2024000010",
+    "debito": 0.0,
+    "credito": 5407419.0,
+    "saldo": -513988645.24,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-01-2024",
+    "codigo_movimiento": "2024000015",
+    "debito": 0.0,
+    "credito": 260488208.0,
+    "saldo": -774476853.24,
+    "conciliado": false
+  },
+  {
+    "fecha": "31-01-2024",
+    "codigo_movimiento": "2024000016",
+    "debito": 0.0,
+    "credito": 310000000.0,
+    "saldo": -1084476853.24,
+    "conciliado": false
+  }
+]

@@ -59,8 +59,8 @@ def clasificar_no_conciliados(
     if saldo_libros is None:
         saldo_libros = saldo_extracto  # Approximate
 
-    suma_iguales_libros = saldo_libros + partidas_libros
-    suma_iguales_extracto = saldo_extracto + cheques_no_cobrados + consignaciones_transito + partidas_extracto
+    suma_iguales_libros = saldo_libros + partidas_extracto
+    suma_iguales_extracto = saldo_extracto + partidas_libros
     diferencia = round(abs(suma_iguales_libros - suma_iguales_extracto), 2)
 
     return CuadreFinal(
