@@ -8,6 +8,9 @@ API minimalista de conciliacion bancaria con un solo endpoint publico, sin base 
 |---------|-----------|
 | `README.md` | English — badges, API ref, arquitectura Mermaid, PDFs de prueba, deployment |
 | `README.es.md` | Espanol — mismo contenido traducido |
+| `docs/MATCHING_LOGICA.md` | Logica de negocio de los 5 niveles de matching |
+| `docs/CATALOGO_CUENTAS.md` | Catalogo de las 19 cuentas de prueba |
+| `docs/SCRIPTS.md` | Documentacion de scripts de test y conversion |
 | `LICENSE` | MIT License |
 | `SECURITY.md` | Politica de seguridad, API keys, Docker hardening |
 | `CONTRIBUTING.md` | Guia de contribucion, setup dev, convencion commits |
@@ -138,6 +141,8 @@ tests/
 ## PDFs de prueba
 
 23 extractos reales en `tests/fixtures/reales/extractosBancarios/` (copiados del repo padre). Ver `README.md` para la tabla completa de bancos y movimientos.
+
+19 cuentas completas (PDF + XLSX + JSON) en `tests/fixtures/reales-completas/`. Ver `docs/CATALOGO_CUENTAS.md` para el catálogo completo con parser, estado y observaciones.
 
 ## Reglas del proyecto
 

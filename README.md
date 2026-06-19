@@ -96,8 +96,8 @@ Open http://localhost:8000/docs for the Swagger UI.
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/conciliaciones/procesar \
-  -F "extracto=@/path/to/bbva.pdf" \
-  -F 'movimientos_detalle=[{"fecha":"2024-01-05","descripcion":"PAGO PROVEEDOR","valor":150000,"naturaleza":"debito","tipo_documento":"EG","codigo_comprobante":"EG-001","referencia":"REF-123"}]'
+  -F "extracto=@/path/to/extracto.pdf" \
+  -F 'movimientos_detalle=[{"fecha":"01-03-2026","codigo_movimiento":"TRX001","debito":0,"credito":250000,"saldo":1750000,"conciliado":false}]'
 ```
 
 ---
@@ -205,57 +205,53 @@ Public endpoint. No authentication required.
 ```json
 [
   {
-    "fecha": "2024-01-05",
-    "descripcion": "PAGO PROVEEDOR",
-    "valor": 150000,
-    "naturaleza": "debito",
-    "tipo_documento": "EG",
-    "codigo_comprobante": "EG-001",
-    "referencia": "REF-123"
+    "fecha": "01-03-2026",
+    "codigo_movimiento": "TRX001",
+    "debito": 0,
+    "credito": 250000,
+    "saldo": 1750000,
+    "conciliado": false
   }
 ]
 ```
 
 | Field | Type | Required | Notes |
 |-------|------|----------|-------|
-| `fecha` | string | **Yes** | Format: `YYYY-MM-DD` |
-| `descripcion` | string | **Yes** | Free text |
-| `valor` | number | **Yes** | Positive amount |
-| `naturaleza` | string | **Yes** | `"debito"` or `"credito"` |
-| `tipo_documento` | string | No | e.g. `"EG"`, `"EI"` |
-| `codigo_comprobante` | string | No | Voucher code |
-| `referencia` | string | No | Reference number |
+| `fecha` | string | **Yes** | Format: `dd-mm-aaaa` (e.g. `01-03-2026`) |
+| `codigo_movimiento` | string | No | Internal movement code (used as reference, not for matching) |
+| `debito` | number | **Yes*** | Debit amount. Must be > 0 if credito = 0 |
+| `credito` | number | **Yes*** | Credit amount. Must be > 0 if debito = 0 |
+| `saldo` | number | No | Running balance (used as secondary matching signal) |
+| `conciliado` | boolean | No | Initial state — always `false`. Updated by the engine |
+
+> *One of `debito` or `credito` must be > 0. Rows where both are 0 are skipped.
 
 #### Response Schema
 
 ```json
 {
   "estado": "completada",
-  "periodo": "202401",
+  "periodo": "202603",
   "resumen": {
-    "movimientos": 2,
-    "conciliados_nivel_0": 0,
-    "conciliados_nivel_1": 1,
-    "conciliados_nivel_2": 0,
-    "conciliados_nivel_3": 0,
-    "conciliados_porcentaje": 50.0,
-    "no_conciliados": 1
+    "total_movimientos": 1852,
+    "conciliados": 1820,
+    "no_conciliados": 32,
+    "porcentaje_conciliacion": 98.27
   },
   "cuadre_diferencia": 0.0,
   "movimientos_detalle": [
     {
-      "fecha": "2024-01-05",
-      "descripcion": "PAGO PROVEEDOR",
-      "valor": 150000,
-      "naturaleza": "debito",
+      "fecha": "01-03-2026",
+      "codigo_movimiento": "TRX001",
+      "debito": 0,
+      "credito": 250000,
+      "saldo": 1750000,
       "conciliado": true
     }
   ],
   "advertencias": [],
   "metricas": {
-    "tiempo_procesamiento_ms": 1234.0,
-    "parser_utilizado": "bbva",
-    "motor_version": "1.0.0"
+    "tiempo_total_ms": 1234
   }
 }
 ```
@@ -346,6 +342,8 @@ flowchart TB
     API -->|"Response JSON"| RESULT["ProcesarConciliacionResponse"]
 ```
 
+> For detailed business logic of each matching level (confidence formulas, subset-sum algorithm, cuadre formula), see [docs/MATCHING_LOGICA.md](docs/MATCHING_LOGICA.md).
+
 ---
 
 ## Project Structure
@@ -369,7 +367,7 @@ simplificada-conciliacion-bancaria/
 │   ├── matching/                    # 5-level reconciliation engine
 │   │   ├── engine.py                # Orchestrator (levels 0-4)
 │   │   ├── nivel0.py                # Nature inversion
-│   │   ├── nivel1.py                # Exact match (ref-based + date/amount/nature)
+│   │   ├── nivel1.py                # Exact match (date/amount/nature)
 │   │   ├── nivel2.py                # Flexible date match
 │   │   ├── nivel3.py                # N:M group/subset-sum match
 │   │   └── nivel4.py                # Unmatched classification + cuadre

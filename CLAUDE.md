@@ -9,6 +9,9 @@ Single-endpoint FastAPI microservice for bank statement reconciliation. No datab
 | File | Content |
 |------|---------|
 | `README.md` / `README.es.md` | Full docs: badges, API ref, Mermaid architecture, test PDFs, deployment |
+| `docs/MATCHING_LOGICA.md` | Matching engine business logic: 5 levels, confidence formulas, cuadre |
+| `docs/CATALOGO_CUENTAS.md` | Catalog of 19 test accounts with parser, status, observations |
+| `docs/SCRIPTS.md` | Scripts documentation: xlsx_to_json, test_real, test_16 |
 | `LICENSE` | MIT |
 | `SECURITY.md` | Security policy, API keys, Docker hardening |
 | `CONTRIBUTING.md` | Dev setup, testing, commit conventions, `concilia_engine/` rule |
@@ -26,10 +29,19 @@ simplificada-conciliacion-bancaria/
 │   ├── validacion.py    # Period & account cross-validation
 │   ├── report.py        # Report generator
 │   └── models.py        # Domain dataclasses (no SQLAlchemy)
+├── docs/
+│   ├── MATCHING_LOGICA.md            # Matching engine business logic (5 levels)
+│   ├── CATALOGO_CUENTAS.md           # Catalog of 19 test accounts
+│   └── SCRIPTS.md                    # Scripts documentation
 ├── tests/
 │   ├── test_procesar.py          # 18 unit tests (mock pipeline)
 │   ├── e2e/test_e2e_procesar.py  # 5 E2E tests
-│   └── fixtures/reales/          # 23 real bank PDFs from parent project
+│   ├── fixtures/reales/          # 23 real bank PDFs from parent project
+│   └── fixtures/reales-completas/  # 19 test accounts (PDF + XLSX + JSON)
+├── scripts/
+│   ├── xlsx_to_json.py           # Convert XLSX to JSON for API
+│   ├── test_real.py              # Test 3 original accounts (no server)
+│   └── test_16.py                # Test 16 new accounts (needs server)
 ├── requirements.txt     # 7 packages (fastapi, uvicorn, pydantic, pdfplumber, pypdf)
 ├── Dockerfile           # python:3.12-slim, configurable APP_PORT/APP_HOST via ARG/ENV
 ├── .env                 # LLM_API_KEY, NVIDIA_API_KEY, HF_API_KEY (optional)

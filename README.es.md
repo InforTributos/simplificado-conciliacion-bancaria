@@ -96,8 +96,8 @@ Abre http://localhost:8000/docs para la interfaz Swagger.
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/conciliaciones/procesar \
-  -F "extracto=@/ruta/a/bbva.pdf" \
-  -F 'movimientos_detalle=[{"fecha":"2024-01-05","descripcion":"PAGO PROVEEDOR","valor":150000,"naturaleza":"debito","tipo_documento":"EG","codigo_comprobante":"EG-001","referencia":"REF-123"}]'
+  -F "extracto=@/path/to/extracto.pdf" \
+  -F 'movimientos_detalle=[{"fecha":"01-03-2026","codigo_movimiento":"TRX001","debito":0,"credito":250000,"saldo":1750000,"conciliado":false}]'
 ```
 
 ---
@@ -205,57 +205,53 @@ Endpoint público. No requiere autenticación.
 ```json
 [
   {
-    "fecha": "2024-01-05",
-    "descripcion": "PAGO PROVEEDOR",
-    "valor": 150000,
-    "naturaleza": "debito",
-    "tipo_documento": "EG",
-    "codigo_comprobante": "EG-001",
-    "referencia": "REF-123"
+    "fecha": "01-03-2026",
+    "codigo_movimiento": "TRX001",
+    "debito": 0,
+    "credito": 250000,
+    "saldo": 1750000,
+    "conciliado": false
   }
 ]
 ```
 
 | Campo | Tipo | Requerido | Notas |
 |-------|------|-----------|-------|
-| `fecha` | string | **Sí** | Formato: `YYYY-MM-DD` |
-| `descripcion` | string | **Sí** | Texto libre |
-| `valor` | number | **Sí** | Monto positivo |
-| `naturaleza` | string | **Sí** | `"debito"` o `"credito"` |
-| `tipo_documento` | string | No | Ej. `"EG"`, `"EI"` |
-| `codigo_comprobante` | string | No | Código de comprobante |
-| `referencia` | string | No | Número de referencia |
+| `fecha` | string | **Sí** | Formato: `dd-mm-aaaa` (ej. `01-03-2026`) |
+| `codigo_movimiento` | string | No | Código interno del movimiento (se usa como referencia, no para matching) |
+| `debito` | number | **Sí*** | Monto del débito. Debe ser > 0 si credito = 0 |
+| `credito` | number | **Sí*** | Monto del crédito. Debe ser > 0 si debito = 0 |
+| `saldo` | number | No | Saldo corriente (se usa como señal secundaria de matching) |
+| `conciliado` | boolean | No | Estado inicial — siempre `false`. Se actualiza por el motor |
+
+> *Uno de `debito` o `credito` debe ser > 0. Las filas donde ambos son 0 se omiten.
 
 #### Esquema de Respuesta
 
 ```json
 {
   "estado": "completada",
-  "periodo": "202401",
+  "periodo": "202603",
   "resumen": {
-    "movimientos": 2,
-    "conciliados_nivel_0": 0,
-    "conciliados_nivel_1": 1,
-    "conciliados_nivel_2": 0,
-    "conciliados_nivel_3": 0,
-    "conciliados_porcentaje": 50.0,
-    "no_conciliados": 1
+    "total_movimientos": 1852,
+    "conciliados": 1820,
+    "no_conciliados": 32,
+    "porcentaje_conciliacion": 98.27
   },
   "cuadre_diferencia": 0.0,
   "movimientos_detalle": [
     {
-      "fecha": "2024-01-05",
-      "descripcion": "PAGO PROVEEDOR",
-      "valor": 150000,
-      "naturaleza": "debito",
+      "fecha": "01-03-2026",
+      "codigo_movimiento": "TRX001",
+      "debito": 0,
+      "credito": 250000,
+      "saldo": 1750000,
       "conciliado": true
     }
   ],
   "advertencias": [],
   "metricas": {
-    "tiempo_procesamiento_ms": 1234.0,
-    "parser_utilizado": "bbva",
-    "motor_version": "1.0.0"
+    "tiempo_total_ms": 1234
   }
 }
 ```
@@ -346,6 +342,8 @@ flowchart TB
     API -->|"Response JSON"| RESULT["ProcesarConciliacionResponse"]
 ```
 
+> Para la lógica de negocio detallada de cada nivel de matching (fórmulas de confianza, algoritmo subset-sum, fórmula de cuadre), ver [docs/MATCHING_LOGICA.md](docs/MATCHING_LOGICA.md).
+
 ---
 
 ## Estructura del Proyecto
@@ -369,7 +367,7 @@ simplificada-conciliacion-bancaria/
 │   ├── matching/                    # Motor de conciliación en 5 niveles
 │   │   ├── engine.py                # Orquestador (niveles 0-4)
 │   │   ├── nivel0.py                # Inversión de naturaleza
-│   │   ├── nivel1.py                # Match exacto (referencia + fecha/monto/nat)
+│   │   ├── nivel1.py                # Match exacto (fecha/monto/naturaleza)
 │   │   ├── nivel2.py                # Match con fecha flexible
 │   │   ├── nivel3.py                # Match grupal N:M / subset-sum
 │   │   └── nivel4.py                # Clasificación no conciliados + cuadre

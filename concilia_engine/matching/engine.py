@@ -25,10 +25,10 @@ logger = logging.getLogger(__name__)
 class MatchingEngine:
     """Execute the 5-level reconciliation algorithm.
 
-    Level 0: Nature inversion (preparation)
-    Level 1: Exact match (date + value + nature)
-    Level 2: Flexible date match (value + nature + date within window)
-    Level 3: N:M group match (subset-sum, tridirectional)
+    Level 0: Nature inversion (preparation for double-entry matching)
+    Level 1: Exact match — date + value + same nature
+    Level 2: Flexible date match — value + nature + date within window (N days)
+    Level 3: N:M group match — subset-sum backtracking, tridirectional
     Level 4: Classify unmatched + compute cuadre formula
     """
 
@@ -61,7 +61,7 @@ class MatchingEngine:
         remaining_ctb = list(ctb_prepared)
         all_matches = []
 
-        # Level 1: Exact match
+        # Level 1: Exact match (date + value + nature)
         matches_1, remaining_ext, remaining_ctb = match_exacto(
             remaining_ext, remaining_ctb, config
         )
