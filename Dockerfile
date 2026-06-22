@@ -22,7 +22,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # App code
 COPY concilia_engine/ concilia_engine/
 COPY main.py .
-COPY .env .
 
 # Set ownership and switch user
 RUN chown -R appuser:appuser /app

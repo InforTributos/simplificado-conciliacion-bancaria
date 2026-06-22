@@ -17,6 +17,7 @@ CLAUDE.md
 pyproject.toml
 
 # Env
+.env
 .env.example
 
 # Docker
