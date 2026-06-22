@@ -183,6 +183,67 @@ The image uses a **non-root user** (`appuser`) and runs `apt-get upgrade` during
 
 ---
 
+## Server Deployment (with OPA)
+
+If the server has the `opa-docker-authz` plugin enabled, images must use the `infortributos/` namespace. Additionally, API keys are **not** baked into the Docker image for security — they are injected as environment variables at runtime.
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/InforTributos/simplificado-conciliacion-bancaria.git
+cd simplificado-conciliacion-bancaria
+```
+
+### 2. Build the image
+
+```bash
+DOCKER_BUILDKIT=0 docker build --no-cache -t procesar-api .
+```
+
+### 3. Tag with infra namespace
+
+```bash
+docker tag procesar-api infortributos/procesar-api:latest
+```
+
+### 4. Run with env vars
+
+```bash
+docker run -d --name procesar-api -p 8000:8000 \
+  -e MAX_FILE_SIZE_MB=50 \
+  -e LLM_API_KEY=your-api-key \
+  -e NVIDIA_API_KEY=your-api-key \
+  infortributos/procesar-api:latest
+```
+
+### 5. Verify
+
+```bash
+docker ps
+curl http://localhost:8000/docs
+```
+
+### 6. View logs
+
+```bash
+docker logs procesar-api
+```
+
+### 7. Rebuild after changes
+
+```bash
+docker stop procesar-api && docker rm procesar-api
+DOCKER_BUILDKIT=0 docker build --no-cache -t procesar-api .
+docker tag procesar-api infortributos/procesar-api:latest
+docker run -d --name procesar-api -p 8000:8000 \
+  -e MAX_FILE_SIZE_MB=50 \
+  -e LLM_API_KEY=your-api-key \
+  -e NVIDIA_API_KEY=your-api-key \
+  infortributos/procesar-api:latest
+```
+
+---
+
 ## API Reference
 
 ### `POST /api/v1/conciliaciones/procesar`
