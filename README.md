@@ -340,6 +340,82 @@ Public endpoint. No authentication required.
 | 422 | `VALIDACION_CUENTA` | User-provided account does not match PDF |
 | 500 | `ERROR_INTERNO` | Unexpected server error |
 
+#### Error Response Schema
+
+All error responses are returned via FastAPI's `HTTPException`, wrapped in a `"detail"` key:
+
+**422 — Invalid JSON / empty movements / bad date format:**
+```json
+{
+  "detail": {
+    "estado": "error",
+    "error": {
+      "codigo": "VALIDACION_ERROR",
+      "mensaje": "movimientos_detalle no es un JSON valido",
+      "detalles": [{"campo": "movimientos_detalle", "motivo": "JSON invalido"}]
+    }
+  }
+}
+```
+
+**422 — Period mismatch (includes received vs extracted):**
+```json
+{
+  "detail": {
+    "estado": "error",
+    "error": {
+      "codigo": "VALIDACION_PERIODO",
+      "mensaje": "El periodo enviado no concuerda con el extracto",
+      "periodo_recibido": "202606",
+      "periodo_extraido": "202601"
+    }
+  }
+}
+```
+
+**422 — Account mismatch (includes received vs extracted):**
+```json
+{
+  "detail": {
+    "estado": "error",
+    "error": {
+      "codigo": "VALIDACION_CUENTA",
+      "mensaje": "La cuenta enviada no concuerda con el extracto",
+      "cuenta_recibida": "999888777",
+      "cuenta_extraida": "938554490"
+    }
+  }
+}
+```
+
+**400 — File too large:**
+```json
+{
+  "detail": {
+    "estado": "error",
+    "error": {
+      "codigo": "ARCHIVO_MUY_GRANDE",
+      "mensaje": "Extracto excede 50MB",
+      "detalles": []
+    }
+  }
+}
+```
+
+**500 — Internal server error:**
+```json
+{
+  "detail": {
+    "estado": "error",
+    "error": {
+      "codigo": "ERROR_INTERNO",
+      "mensaje": "Error interno al procesar la conciliacion",
+      "detalles": []
+    }
+  }
+}
+```
+
 ---
 
 ## Validation

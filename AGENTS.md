@@ -66,6 +66,21 @@ API minimalista de conciliacion bancaria con un solo endpoint publico, sin base 
 - `movimientos_detalle` debe ser JSON válido, array no vacío. Fechas en `dd-mm-aaaa`.
 - Movimientos con `debito=0` y `credito=0` se omiten del procesamiento.
 
+Todas las respuestas de error van envueltas en `{"detail": {...}}` por FastAPI:
+
+```json
+// 422 - JSON inválido
+{"detail": {"estado": "error", "error": {"codigo": "VALIDACION_ERROR", "mensaje": "...", "detalles": [...]}}}
+// 422 - Periodo no concuerda
+{"detail": {"estado": "error", "error": {"codigo": "VALIDACION_PERIODO", "mensaje": "...", "periodo_recibido": "...", "periodo_extraido": "..."}}}
+// 422 - Cuenta no concuerda
+{"detail": {"estado": "error", "error": {"codigo": "VALIDACION_CUENTA", "mensaje": "...", "cuenta_recibida": "...", "cuenta_extraida": "..."}}}
+// 400 - Archivo muy grande
+{"detail": {"estado": "error", "error": {"codigo": "ARCHIVO_MUY_GRANDE", "mensaje": "..."}}}
+// 500 - Error interno
+{"detail": {"estado": "error", "error": {"codigo": "ERROR_INTERNO", "mensaje": "..."}}}
+```
+
 ## Cómo funciona
 
 1. Parsea el PDF con `concilia_engine/parsers/` (18 parsers regex + LLM opcional).

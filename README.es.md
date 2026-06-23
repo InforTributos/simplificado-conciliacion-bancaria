@@ -340,6 +340,82 @@ Endpoint público. No requiere autenticación.
 | 422 | `VALIDACION_CUENTA` | Cuenta del usuario no coincide con la del PDF |
 | 500 | `ERROR_INTERNO` | Error inesperado del servidor |
 
+#### Esquema de Respuesta de Error
+
+Todos los errores se devuelven mediante `HTTPException` de FastAPI, envueltos en la clave `"detail"`:
+
+**422 — JSON inválido / movimientos vacíos / formato de fecha incorrecto:**
+```json
+{
+  "detail": {
+    "estado": "error",
+    "error": {
+      "codigo": "VALIDACION_ERROR",
+      "mensaje": "movimientos_detalle no es un JSON valido",
+      "detalles": [{"campo": "movimientos_detalle", "motivo": "JSON invalido"}]
+    }
+  }
+}
+```
+
+**422 — Período no coincide (incluye valor recibido vs extraído):**
+```json
+{
+  "detail": {
+    "estado": "error",
+    "error": {
+      "codigo": "VALIDACION_PERIODO",
+      "mensaje": "El periodo enviado no concuerda con el extracto",
+      "periodo_recibido": "202606",
+      "periodo_extraido": "202601"
+    }
+  }
+}
+```
+
+**422 — Cuenta no coincide (incluye valor recibida vs extraída):**
+```json
+{
+  "detail": {
+    "estado": "error",
+    "error": {
+      "codigo": "VALIDACION_CUENTA",
+      "mensaje": "La cuenta enviada no concuerda con el extracto",
+      "cuenta_recibida": "999888777",
+      "cuenta_extraida": "938554490"
+    }
+  }
+}
+```
+
+**400 — Archivo demasiado grande:**
+```json
+{
+  "detail": {
+    "estado": "error",
+    "error": {
+      "codigo": "ARCHIVO_MUY_GRANDE",
+      "mensaje": "Extracto excede 50MB",
+      "detalles": []
+    }
+  }
+}
+```
+
+**500 — Error interno del servidor:**
+```json
+{
+  "detail": {
+    "estado": "error",
+    "error": {
+      "codigo": "ERROR_INTERNO",
+      "mensaje": "Error interno al procesar la conciliacion",
+      "detalles": []
+    }
+  }
+}
+```
+
 ---
 
 ## Validación
