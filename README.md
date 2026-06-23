@@ -280,8 +280,8 @@ Public endpoint. No authentication required.
 |-------|------|----------|-------|
 | `fecha` | string | **Yes** | Format: `dd-mm-aaaa` (e.g. `01-03-2026`) |
 | `codigo_movimiento` | string | No | Internal movement code (used as reference, not for matching) |
-| `debito` | number | **Yes*** | Debit amount. Must be > 0 if credito = 0 |
-| `credito` | number | **Yes*** | Credit amount. Must be > 0 if debito = 0 |
+| `debito` | number | **Yes*** | Debit amount. Value is used as absolute (negative accepted). Must be > 0 if credito = 0 |
+| `credito` | number | **Yes*** | Credit amount. Value is used as absolute (negative accepted). Must be > 0 if debito = 0 |
 | `saldo` | number | No | Running balance (used as secondary matching signal) |
 | `conciliado` | boolean | No | Initial state — always `false`. Updated by the engine |
 
@@ -307,7 +307,8 @@ Public endpoint. No authentication required.
       "debito": 0,
       "credito": 250000,
       "saldo": 1750000,
-      "conciliado": true
+      "conciliado": true,
+      "nota": "Conciliado con EXT-0007 (PAGO A TERCEROS AVAL) - nivel 1 (exacto)"
     }
   ],
   "advertencias": [],
@@ -323,8 +324,8 @@ Public endpoint. No authentication required.
 | `periodo` | string \| null | Detected period (AAAAMM) |
 | `resumen` | object | Totals: movements, matched by level, percentage, unmatched |
 | `cuadre_diferencia` | float \| null | Balance difference ($0 = cuadra) |
-| `movimientos_detalle` | array \| null | Same array from request with `conciliado: true/false` added |
-| `advertencias` | array | Non-blocking warnings (e.g. saldo mismatch). Always present even if empty. |
+| `movimientos_detalle` | array \| null | Same array from request with `conciliado: true/false` and `nota` (diagnostic message) added |
+| `advertencias` | array | Non-blocking warnings. Always present even if empty (see [Advertencias](#advertencias)) |
 | `metricas` | object \| null | Processing time, parser used, engine version |
 
 #### Error Codes
@@ -354,6 +355,39 @@ If `cuenta_bancaria.numero_cuenta` is provided, it is matched against the accoun
 ### Saldo Warnings (non-blocking)
 
 If `saldo_anterior` and/or `saldo_final` are provided in `cuenta_bancaria`, they are compared against the PDF. Mismatches are returned in `advertencias` but do not block the request.
+
+### Advertencias
+
+All warnings are non-blocking and returned in the `advertencias` array:
+
+| Tipo | Condition | Example |
+|------|-----------|---------|
+| `saldo_anterior` | User-provided `saldo_anterior` differs from PDF | `"Saldo anterior no coincide"` |
+| `saldo_actual` | User-provided `saldo_final` differs from PDF | `"Saldo actual no coincide"` |
+| `cuadre_diferencia` | Final balance difference > 0 | `"La conciliacion tiene una diferencia de 7,237,064,605.98"` |
+| `movimientos_insuficientes` | Contabilidad movements < extracto movements | `"Se enviaron 22 movimientos pero el extracto tiene 44"` |
+| `movimientos_duplicados` | Same amount + same date in contabilidad | `"7 movimientos duplicados en 3 grupos"` |
+| `intereses_no_contabilizados` | Bank interest movements not in contabilidad | `"El extracto tiene 31 movimientos de intereses"` |
+
+### Movement Diagnostic Notes (`nota`)
+
+Every movement in `movimientos_detalle` includes a `nota` field explaining the reconciliation outcome:
+
+**For matched movements:**
+```
+"Conciliado con EXT-0007 (PAGO A TERCEROS AVAL) - nivel 1 (exacto)"
+"Conciliado con EXT-0010 (PAGO TERCERO) - nivel 2 (fecha_flexible) - 2 dias de diferencia"
+"Conciliado con EXT-0028 (PAGO PROVEEDOR) - nivel 1 (exacto) - multiples candidatos"
+```
+
+**For unmatched movements:**
+```
+"No conciliado: sin contraparte en el extracto"
+"No conciliado: candidato EXT-0016 (CENIT 3.5B) encontrado pero 15 dias fuera de ventana"
+"No conciliado: 3 movimientos contables por mismo monto ($118,886,961.00) y fecha"
+```
+
+The `nota` field is always present as a string (empty `""` for zero-value movements).
 
 ---
 

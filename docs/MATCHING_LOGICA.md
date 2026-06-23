@@ -306,12 +306,15 @@ diferencia = abs(suma_iguales_libros - suma_iguales_extracto)
 │  4. ACTUALIZACIÓN DE ESTADOS                                  │
 │     Cada MovimientoContable.matched → conciliado: true        │
 │     Movimientos no encontrados → conciliado: false            │
+│     Se genera nota con diagnóstico por cada movimiento        │
 │                                                               │
 │  5. RESPUESTA                                                │
-│     movimientos_detalle con conciliado actualizado             │
+│     movimientos_detalle con conciliado y nota actualizados    │
 │     + resumen (totales, porcentaje)                           │
 │     + cuadre_diferencia                                       │
-│     + advertencias (saldo anterior/actual vs PDF)             │
+│     + advertencias (saldo anterior/actual, cuadre,            │
+│       movimientos insuficientes/duplicados,                   │
+│       intereses no contabilizados)                            │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -398,3 +401,36 @@ Porque en la vida real, los montos no siempre son 1:1. Un depósito de $500K pue
 | Nivel 3 | 0.60 - 0.80 | Match grupal — certeza moderada, requiere verificación manual |
 
 La confianza se usa para priorizar revisiones humanas, no para descartar matches.
+
+### ¿Qué información proporciona el campo `nota` en cada movimiento?
+
+Cada movimiento en la respuesta incluye un campo `nota` que explica el diagnóstico de la conciliación:
+
+**Movimientos conciliados:**
+- Nivel y tipo de match (`nivel 1 (exacto)`, `nivel 2 (fecha_flexible)`)
+- ID y descripción del movimiento del extracto (`EXT-0007 (PAGO A TERCEROS AVAL)`)
+- Información adicional relevante (`2 dias de diferencia`, `multiples candidatos`)
+
+**Movimientos no conciliados:**
+- Candidato encontrado pero fuera de ventana (`candidato EXT-0016 encontrado pero 15 dias fuera de ventana`)
+- Movimientos duplicados en la contabilidad (`3 movimientos contables por mismo monto y fecha`)
+- Sin contraparte en absoluto (`sin contraparte en el extracto`)
+
+Ejemplos completos:
+```
+"Conciliado con EXT-0007 (PAGO A TERCEROS AVAL) - nivel 1 (exacto)"
+"Conciliado con EXT-0010 (PAGO TERCERO) - nivel 2 (fecha_flexible) - 2 dias de diferencia"
+"No conciliado: candidato EXT-0016 (CENIT 3.5B) encontrado pero 15 dias fuera de ventana"
+"No conciliado: 3 movimientos contables por mismo monto ($118,886,961.00) y fecha"
+"No conciliado: sin contraparte en el extracto"
+```
+
+### ¿Qué advertencias de proceso genera el motor?
+
+Además de las advertencias de saldo, el motor genera advertencias a nivel de proceso:
+
+| Tipo | Cuando se genera |
+|------|-----------------|
+| `movimientos_insuficientes` | Contabilidad tiene menos movimientos que el extracto |
+| `movimientos_duplicados` | Mismo monto + misma fecha en múltiples movimientos contables |
+| `intereses_no_contabilizados` | El extracto tiene INTERESES LIQUIDADOS sin contraparte en contabilidad |

@@ -38,7 +38,8 @@ API minimalista de conciliacion bancaria con un solo endpoint publico, sin base 
     "estado": "completada" | "no_completada" | "error",
     "periodo": "202603",
     "movimientos_detalle": [
-        {"fecha":"01-03-2026","codigo_movimiento":"TRX001","debito":0,"credito":250000,"saldo":1750000,"conciliado":true}
+        {"fecha":"01-03-2026","codigo_movimiento":"TRX001","debito":0,"credito":250000,"saldo":1750000,"conciliado":true,"nota":"Conciliado con EXT-0007 (PAGO A TERCEROS AVAL) - nivel 1 (exacto)"},
+        {"fecha":"02-03-2026","codigo_movimiento":"TRX002","debito":100000,"credito":0,"saldo":1650000,"conciliado":false,"nota":"No conciliado: sin contraparte en el extracto"}
     ],
     "resumen": {
         "total_movimientos": 2,
@@ -54,8 +55,8 @@ API minimalista de conciliacion bancaria con un solo endpoint publico, sin base 
 }
 ```
 
-- `movimientos_detalle` devuelve el mismo array del request pero con `conciliado` actualizado (true/false) según el resultado del matching.
-- `advertencias` compara saldo anterior/actual recibido vs extraído del PDF. No detiene el flujo.
+- `movimientos_detalle` devuelve el mismo array del request pero con `conciliado` actualizado (true/false) según el resultado del matching y `nota` con el mensaje de diagnóstico.
+- `advertencias` puede incluir: saldo anterior/actual, cuadre_diferencia, movimientos_insuficientes, movimientos_duplicados, intereses_no_contabilizados. No detienen el flujo.
 
 ### Validaciones (422)
 
@@ -71,8 +72,8 @@ API minimalista de conciliacion bancaria con un solo endpoint publico, sin base 
 2. Convierte `movimientos_detalle` JSON a objetos `MovimientoContable`.
 3. Ejecuta `ejecutar_pipeline_conciliacion()`: parse + matching 5 niveles + reporte.
 4. Valida periodo y cuenta contra lo extraído del PDF (bloqueante).
-5. Compara saldo anterior/actual recibido vs PDF (advertencia, no bloquea).
-6. Actualiza `conciliado` en cada movimiento según resultado del matching.
+5. Compara saldo anterior/actual recibido vs PDF (advertencia, no bloquea) + genera advertencias de proceso (cuadre_diferencia, movimientos_insuficientes, movimientos_duplicados, intereses_no_contabilizados).
+6. Actualiza `conciliado` en cada movimiento según resultado del matching y genera `nota` con diagnóstico (nivel de match, candidato, motivo de no conciliación).
 7. Retorna respuesta.
 
 ## Comandos

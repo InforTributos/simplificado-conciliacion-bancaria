@@ -64,6 +64,7 @@ python scripts/test_real.py Valledupar
 - Resumen (total, conciliados, no conciliados, porcentaje)
 - Tiempo de procesamiento
 - Advertencias (si las hay)
+- Nota de diagnóstico por movimiento (conciliado / no conciliado + razón)
 - Muestra de los primeros 5 movimientos conciliados y no conciliados
 
 ### Requisitos

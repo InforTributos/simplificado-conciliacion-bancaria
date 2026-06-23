@@ -88,8 +88,8 @@ def _parse_movimientos_detalle(items: list[dict]) -> list[MovimientoContable]:
                 },
             )
 
-        debito = float(item.get("debito", 0))
-        credito = float(item.get("credito", 0))
+        debito = abs(float(item.get("debito", 0)))
+        credito = abs(float(item.get("credito", 0)))
 
         if debito > 0:
             valor = debito
@@ -351,29 +351,88 @@ async def procesar_conciliacion(
     diferencia = match_result.cuadre_final.diferencia if match_result.cuadre_final else 0.0
     estado = "completada" if diferencia == 0 else "no_completada"
 
-    # Build matched IDs set from matching results
+    # Build ctb_match_map and matched IDs from matching results
+    ctb_match_map = {}
     matched_ids: set[str] = set()
     for m in match_result.matches:
-        if isinstance(m.movimiento_contabilidad, list):
-            for mc in m.movimiento_contabilidad:
-                matched_ids.add(mc.id)
-        else:
-            matched_ids.add(m.movimiento_contabilidad.id)
+        ctb_sides = m.movimiento_contabilidad if isinstance(m.movimiento_contabilidad, list) else [m.movimiento_contabilidad]
+        for mc in ctb_sides:
+            matched_ids.add(mc.id)
+            ctb_match_map[mc.id] = m
 
-    # Update conciliado flag on original movements
+    # Build unmatched extracto list for nota diagnostics
+    ext_no_conciliados = match_result.no_conciliados_extracto
+
+    # Detect duplicated contabilidad movements (same amount + same date)
+    dup_counter = {}
+    for m in movimientos_ctb:
+        key = (m.fecha, round(m.valor, 2))
+        dup_counter[key] = dup_counter.get(key, 0) + 1
+    dup_keys = {k for k, v in dup_counter.items() if v > 1}
+
+    # Update conciliado flag and generate nota on original movements
     ctb_index = 0
     movs_response = []
     for item in movs_raw:
         copy = dict(item)
-        debito = float(copy.get("debito", 0))
-        credito = float(copy.get("credito", 0))
+        debito = abs(float(copy.get("debito", 0)))
+        credito = abs(float(copy.get("credito", 0)))
         if debito == 0 and credito == 0:
             copy["conciliado"] = False
+            copy["nota"] = ""
             movs_response.append(copy)
             continue
         ctb_index += 1
         ctb_id = f"CTB-{ctb_index:04d}"
-        copy["conciliado"] = ctb_id in matched_ids
+        conciliado = ctb_id in matched_ids
+        copy["conciliado"] = conciliado
+        valor = debito if debito > 0 else credito
+
+        if conciliado and ctb_id in ctb_match_map:
+            match = ctb_match_map[ctb_id]
+            ext_side = match.movimiento_extracto
+            ext_obj = ext_side[0] if isinstance(ext_side, list) else ext_side
+            parts = [f"Conciliado con {ext_obj.id} ({ext_obj.descripcion[:40]})"]
+            parts.append(f"nivel {match.nivel} ({match.tipo})")
+            if match.dias_diferencia:
+                parts.append(f"{match.dias_diferencia} dias de diferencia")
+            if match.multiple_candidates:
+                parts.append("multiples candidatos")
+            copy["nota"] = " - ".join(parts)
+        else:
+            nota = ""
+            fecha_str = item.get("fecha", "")
+            try:
+                from datetime import datetime as _dt
+                ctb_fecha = _dt.strptime(fecha_str, "%d-%m-%Y").date()
+            except ValueError:
+                ctb_fecha = None
+
+            candidate = None
+            best_dias = float("inf")
+            for ext in ext_no_conciliados:
+                if abs(ext.valor - valor) < 0.01:
+                    if ctb_fecha:
+                        dias = abs((ext.fecha - ctb_fecha).days)
+                        if dias < best_dias:
+                            best_dias = dias
+                            candidate = ext
+                    else:
+                        candidate = ext
+                        break
+
+            if candidate is not None and ctb_fecha is not None and best_dias > config.max_dias_diferencia:
+                nota = f"No conciliado: candidato {candidate.id} ({candidate.descripcion[:30]}) encontrado pero {best_dias} dias fuera de ventana"
+            elif candidate is not None:
+                nota = f"No conciliado: candidato {candidate.id} ({candidate.descripcion[:30]}) encontrado pero naturaleza no coincide tras inversion"
+            elif ctb_fecha and (ctb_fecha, round(valor, 2)) in dup_keys:
+                dup_count = dup_counter.get((ctb_fecha, round(valor, 2)), 1)
+                nota = f"No conciliado: {dup_count} movimientos contables por mismo monto ({valor:,.2f}) y fecha"
+            else:
+                nota = "No conciliado: sin contraparte en el extracto"
+
+            copy["nota"] = nota
+
         movs_response.append(copy)
 
     # Build advertencias from saldo comparisons (never block)
@@ -403,6 +462,42 @@ async def procesar_conciliacion(
                 })
         except (TypeError, ValueError):
             pass
+
+    if diferencia > 0:
+        advertencias.append({
+            "tipo": "cuadre_diferencia",
+            "mensaje": f"La conciliacion tiene una diferencia de {diferencia:,.2f}",
+            "diferencia": diferencia,
+        })
+
+    # Process-level warnings
+    ctb_count = len(movimientos_ctb)
+    ext_count = resumen_engine.movimientos_extracto
+
+    if ctb_count < ext_count:
+        advertencias.append({
+            "tipo": "movimientos_insuficientes",
+            "mensaje": f"Se enviaron {ctb_count} movimientos contables pero el extracto tiene {ext_count}. Puede haber movimientos del banco sin registrar en contabilidad.",
+            "movimientos_contables": ctb_count,
+            "movimientos_extracto": ext_count,
+        })
+
+    if dup_keys:
+        total_dup = sum(v for k, v in dup_counter.items() if k in dup_keys)
+        advertencias.append({
+            "tipo": "movimientos_duplicados",
+            "mensaje": f"Se detectaron {total_dup} movimientos contables duplicados (mismo monto y fecha) en {len(dup_keys)} grupos.",
+            "grupos_duplicados": len(dup_keys),
+            "movimientos_afectados": total_dup,
+        })
+
+    intereses_count = sum(1 for ext in ext_no_conciliados if "INTERESES LIQUIDADOS" in ext.descripcion.upper())
+    if intereses_count > 0:
+        advertencias.append({
+            "tipo": "intereses_no_contabilizados",
+            "mensaje": f"El extracto tiene {intereses_count} movimientos de intereses no registrados en contabilidad.",
+            "intereses_sin_conciliar": intereses_count,
+        })
 
     return ProcesarConciliacionResponse(
         estado=estado,

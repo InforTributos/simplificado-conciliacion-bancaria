@@ -280,8 +280,8 @@ Endpoint público. No requiere autenticación.
 |-------|------|-----------|-------|
 | `fecha` | string | **Sí** | Formato: `dd-mm-aaaa` (ej. `01-03-2026`) |
 | `codigo_movimiento` | string | No | Código interno del movimiento (se usa como referencia, no para matching) |
-| `debito` | number | **Sí*** | Monto del débito. Debe ser > 0 si credito = 0 |
-| `credito` | number | **Sí*** | Monto del crédito. Debe ser > 0 si debito = 0 |
+| `debito` | number | **Sí*** | Monto del débito. Se usa el valor absoluto (negativos aceptados). Debe ser > 0 si credito = 0 |
+| `credito` | number | **Sí*** | Monto del crédito. Se usa el valor absoluto (negativos aceptados). Debe ser > 0 si debito = 0 |
 | `saldo` | number | No | Saldo corriente (se usa como señal secundaria de matching) |
 | `conciliado` | boolean | No | Estado inicial — siempre `false`. Se actualiza por el motor |
 
@@ -307,7 +307,8 @@ Endpoint público. No requiere autenticación.
       "debito": 0,
       "credito": 250000,
       "saldo": 1750000,
-      "conciliado": true
+      "conciliado": true,
+      "nota": "Conciliado con EXT-0007 (PAGO A TERCEROS AVAL) - nivel 1 (exacto)"
     }
   ],
   "advertencias": [],
@@ -323,8 +324,8 @@ Endpoint público. No requiere autenticación.
 | `periodo` | string \| null | Período detectado (AAAAMM) |
 | `resumen` | object | Totales: movimientos, conciliados por nivel, %, no conciliados |
 | `cuadre_diferencia` | float \| null | Diferencia de cuadre ($0 = cuadra) |
-| `movimientos_detalle` | array \| null | Mismo array de la solicitud con `conciliado: true/false` agregado |
-| `advertencias` | array | Advertencias no bloqueantes (ej. diferencia de saldos). Siempre presente, incluso vacío. |
+| `movimientos_detalle` | array \| null | Mismo array de la solicitud con `conciliado: true/false` y `nota` (mensaje de diagnóstico) agregados |
+| `advertencias` | array | Advertencias no bloqueantes. Siempre presente, incluso vacío (ver [Advertencias](#advertencias)) |
 | `metricas` | object \| null | Tiempo de procesamiento, parser usado, versión del motor |
 
 #### Códigos de Error
@@ -354,6 +355,39 @@ Si se provee `cuenta_bancaria.numero_cuenta`, se compara con el número de cuent
 ### Advertencias de Saldo (no bloqueantes)
 
 Si se proveen `saldo_anterior` y/o `saldo_final` en `cuenta_bancaria`, se comparan contra el PDF. Las diferencias se reportan en `advertencias` pero no bloquean la solicitud.
+
+### Advertencias
+
+Todas las advertencias son no bloqueantes y se retornan en el array `advertencias`:
+
+| Tipo | Condición | Ejemplo |
+|------|-----------|---------|
+| `saldo_anterior` | `saldo_anterior` enviado difiere del PDF | `"Saldo anterior no coincide"` |
+| `saldo_actual` | `saldo_final` enviado difiere del PDF | `"Saldo actual no coincide"` |
+| `cuadre_diferencia` | Diferencia de cuadre > 0 | `"La conciliacion tiene una diferencia de 7,237,064,605.98"` |
+| `movimientos_insuficientes` | Movimientos contables < movimientos del extracto | `"Se enviaron 22 movimientos pero el extracto tiene 44"` |
+| `movimientos_duplicados` | Mismo monto + misma fecha en contabilidad | `"7 movimientos duplicados en 3 grupos"` |
+| `intereses_no_contabilizados` | Intereses del banco no registrados en contabilidad | `"El extracto tiene 31 movimientos de intereses"` |
+
+### Notas de Diagnóstico por Movimiento (`nota`)
+
+Cada movimiento en `movimientos_detalle` incluye un campo `nota` que explica el resultado de la conciliación:
+
+**Para movimientos conciliados:**
+```
+"Conciliado con EXT-0007 (PAGO A TERCEROS AVAL) - nivel 1 (exacto)"
+"Conciliado con EXT-0010 (PAGO TERCERO) - nivel 2 (fecha_flexible) - 2 dias de diferencia"
+"Conciliado con EXT-0028 (PAGO PROVEEDOR) - nivel 1 (exacto) - multiples candidatos"
+```
+
+**Para movimientos no conciliados:**
+```
+"No conciliado: sin contraparte en el extracto"
+"No conciliado: candidato EXT-0016 (CENIT 3.5B) encontrado pero 15 dias fuera de ventana"
+"No conciliado: 3 movimientos contables por mismo monto ($118,886,961.00) y fecha"
+```
+
+El campo `nota` siempre está presente como string (vacío `""` para movimientos con valor cero).
 
 ---
 
