@@ -54,7 +54,8 @@ simplificada-conciliacion-bancaria/
 
 Top-level response fields: `estado`, `periodo`, `movimientos_detalle`, `resumen`, `cuadre_diferencia`, `metricas`, `advertencias`.
 
-- `movimientos_detalle` is the same array from the request, with `conciliado` set to `true`/`false` based on matching results.
+- `movimientos_detalle` is the same array from the request, with `conciliado` set to `true`/`false` based on matching results, plus `nota` explaining the outcome.
+- Optional fields: `codig_cp_contable` (unique comprobante code) and `cons_cp_contable` (reversal pointer, null if not a reversal). When `cons_cp_contable` is set, the movement is a reversal and is excluded from bank matching.
 - `advertencias` compares `saldo_anterior_periodo`/`saldo_actual_periodo` vs PDF — non-blocking warnings.
 - Period and account validations are blocking: mismatch → 422 with both received and extracted values.
 

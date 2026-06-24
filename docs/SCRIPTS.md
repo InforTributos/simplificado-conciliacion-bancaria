@@ -30,7 +30,9 @@ python scripts/xlsx_to_json.py
     "debito": 0,
     "credito": 250000,
     "saldo": 1750000,
-    "conciliado": false
+    "conciliado": false,
+    "codig_cp_contable": "NCO-2025-001234",
+    "cons_cp_contable": null
   }
 ]
 ```

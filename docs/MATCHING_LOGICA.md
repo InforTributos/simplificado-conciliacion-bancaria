@@ -31,6 +31,8 @@ Los movimientos contables llegan con `conciliado: false` y el motor los marca co
 | `naturaleza` | str | `"debito"` o `"credito"` |
 | `naturaleza_matching` | str | Naturaleza invertida para matching (se asigna en Nivel 0) |
 | `codigo_movimiento` | str | Código del sistema contable (**NO se usa para matching**) |
+| `codigo_comprobante` | str \| None | Código único del comprobante contable (`codig_cp_contable` en el request). Se usa para identificar pares de reversión. |
+| `cons_cp_contable` | str \| None | Si tiene valor, este movimiento es una reversión. Apunta al `codigo_comprobante` del movimiento original que anula. Se excluye del matching contra el extracto. |
 | `conciliado` | bool | Estado de conciliación (se actualiza al final) |
 
 ### Clave de Matching
@@ -415,6 +417,7 @@ Cada movimiento en la respuesta incluye un campo `nota` que explica el diagnóst
 - Candidato encontrado pero fuera de ventana (`candidato EXT-0016 encontrado pero 15 dias fuera de ventana`)
 - Movimientos duplicados en la contabilidad (`3 movimientos contables por mismo monto y fecha`)
 - Sin contraparte en absoluto (`sin contraparte en el extracto`)
+- **Reversión contable:** el movimiento es una reversión y se excluye del matching (`Reversión de CTB-0001 (comprobante NCO-001) - excluido del matching` / `Anulado por CTB-0002 (comprobante NCO-002) - excluido del matching`)
 
 Ejemplos completos:
 ```
@@ -423,6 +426,8 @@ Ejemplos completos:
 "No conciliado: candidato EXT-0016 (CENIT 3.5B) encontrado pero 15 dias fuera de ventana"
 "No conciliado: 3 movimientos contables por mismo monto ($118,886,961.00) y fecha"
 "No conciliado: sin contraparte en el extracto"
+"Reversión de CTB-0001 (comprobante NCO-001) - excluido del matching"
+"Anulado por CTB-0008 (comprobante NCO-605) - excluido del matching"
 ```
 
 ### ¿Qué advertencias de proceso genera el motor?
@@ -432,5 +437,5 @@ Además de las advertencias de saldo, el motor genera advertencias a nivel de pr
 | Tipo | Cuando se genera |
 |------|-----------------|
 | `movimientos_insuficientes` | Contabilidad tiene menos movimientos que el extracto |
-| `movimientos_duplicados` | Mismo monto + misma fecha en múltiples movimientos contables |
+| `movimientos_duplicados` | Mismo monto + misma fecha en múltiples movimientos contables (excluye pares de reversión con `cons_cp_contable`) |
 | `intereses_no_contabilizados` | El extracto tiene INTERESES LIQUIDADOS sin contraparte en contabilidad |
