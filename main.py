@@ -247,6 +247,23 @@ async def procesar_conciliacion(
             },
         )
 
+    # Build reversal/cancelled maps BEFORE engine so neither reaches the matching engine
+    _cp_to_ctb: dict[str, str] = {}
+    for m in movimientos_ctb:
+        if m.codigo_comprobante:
+            _cp_to_ctb[m.codigo_comprobante] = m.id
+    cancelled_ids: set[str] = set()   # originals that were cancelled by a reversal
+    reversal_ids: set[str] = set()    # movements that ARE reversals (have cons_cp_contable)
+    for m in movimientos_ctb:
+        if m.cons_cp_contable and m.cons_cp_contable in _cp_to_ctb:
+            original_id = _cp_to_ctb[m.cons_cp_contable]
+            cancelled_ids.add(original_id)
+            reversal_ids.add(m.id)
+
+    # Filter out cancelled originals AND reversals — neither are real bank transactions
+    movs_ctb_engine = [m for m in movimientos_ctb
+                       if m.id not in cancelled_ids and m.id not in reversal_ids]
+
     # Extract saldo_libros from last movement's saldo (closing balance)
     saldo_libros = None
     if movs_raw:
@@ -273,12 +290,12 @@ async def procesar_conciliacion(
     )
     config = MatchConfig()
 
-    # Run pipeline
+    # Run pipeline (only with non-cancelled movements)
     try:
         pipeline_result = ejecutar_pipeline_conciliacion(
             extracto_bytes=extracto_bytes,
             extracto_filename=extracto.filename or "extracto.pdf",
-            movimientos_contables=movimientos_ctb,
+            movimientos_contables=movs_ctb_engine,
             periodo=periodo,
             config=config,
             llm_config=llm_config,
@@ -382,26 +399,19 @@ async def procesar_conciliacion(
     # Build unmatched extracto list for nota diagnostics
     ext_no_conciliados = match_result.no_conciliados_extracto
 
-    # Build reversal pair map from parsed movements
-    cp_to_ctb = {}
-    for m in movimientos_ctb:
-        if m.codigo_comprobante:
-            cp_to_ctb[m.codigo_comprobante] = m.id
+    # Lookup helpers for nota generation (uses cancelled_ids / reversal_ids from before engine)
     ctb_by_id = {m.id: m for m in movimientos_ctb}
-    reversal_exclude_ids: set[str] = set()
-    reversal_ctb_map: dict[str, str] = {}  # {original_ctb_id: reversal_ctb_id}
+    reversal_of: dict[str, str] = {}  # {original_id: reversal_id}
     for m in movimientos_ctb:
-        if m.cons_cp_contable and m.cons_cp_contable in cp_to_ctb:
-            original_id = cp_to_ctb[m.cons_cp_contable]
-            reversal_exclude_ids.add(m.id)
-            reversal_exclude_ids.add(original_id)
-            reversal_ctb_map[original_id] = m.id
+        if m.id in reversal_ids and m.cons_cp_contable in _cp_to_ctb:
+            reversal_of[_cp_to_ctb[m.cons_cp_contable]] = m.id
 
     # Detect duplicated contabilidad movements (same amount + same date)
+    # Exclude both cancelled originals and reversals — neither are real bank transactions
     dup_counter = {}
     for m in movimientos_ctb:
-        if m.id in reversal_exclude_ids:
-            continue  # Skip reversal pairs — intentional accounting cancelation
+        if m.id in cancelled_ids or m.id in reversal_ids:
+            continue
         key = (m.fecha, round(m.valor, 2))
         dup_counter[key] = dup_counter.get(key, 0) + 1
     dup_keys = {k for k, v in dup_counter.items() if v > 1}
@@ -421,19 +431,18 @@ async def procesar_conciliacion(
         ctb_index += 1
         ctb_id = f"CTB-{ctb_index:04d}"
 
-        # Reversal pair check (overrides matching result — reversals don't appear in bank)
-        if ctb_id in reversal_exclude_ids:
+        # Three paths: cancelled → false, reversal → false, normal → engine result
+        if ctb_id in cancelled_ids:
+            copy["conciliado"] = False
+            copy["nota"] = "Comprobante excluido por estado anulado"
+            movs_response.append(copy)
+            continue
+
+        if ctb_id in reversal_ids:
             copy["conciliado"] = False
             ctb_obj = ctb_by_id.get(ctb_id)
-            if ctb_obj and ctb_obj.cons_cp_contable:
-                original_cp = ctb_obj.cons_cp_contable
-                original_id = cp_to_ctb.get(original_cp, "?")
-                copy["nota"] = f"Reversión de {original_id} (comprobante {original_cp}) - excluido del matching"
-            else:
-                rev_id = reversal_ctb_map.get(ctb_id, "?")
-                rev_obj = ctb_by_id.get(rev_id)
-                rev_cp = rev_obj.codigo_comprobante or "?" if rev_obj else "?"
-                copy["nota"] = f"Anulado por {rev_id} (comprobante {rev_cp}) - excluido del matching"
+            original_cp = ctb_obj.cons_cp_contable if ctb_obj else "?"
+            copy["nota"] = f"Comprobante excluido por reversión de movimiento ({original_cp})"
             movs_response.append(copy)
             continue
 
@@ -445,7 +454,11 @@ async def procesar_conciliacion(
             match = ctb_match_map[ctb_id]
             ext_side = match.movimiento_extracto
             ext_obj = ext_side[0] if isinstance(ext_side, list) else ext_side
-            parts = [f"Conciliado con {ext_obj.id} ({ext_obj.descripcion[:40]})"]
+            parts = [
+                f"Conciliado con movimiento del extracto número {ext_obj.id}, "
+                f"con concepto {ext_obj.descripcion[:40]}, "
+                f"monto {ext_obj.valor:,.0f}"
+            ]
             parts.append(f"nivel {match.nivel} ({match.tipo})")
             if match.dias_diferencia:
                 parts.append(f"{match.dias_diferencia} dias de diferencia")
@@ -480,7 +493,7 @@ async def procesar_conciliacion(
                 nota = f"No conciliado: candidato {candidate.id} ({candidate.descripcion[:30]}) encontrado pero naturaleza no coincide tras inversion"
             elif ctb_fecha and (ctb_fecha, round(valor, 2)) in dup_keys:
                 dup_count = dup_counter.get((ctb_fecha, round(valor, 2)), 1)
-                nota = f"No conciliado: {dup_count} movimientos contables por mismo monto ({valor:,.2f}) y fecha"
+                nota = f"No conciliado: {dup_count} movimientos con mismo monto ({valor:,.2f}) y fecha ({fecha_str}) - solo uno puede conciliarse"
             else:
                 nota = "No conciliado: sin contraparte en el extracto"
 

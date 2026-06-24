@@ -578,7 +578,7 @@ class TestProcesar:
         movs = resp.json()["movimientos_detalle"]
         assert len(movs) == 2
         assert movs[0]["conciliado"] is True
-        assert "Conciliado con EXT-0007" in movs[0]["nota"]
+        assert "Conciliado con movimiento del extracto número EXT-0007" in movs[0]["nota"]
         assert "nivel 1" in movs[0]["nota"]
         assert movs[1]["conciliado"] is False
         assert "No conciliado" in movs[1]["nota"]
@@ -755,21 +755,17 @@ class TestProcesar:
         data = resp.json()
         movs = data["movimientos_detalle"]
 
-        # Original movement: excluded from matching, nota mentions reversal
+        # Original movement: excluded from matching, nota mentions it was cancelled
         assert movs[0]["codigo_movimiento"] == "ORI001"
         assert movs[0]["conciliado"] is False
-        assert "Anulado por" in movs[0]["nota"]
-        assert "CTB-0002" in movs[0]["nota"]
-        assert "NCO-002" in movs[0]["nota"]
+        assert movs[0]["nota"] == "Comprobante excluido por estado anulado"
         assert movs[0].get("codig_cp_contable") == "NCO-001"
         assert movs[0].get("cons_cp_contable") is None
 
-        # Reversal movement: excluded from matching, nota identifies original
+        # Reversal movement: excluded from matching, nota references original comprobante
         assert movs[1]["codigo_movimiento"] == "REV001"
         assert movs[1]["conciliado"] is False
-        assert "Reversión de" in movs[1]["nota"]
-        assert "CTB-0001" in movs[1]["nota"]
-        assert "NCO-001" in movs[1]["nota"]
+        assert movs[1]["nota"] == "Comprobante excluido por reversión de movimiento (NCO-001)"
         assert movs[1].get("codig_cp_contable") == "NCO-002"
         assert movs[1].get("cons_cp_contable") == "NCO-001"
 
@@ -803,3 +799,82 @@ class TestProcesar:
         intereses = [w for w in advertencias if w["tipo"] == "intereses_no_contabilizados"]
         assert len(intereses) == 1
         assert intereses[0]["intereses_sin_conciliar"] == 2
+
+    async def test_procesar_debito_reversion_debito(self, mock_pipeline, client):
+        """Scenario: debit → reversal → debit real. Only the last debit conciliates."""
+        from datetime import date as _dt_date
+        from concilia_engine.models import Match, MovimientoContable, MovimientoExtracto
+
+        json_tercero = json.dumps([
+            {
+                "fecha": "27-01-2025",
+                "codigo_movimiento": "DEB001",
+                "debito": 118886961,
+                "credito": 0,
+                "saldo": 118886961,
+                "conciliado": False,
+                "codig_cp_contable": "NCO-001",
+                "cons_cp_contable": None,
+            },
+            {
+                "fecha": "27-01-2025",
+                "codigo_movimiento": "REV001",
+                "debito": 0,
+                "credito": -118886961,
+                "saldo": 0,
+                "conciliado": False,
+                "codig_cp_contable": "NCO-002",
+                "cons_cp_contable": "NCO-001",
+            },
+            {
+                "fecha": "27-01-2025",
+                "codigo_movimiento": "DEB002",
+                "debito": 118886961,
+                "credito": 0,
+                "saldo": 118886961,
+                "conciliado": False,
+                "codig_cp_contable": "NCO-003",
+                "cons_cp_contable": None,
+            },
+        ])
+
+        # Engine only sees DEB002 (DEB001 cancelled, REV001 reversal) — matches with EXT
+        ext = MovimientoExtracto(id="EXT-0020", fecha=_dt_date(2025, 1, 27),
+                                  valor=118886961, naturaleza="debito",
+                                  descripcion="PAGO PROVEEDOR XYZ")
+        ctb = MovimientoContable(id="CTB-0003", fecha=_dt_date(2025, 1, 27),
+                                  valor=118886961, naturaleza="debito",
+                                  descripcion="DEB002")
+        match = Match(nivel=1, confianza=0.98, movimiento_extracto=ext,
+                       movimiento_contabilidad=ctb, tipo="exacto")
+
+        mock_pipeline.return_value = _make_mock_pipeline_result(
+            diferencia=0.0, movs_extracto=1, matches=[match],
+            periodo_inicio=_dt_date(2025, 1, 1), periodo_fin=_dt_date(2025, 1, 31),
+        )
+
+        resp = await client.post(PATH,
+            data={"periodo": "202501", "movimientos_detalle": json_tercero},
+            files={"extracto": ("extracto.pdf", b"%PDF-1.4 fake", "application/pdf")},
+        )
+
+        assert resp.status_code == 200
+        data = resp.json()
+        movs = data["movimientos_detalle"]
+        assert len(movs) == 3
+
+        # DEB001: original cancelled → false, "estado anulado"
+        assert movs[0]["codigo_movimiento"] == "DEB001"
+        assert movs[0]["conciliado"] is False
+        assert movs[0]["nota"] == "Comprobante excluido por estado anulado"
+
+        # REV001: reversal → false, references original comprobante
+        assert movs[1]["codigo_movimiento"] == "REV001"
+        assert movs[1]["conciliado"] is False
+        assert movs[1]["nota"] == "Comprobante excluido por reversión de movimiento (NCO-001)"
+
+        # DEB002: real debit → conciliado=true, matched by engine
+        assert movs[2]["codigo_movimiento"] == "DEB002"
+        assert movs[2]["conciliado"] is True
+        assert "Conciliado con movimiento del extracto número EXT-0020" in movs[2]["nota"]
+        assert "monto 118,886,961" in movs[2]["nota"]
