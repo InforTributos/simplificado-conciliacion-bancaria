@@ -758,14 +758,14 @@ class TestProcesar:
         # Original movement: excluded from matching, nota mentions it was cancelled
         assert movs[0]["codigo_movimiento"] == "ORI001"
         assert movs[0]["conciliado"] is False
-        assert movs[0]["nota"] == "ORI001 - Comprobante excluido por estado anulado"
+        assert movs[0]["nota"] == "Comprobante excluido por reversión de movimiento REV001."
         assert movs[0].get("codig_cp_contable") == "NCO-001"
         assert movs[0].get("cons_cp_contable") is None
 
         # Reversal movement: excluded from matching, nota references original comprobante
         assert movs[1]["codigo_movimiento"] == "REV001"
         assert movs[1]["conciliado"] is False
-        assert movs[1]["nota"] == "REV001 - Comprobante excluido por reversión de movimiento (NCO-001)"
+        assert movs[1]["nota"] == "Comprobante excluido por estado anulado."
         assert movs[1].get("codig_cp_contable") == "NCO-002"
         assert movs[1].get("cons_cp_contable") == "NCO-001"
 
@@ -863,18 +863,18 @@ class TestProcesar:
         movs = data["movimientos_detalle"]
         assert len(movs) == 3
 
-        # DEB001: original cancelled → false, "estado anulado"
+        # DEB001: original cancelled → false, references reversal
         assert movs[0]["codigo_movimiento"] == "DEB001"
         assert movs[0]["conciliado"] is False
-        assert movs[0]["nota"] == "DEB001 - Comprobante excluido por estado anulado"
+        assert movs[0]["nota"] == "Comprobante excluido por reversión de movimiento REV001."
 
-        # REV001: reversal → false, references original comprobante
+        # REV001: reversal → false, "estado anulado"
         assert movs[1]["codigo_movimiento"] == "REV001"
         assert movs[1]["conciliado"] is False
-        assert movs[1]["nota"] == "REV001 - Comprobante excluido por reversión de movimiento (NCO-001)"
+        assert movs[1]["nota"] == "Comprobante excluido por estado anulado."
 
         # DEB002: real debit → conciliado=true, matched by engine
         assert movs[2]["codigo_movimiento"] == "DEB002"
         assert movs[2]["conciliado"] is True
-        assert "DEB002 - Conciliado con movimiento del extracto número EXT-0020" in movs[2]["nota"]
+        assert "Conciliado con movimiento del extracto número EXT-0020" in movs[2]["nota"]
         assert "monto 118,886,961" in movs[2]["nota"]

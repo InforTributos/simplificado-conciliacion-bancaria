@@ -432,18 +432,18 @@ async def procesar_conciliacion(
         ctb_id = f"CTB-{ctb_index:04d}"
 
         # Three paths: cancelled → false, reversal → false, normal → engine result
-        cod_mov = copy.get("codigo_movimiento", "")
         if ctb_id in cancelled_ids:
             copy["conciliado"] = False
-            copy["nota"] = f"{cod_mov} - Comprobante excluido por estado anulado"
+            rev_id = reversal_of.get(ctb_id, "?")
+            rev_obj = ctb_by_id.get(rev_id)
+            rev_cod = rev_obj.referencia if rev_obj else "?"
+            copy["nota"] = f"Comprobante excluido por reversión de movimiento {rev_cod}."
             movs_response.append(copy)
             continue
 
         if ctb_id in reversal_ids:
             copy["conciliado"] = False
-            ctb_obj = ctb_by_id.get(ctb_id)
-            original_cp = ctb_obj.cons_cp_contable if ctb_obj else "?"
-            copy["nota"] = f"{cod_mov} - Comprobante excluido por reversión de movimiento ({original_cp})"
+            copy["nota"] = "Comprobante excluido por estado anulado."
             movs_response.append(copy)
             continue
 
@@ -456,7 +456,7 @@ async def procesar_conciliacion(
             ext_side = match.movimiento_extracto
             ext_obj = ext_side[0] if isinstance(ext_side, list) else ext_side
             parts = [
-                f"{cod_mov} - Conciliado con movimiento del extracto número {ext_obj.id}, "
+                f"Conciliado con movimiento del extracto número {ext_obj.id}, "
                 f"con concepto {ext_obj.descripcion[:40]}, "
                 f"monto {ext_obj.valor:,.0f}"
             ]
@@ -489,14 +489,14 @@ async def procesar_conciliacion(
                         break
 
             if candidate is not None and ctb_fecha is not None and best_dias > config.max_dias_diferencia:
-                nota = f"{cod_mov} - No conciliado: candidato {candidate.id} ({candidate.descripcion[:30]}) encontrado pero {best_dias} dias fuera de ventana"
+                nota = f"No conciliado: candidato {candidate.id} ({candidate.descripcion[:30]}) encontrado pero {best_dias} dias fuera de ventana"
             elif candidate is not None:
-                nota = f"{cod_mov} - No conciliado: candidato {candidate.id} ({candidate.descripcion[:30]}) encontrado pero naturaleza no coincide tras inversion"
+                nota = f"No conciliado: candidato {candidate.id} ({candidate.descripcion[:30]}) encontrado pero naturaleza no coincide tras inversion"
             elif ctb_fecha and (ctb_fecha, round(valor, 2)) in dup_keys:
                 dup_count = dup_counter.get((ctb_fecha, round(valor, 2)), 1)
-                nota = f"{cod_mov} - No conciliado: {dup_count} movimientos con mismo monto ({valor:,.2f}) y fecha ({fecha_str}) - solo uno puede conciliarse"
+                nota = f"No conciliado: {dup_count} movimientos con mismo monto ({valor:,.2f}) y fecha ({fecha_str}) - solo uno puede conciliarse"
             else:
-                nota = f"{cod_mov} - No conciliado: sin contraparte en el extracto"
+                nota = "No conciliado: sin contraparte en el extracto"
 
             copy["nota"] = nota
 
