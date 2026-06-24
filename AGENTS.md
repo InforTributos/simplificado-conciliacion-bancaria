@@ -27,7 +27,7 @@ API minimalista de conciliacion bancaria con un solo endpoint publico, sin base 
 | Campo | Tipo | Requerido | Ejemplo |
 |-------|------|-----------|---------|
 | `extracto` | PDF (binario) | Sí | archivo extracto bancario |
-| `movimientos_detalle` | string (JSON array) | Sí | `[{"fecha":"01-03-2026","codigo_movimiento":"TRX001","debito":0,"credito":250000,"saldo":1750000,"conciliado":false}]` |
+| `movimientos_detalle` | string (JSON array) | Sí | `[{"fecha":"01-03-2026","codigo_movimiento":"TRX001","debito":0,"credito":250000,"saldo":1750000,"conciliado":false,"codig_cp_contable":"NCO-001","cons_cp_contable":null}]` |
 | `periodo` | string | No | `"202603"` (AAAAMM) |
 | `cuenta_bancaria` | string (JSON object) | No | `{"numero_cuenta_bancaria":"123456","saldo_anterior_periodo":1500000,"saldo_actual_periodo":1750000}` |
 
@@ -38,8 +38,8 @@ API minimalista de conciliacion bancaria con un solo endpoint publico, sin base 
     "estado": "completada" | "no_completada" | "error",
     "periodo": "202603",
     "movimientos_detalle": [
-        {"fecha":"01-03-2026","codigo_movimiento":"TRX001","debito":0,"credito":250000,"saldo":1750000,"conciliado":true,"nota":"Conciliado con EXT-0007 (PAGO A TERCEROS AVAL) - nivel 1 (exacto)"},
-        {"fecha":"02-03-2026","codigo_movimiento":"TRX002","debito":100000,"credito":0,"saldo":1650000,"conciliado":false,"nota":"No conciliado: sin contraparte en el extracto"}
+        {"fecha":"01-03-2026","codigo_movimiento":"TRX001","debito":0,"credito":250000,"saldo":1750000,"conciliado":true,"nota":"Conciliado con EXT-0007 (PAGO A TERCEROS AVAL) - nivel 1 (exacto)","codig_cp_contable":"NCO-001","cons_cp_contable":null},
+        {"fecha":"02-03-2026","codigo_movimiento":"TRX002","debito":100000,"credito":0,"saldo":1650000,"conciliado":false,"nota":"No conciliado: sin contraparte en el extracto","codig_cp_contable":null,"cons_cp_contable":null}
     ],
     "resumen": {
         "total_movimientos": 2,
@@ -56,6 +56,7 @@ API minimalista de conciliacion bancaria con un solo endpoint publico, sin base 
 ```
 
 - `movimientos_detalle` devuelve el mismo array del request pero con `conciliado` actualizado (true/false) según el resultado del matching y `nota` con el mensaje de diagnóstico.
+- Si un movimiento tiene `cons_cp_contable` no nulo, se marca automáticamente como `conciliado: false` y se excluye del matching (es una reversión contable). El movimiento original que anula también se excluye.
 - `advertencias` puede incluir: saldo anterior/actual, cuadre_diferencia, movimientos_insuficientes, movimientos_duplicados, intereses_no_contabilizados. No detienen el flujo.
 
 ### Validaciones (422)

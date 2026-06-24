@@ -271,7 +271,9 @@ Endpoint público. No requiere autenticación.
     "debito": 0,
     "credito": 250000,
     "saldo": 1750000,
-    "conciliado": false
+    "conciliado": false,
+    "codig_cp_contable": "NCO-2025-001234",
+    "cons_cp_contable": null
   }
 ]
 ```
@@ -284,6 +286,8 @@ Endpoint público. No requiere autenticación.
 | `credito` | number | **Sí*** | Monto del crédito. Se usa el valor absoluto (negativos aceptados). Debe ser > 0 si debito = 0 |
 | `saldo` | number | No | Saldo corriente (se usa como señal secundaria de matching) |
 | `conciliado` | boolean | No | Estado inicial — siempre `false`. Se actualiza por el motor |
+| `codig_cp_contable` | string | No | Código único del comprobante contable. Se usa para identificación de reversiones. |
+| `cons_cp_contable` | string \| null | No | Si tiene valor, este movimiento es una **reversión** del comprobante indicado. Tanto la reversión como el original se excluyen del matching y se marcan como no conciliados. |
 
 > *Uno de `debito` o `credito` debe ser > 0. Las filas donde ambos son 0 se omiten.
 
@@ -442,7 +446,7 @@ Todas las advertencias son no bloqueantes y se retornan en el array `advertencia
 | `saldo_actual` | `saldo_final` enviado difiere del PDF | `"Saldo actual no coincide"` |
 | `cuadre_diferencia` | Diferencia de cuadre > 0 | `"La conciliacion tiene una diferencia de 7,237,064,605.98"` |
 | `movimientos_insuficientes` | Movimientos contables < movimientos del extracto | `"Se enviaron 22 movimientos pero el extracto tiene 44"` |
-| `movimientos_duplicados` | Mismo monto + misma fecha en contabilidad | `"7 movimientos duplicados en 3 grupos"` |
+| `movimientos_duplicados` | Mismo monto + misma fecha en contabilidad (excluye pares de reversión con `cons_cp_contable`) | `"7 movimientos duplicados en 3 grupos"` |
 | `intereses_no_contabilizados` | Intereses del banco no registrados en contabilidad | `"El extracto tiene 31 movimientos de intereses"` |
 
 ### Notas de Diagnóstico por Movimiento (`nota`)
@@ -461,6 +465,12 @@ Cada movimiento en `movimientos_detalle` incluye un campo `nota` que explica el 
 "No conciliado: sin contraparte en el extracto"
 "No conciliado: candidato EXT-0016 (CENIT 3.5B) encontrado pero 15 dias fuera de ventana"
 "No conciliado: 3 movimientos contables por mismo monto ($118,886,961.00) y fecha"
+```
+
+**Para pares de reversión (cuando `cons_cp_contable` tiene valor):**
+```
+"Reversión de CTB-0001 (comprobante NCO-001) - excluido del matching"
+"Anulado por CTB-0002 (comprobante NCO-002) - excluido del matching"
 ```
 
 El campo `nota` siempre está presente como string (vacío `""` para movimientos con valor cero).

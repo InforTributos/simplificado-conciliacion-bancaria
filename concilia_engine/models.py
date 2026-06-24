@@ -29,7 +29,8 @@ class MovimientoContable:
     descripcion: str
     referencia: Optional[str] = None
     tipo_documento: Optional[str] = None  # NCO, CE, IRM, etc.
-    codigo_comprobante: Optional[str] = None
+    codigo_comprobante: Optional[str] = None  # codig_cp_contable from request
+    cons_cp_contable: Optional[str] = None  # If not null, movement reverses this comprobante
     naturaleza_matching: Optional[str] = None  # Set by Nivel 0
 
 

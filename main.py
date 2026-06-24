@@ -101,6 +101,8 @@ def _parse_movimientos_detalle(items: list[dict]) -> list[MovimientoContable]:
             continue  # skip zero-value rows
 
         referencia = str(item.get("codigo_movimiento", ""))
+        codig_cp = item.get("codig_cp_contable") or None
+        cons_cp = item.get("cons_cp_contable") or None
 
         movs.append(
             MovimientoContable(
@@ -110,6 +112,8 @@ def _parse_movimientos_detalle(items: list[dict]) -> list[MovimientoContable]:
                 naturaleza=naturaleza,
                 descripcion=referencia,
                 referencia=referencia,
+                codigo_comprobante=codig_cp,
+                cons_cp_contable=cons_cp,
             )
         )
 
@@ -363,9 +367,26 @@ async def procesar_conciliacion(
     # Build unmatched extracto list for nota diagnostics
     ext_no_conciliados = match_result.no_conciliados_extracto
 
+    # Build reversal pair map from parsed movements
+    cp_to_ctb = {}
+    for m in movimientos_ctb:
+        if m.codigo_comprobante:
+            cp_to_ctb[m.codigo_comprobante] = m.id
+    ctb_by_id = {m.id: m for m in movimientos_ctb}
+    reversal_exclude_ids: set[str] = set()
+    reversal_ctb_map: dict[str, str] = {}  # {original_ctb_id: reversal_ctb_id}
+    for m in movimientos_ctb:
+        if m.cons_cp_contable and m.cons_cp_contable in cp_to_ctb:
+            original_id = cp_to_ctb[m.cons_cp_contable]
+            reversal_exclude_ids.add(m.id)
+            reversal_exclude_ids.add(original_id)
+            reversal_ctb_map[original_id] = m.id
+
     # Detect duplicated contabilidad movements (same amount + same date)
     dup_counter = {}
     for m in movimientos_ctb:
+        if m.id in reversal_exclude_ids:
+            continue  # Skip reversal pairs — intentional accounting cancelation
         key = (m.fecha, round(m.valor, 2))
         dup_counter[key] = dup_counter.get(key, 0) + 1
     dup_keys = {k for k, v in dup_counter.items() if v > 1}
@@ -384,6 +405,23 @@ async def procesar_conciliacion(
             continue
         ctb_index += 1
         ctb_id = f"CTB-{ctb_index:04d}"
+
+        # Reversal pair check (overrides matching result — reversals don't appear in bank)
+        if ctb_id in reversal_exclude_ids:
+            copy["conciliado"] = False
+            ctb_obj = ctb_by_id.get(ctb_id)
+            if ctb_obj and ctb_obj.cons_cp_contable:
+                original_cp = ctb_obj.cons_cp_contable
+                original_id = cp_to_ctb.get(original_cp, "?")
+                copy["nota"] = f"Reversión de {original_id} (comprobante {original_cp}) - excluido del matching"
+            else:
+                rev_id = reversal_ctb_map.get(ctb_id, "?")
+                rev_obj = ctb_by_id.get(rev_id)
+                rev_cp = rev_obj.codigo_comprobante or "?" if rev_obj else "?"
+                copy["nota"] = f"Anulado por {rev_id} (comprobante {rev_cp}) - excluido del matching"
+            movs_response.append(copy)
+            continue
+
         conciliado = ctb_id in matched_ids
         copy["conciliado"] = conciliado
         valor = debito if debito > 0 else credito

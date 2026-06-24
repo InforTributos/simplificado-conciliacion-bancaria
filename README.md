@@ -271,7 +271,9 @@ Public endpoint. No authentication required.
     "debito": 0,
     "credito": 250000,
     "saldo": 1750000,
-    "conciliado": false
+    "conciliado": false,
+    "codig_cp_contable": "NCO-2025-001234",
+    "cons_cp_contable": null
   }
 ]
 ```
@@ -284,6 +286,8 @@ Public endpoint. No authentication required.
 | `credito` | number | **Yes*** | Credit amount. Value is used as absolute (negative accepted). Must be > 0 if debito = 0 |
 | `saldo` | number | No | Running balance (used as secondary matching signal) |
 | `conciliado` | boolean | No | Initial state — always `false`. Updated by the engine |
+| `codig_cp_contable` | string | No | Unique comprobante/voucher code. Used for reversal identification. |
+| `cons_cp_contable` | string \| null | No | If set, this movement is a **reversal** of the comprobante identified by this value. Both the reversal and the original are excluded from bank matching and marked as not conciliated. |
 
 > *One of `debito` or `credito` must be > 0. Rows where both are 0 are skipped.
 
@@ -442,7 +446,7 @@ All warnings are non-blocking and returned in the `advertencias` array:
 | `saldo_actual` | User-provided `saldo_final` differs from PDF | `"Saldo actual no coincide"` |
 | `cuadre_diferencia` | Final balance difference > 0 | `"La conciliacion tiene una diferencia de 7,237,064,605.98"` |
 | `movimientos_insuficientes` | Contabilidad movements < extracto movements | `"Se enviaron 22 movimientos pero el extracto tiene 44"` |
-| `movimientos_duplicados` | Same amount + same date in contabilidad | `"7 movimientos duplicados en 3 grupos"` |
+| `movimientos_duplicados` | Same amount + same date in contabilidad (excludes reversal pairs with `cons_cp_contable`) | `"7 movimientos duplicados en 3 grupos"` |
 | `intereses_no_contabilizados` | Bank interest movements not in contabilidad | `"El extracto tiene 31 movimientos de intereses"` |
 
 ### Movement Diagnostic Notes (`nota`)
@@ -461,6 +465,12 @@ Every movement in `movimientos_detalle` includes a `nota` field explaining the r
 "No conciliado: sin contraparte en el extracto"
 "No conciliado: candidato EXT-0016 (CENIT 3.5B) encontrado pero 15 dias fuera de ventana"
 "No conciliado: 3 movimientos contables por mismo monto ($118,886,961.00) y fecha"
+```
+
+**For reversal pairs (when `cons_cp_contable` is set):**
+```
+"Reversión de CTB-0001 (comprobante NCO-001) - excluido del matching"
+"Anulado por CTB-0002 (comprobante NCO-002) - excluido del matching"
 ```
 
 The `nota` field is always present as a string (empty `""` for zero-value movements).

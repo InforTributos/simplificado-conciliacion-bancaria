@@ -714,6 +714,70 @@ class TestProcesar:
         assert duplicados[0]["grupos_duplicados"] == 1
         assert duplicados[0]["movimientos_afectados"] == 2
 
+    async def test_procesar_reversion_excluida(self, mock_pipeline, client):
+        """Reversal pair excluded from matching and duplicate detection."""
+        from datetime import date as _rev_date
+
+        json_rev = json.dumps([
+            {
+                "fecha": "27-01-2025",
+                "codigo_movimiento": "ORI001",
+                "debito": 0,
+                "credito": 118886961,
+                "saldo": 0,
+                "conciliado": False,
+                "codig_cp_contable": "NCO-001",
+                "cons_cp_contable": None,
+            },
+            {
+                "fecha": "27-01-2025",
+                "codigo_movimiento": "REV001",
+                "debito": 0,
+                "credito": -118886961,
+                "saldo": 0,
+                "conciliado": False,
+                "codig_cp_contable": "NCO-002",
+                "cons_cp_contable": "NCO-001",
+            },
+        ])
+
+        mock_pipeline.return_value = _make_mock_pipeline_result(
+            diferencia=0.0, movs_extracto=1, movs_contabilidad=2,
+            periodo_inicio=_rev_date(2025, 1, 1), periodo_fin=_rev_date(2025, 1, 31),
+        )
+
+        resp = await client.post(PATH,
+            data={"periodo": "202501", "movimientos_detalle": json_rev},
+            files={"extracto": ("extracto.pdf", b"%PDF-1.4 fake", "application/pdf")},
+        )
+
+        assert resp.status_code == 200
+        data = resp.json()
+        movs = data["movimientos_detalle"]
+
+        # Original movement: excluded from matching, nota mentions reversal
+        assert movs[0]["codigo_movimiento"] == "ORI001"
+        assert movs[0]["conciliado"] is False
+        assert "Anulado por" in movs[0]["nota"]
+        assert "CTB-0002" in movs[0]["nota"]
+        assert "NCO-002" in movs[0]["nota"]
+        assert movs[0].get("codig_cp_contable") == "NCO-001"
+        assert movs[0].get("cons_cp_contable") is None
+
+        # Reversal movement: excluded from matching, nota identifies original
+        assert movs[1]["codigo_movimiento"] == "REV001"
+        assert movs[1]["conciliado"] is False
+        assert "Reversión de" in movs[1]["nota"]
+        assert "CTB-0001" in movs[1]["nota"]
+        assert "NCO-001" in movs[1]["nota"]
+        assert movs[1].get("codig_cp_contable") == "NCO-002"
+        assert movs[1].get("cons_cp_contable") == "NCO-001"
+
+        # No duplicados warning since reversal pair is excluded
+        advertencias = data["advertencias"]
+        duplicados = [w for w in advertencias if w["tipo"] == "movimientos_duplicados"]
+        assert len(duplicados) == 0
+
     async def test_procesar_advertencia_intereses(self, mock_pipeline, client):
         """Warning when extract has unmatched INTERESES LIQUIDADOS."""
         from datetime import date as _dt_date
