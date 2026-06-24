@@ -51,10 +51,25 @@ settings = Settings()
 # Response schema — only the one used by /procesar
 # ---------------------------------------------------------------------------
 
+class MovimientoDetalleItem(BaseModel):
+    """Cada movimiento en la respuesta de /procesar."""
+    model_config = {"extra": "ignore"}
+
+    fecha: str = Field(..., description="Fecha en formato dd-mm-aaaa", examples=["01-03-2026"])
+    codigo_movimiento: str | None = Field(default=None, description="Codigo interno del movimiento")
+    debito: float = Field(default=0, description="Monto del debito (valor absoluto)")
+    credito: float = Field(default=0, description="Monto del credito (valor absoluto)")
+    saldo: float | None = Field(default=None, description="Saldo corriente")
+    conciliado: bool = Field(default=False, description="True si fue conciliado con un movimiento del extracto")
+    nota: str = Field(default="", description="Diagnostico de conciliacion")
+    codig_cp_contable: str | None = Field(default=None, description="Codigo unico del comprobante contable")
+    cons_cp_contable: str | None = Field(default=None, description="Si no es null, este movimiento es una reversión de este comprobante")
+
+
 class ProcesarConciliacionResponse(BaseModel):
     estado: Literal["completada", "no_completada", "error"] = Field(description="Estado del proceso de conciliacion")
     periodo: str | None = Field(default=None, description="Periodo detectado en formato AAAAMM (ej: 202401)")
-    movimientos_detalle: list[dict] = Field(default_factory=list, description="Array de movimientos contables con bandera conciliado (true/false)")
+    movimientos_detalle: list[MovimientoDetalleItem] = Field(default_factory=list, description="Array de movimientos contables con bandera conciliado (true/false)")
     resumen: dict = Field(default_factory=dict, description="Resumen: total_movimientos, conciliados, no_conciliados, porcentaje_conciliacion")
     cuadre_diferencia: float | None = Field(default=None, description="Diferencia de cuadre (0 = cuadra perfectamente)")
     metricas: dict = Field(default_factory=dict, description="Metricas: tiempo_total_ms")
