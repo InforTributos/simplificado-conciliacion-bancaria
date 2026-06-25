@@ -19,8 +19,8 @@ def clasificar_no_conciliados(
     """Calculate the cuadre (balance) formula for unmatched items.
 
     Formula (bank reconciliation):
-    Saldo Extracto + (Créditos Extracto No Conciliados - Débitos Extracto No Conciliados)
-    = Saldo Libros + (Consignaciones en Tránsito - Cheques No Cobrados)
+    Saldo Libros + (Créditos Extracto No Conciliados - Débitos Extracto No Conciliados)
+    = Saldo Extracto + (Consignaciones en Tránsito - Cheques No Cobrados)
 
     Where:
       Consignaciones en Tránsito = Créditos contabilidad no conciliados
@@ -65,9 +65,10 @@ def clasificar_no_conciliados(
     if saldo_libros is None:
         saldo_libros = saldo_extracto  # Approximate
 
-    # Adjusted / "true" balance from each side
-    suma_iguales_libros = saldo_libros + partidas_libros
-    suma_iguales_extracto = saldo_extracto + partidas_extracto
+    # Partidas del extracto (creditos/debitos no conciliados del banco) ajustan el saldo libros
+    # Partidas de libros (consignaciones transito/cheques no cobrados) ajustan el saldo extracto
+    suma_iguales_libros = saldo_libros + partidas_extracto
+    suma_iguales_extracto = saldo_extracto + partidas_libros
     diferencia = round(abs(suma_iguales_libros - suma_iguales_extracto), 2)
 
     return CuadreFinal(
