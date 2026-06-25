@@ -125,7 +125,7 @@ class TestProcesar:
         assert all(isinstance(m["conciliado"], bool) for m in data["movimientos_detalle"])
 
     async def test_procesar_no_completada(self, mock_pipeline, client):
-        """Mismatch — estado no_completada with cuadre_diferencia in advertencias."""
+        """Mismatch → estado no_completada."""
         mock_pipeline.return_value = _make_mock_pipeline_result(diferencia=5000.0)
 
         resp = await client.post(
@@ -144,8 +144,7 @@ class TestProcesar:
         assert data["estado"] == "no_completada"
         assert data["cuadre_diferencia"] == 5000.0
         cuadre_warnings = [w for w in data["advertencias"] if w["tipo"] == "cuadre_diferencia"]
-        assert len(cuadre_warnings) == 1
-        assert cuadre_warnings[0]["diferencia"] == 5000.0
+        assert len(cuadre_warnings) == 0
 
     async def test_procesar_periodo_invalido(self, client):
         """Invalid periodo format → 422."""

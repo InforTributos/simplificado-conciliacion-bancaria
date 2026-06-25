@@ -530,12 +530,12 @@ async def procesar_conciliacion(
         except (TypeError, ValueError):
             pass
 
-    if diferencia > 0:
-        advertencias.append({
-            "tipo": "cuadre_diferencia",
-            "mensaje": f"La conciliacion tiene una diferencia de {diferencia:,.2f}",
-            "diferencia": diferencia,
-        })
+    # if diferencia > 0:
+    #     advertencias.append({
+    #         "tipo": "cuadre_diferencia",
+    #         "mensaje": f"La conciliacion tiene una diferencia de {diferencia:,.2f}",
+    #         "diferencia": diferencia,
+    #     })
 
     # Process-level warnings
     ctb_count = len(movimientos_ctb)
