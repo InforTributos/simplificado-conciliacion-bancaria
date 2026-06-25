@@ -25,6 +25,7 @@ class BancoomevaParser(BankParser):
     """
 
     banco_nombre = "bancoomeva"
+    invertir_lado = "extracto"
 
     def puede_parsear(self, texto: str) -> bool:
         texto_upper = texto.upper()

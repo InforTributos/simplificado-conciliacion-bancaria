@@ -43,6 +43,7 @@ class InfoExtracto:
     periodo_fin: date
     saldo_anterior: float
     saldo_final: float
+    invertir_lado: str = "contabilidad"  # "contabilidad" | "extracto" | "ninguno"
 
 
 @dataclass

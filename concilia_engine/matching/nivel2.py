@@ -31,7 +31,7 @@ def match_fecha_flexible(
                 continue
             if abs(ctb.valor - ext.valor) > config.tolerancia_monto:
                 continue
-            if ctb.naturaleza_matching != ext.naturaleza:
+            if ctb.naturaleza_matching != ext.naturaleza_matching:
                 continue
 
             dias = abs((ctb.fecha - ext.fecha).days)

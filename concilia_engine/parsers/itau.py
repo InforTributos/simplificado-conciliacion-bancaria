@@ -31,6 +31,7 @@ class ItauParser(BankParser):
     """
 
     banco_nombre = "itau"
+    invertir_lado = "extracto"
 
     ITAU_NIT = "890.903.937"
 
