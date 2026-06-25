@@ -18,9 +18,13 @@ def clasificar_no_conciliados(
 ) -> CuadreFinal:
     """Calculate the cuadre (balance) formula for unmatched items.
 
-    Formula:
-    Saldo Libros + Partidas Libros = Saldo Extracto + Cheques No Cobrados
-                                     + Consignaciones Transito + Partidas Extracto
+    Formula (bank reconciliation):
+    Saldo Extracto + (Créditos Extracto No Conciliados - Débitos Extracto No Conciliados)
+    = Saldo Libros + (Consignaciones en Tránsito - Cheques No Cobrados)
+
+    Where:
+      Consignaciones en Tránsito = Créditos contabilidad no conciliados
+      Cheques No Cobrados       = Débitos contabilidad no conciliados
     """
     saldo_extracto = info_extracto.saldo_final
 
@@ -51,16 +55,19 @@ def clasificar_no_conciliados(
         m.valor for m in no_conciliados_extracto
         if m.naturaleza == "credito"
     )
-    partidas_extracto = partidas_extracto_debito + partidas_extracto_credito
+    # Net partidas: créditos incrementan el saldo, débitos lo disminuyen
+    partidas_extracto = partidas_extracto_credito - partidas_extracto_debito
 
-    partidas_libros = partidas_libros_debito + partidas_libros_credito
+    # Net partidas del lado libros: créditos (consignaciones tránsito) incrementan, débitos (cheques no cobrados) disminuyen
+    partidas_libros = partidas_libros_credito - partidas_libros_debito
 
     # Use provided saldo_libros or estimate from extracto
     if saldo_libros is None:
         saldo_libros = saldo_extracto  # Approximate
 
-    suma_iguales_libros = saldo_libros + partidas_extracto
-    suma_iguales_extracto = saldo_extracto + partidas_libros
+    # Adjusted / "true" balance from each side
+    suma_iguales_libros = saldo_libros + partidas_libros
+    suma_iguales_extracto = saldo_extracto + partidas_extracto
     diferencia = round(abs(suma_iguales_libros - suma_iguales_extracto), 2)
 
     return CuadreFinal(
