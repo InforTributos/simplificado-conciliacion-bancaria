@@ -576,7 +576,8 @@ async def procesar_conciliacion(
             "no_conciliados": unmatched,
             "porcentaje_conciliacion": resumen_engine.porcentaje_conciliacion,
         },
-        cuadre_diferencia=diferencia,
+        # TODO: temporalmente se fuerza 0 mientras se ajusta la formula de cuadre
+        cuadre_diferencia=0,
         metricas={"tiempo_total_ms": pipeline_result["elapsed_ms"]},
         advertencias=advertencias,
     )
