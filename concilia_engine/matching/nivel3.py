@@ -35,7 +35,7 @@ def match_grupo(
         same_nature_ctb = [
             c for c in contabilidad
             if c.id not in matched_ctb_ids
-            and c.naturaleza_matching == ext.naturaleza
+            and c.naturaleza_matching == ext.naturaleza_matching
             and abs((c.fecha - ext.fecha).days) <= config.max_dias_diferencia
         ]
 
@@ -69,7 +69,7 @@ def match_grupo(
         same_nature_ext = [
             e for e in extracto
             if e.id not in matched_ext_ids
-            and e.naturaleza == ctb.naturaleza_matching
+            and e.naturaleza_matching == ctb.naturaleza_matching
             and abs((e.fecha - ctb.fecha).days) <= config.max_dias_diferencia
         ]
 
@@ -193,7 +193,7 @@ def _match_nm_by_description(
             continue
 
         ext_sum = sum(e.valor for e in ext_group)
-        ext_nature = ext_group[0].naturaleza if ext_group else None
+        ext_nature = ext_group[0].naturaleza_matching if ext_group else None
 
         for ctb_key, ctb_group in ctb_groups.items():
             if any(c.id in used_ctb for c in ctb_group):

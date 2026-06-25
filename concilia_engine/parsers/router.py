@@ -263,6 +263,7 @@ class ParserRouter:
         if parser:
             movimientos = parser.parsear(texto_plano)
             info = parser.extraer_info(texto_plano)
+            info.invertir_lado = parser.invertir_lado
             return ParseResult(
                 movimientos=movimientos,
                 info_extracto=info,
@@ -275,6 +276,7 @@ class ParserRouter:
         generic = self._get_generic()
         movimientos = generic.parsear(texto_plano)
         info = generic.extraer_info(texto_plano)
+        info.invertir_lado = generic.invertir_lado
 
         # Check extraction rate — if low, try orchestrator + sub-agent
         total_lines = len([l for l in texto_plano.split("\n") if l.strip()])
@@ -332,6 +334,7 @@ class ParserRouter:
             if result and result.get("movimientos"):
                 movimientos = _build_movimientos(result["movimientos"])
                 info = _build_info_extracto(result.get("info", {}))
+                info.invertir_lado = _BANK_INVERTIR_LADO.get(bank_key, "contabilidad")
                 return ParseResult(
                     movimientos=movimientos,
                     info_extracto=info,
@@ -357,6 +360,7 @@ class ParserRouter:
             generic = self._get_generic()
             movimientos = generic.parsear(generic_text)
             info = generic.extraer_info(generic_text)
+            info.invertir_lado = generic.invertir_lado
             logger.warning("LLM unavailable, using generic parser results")
             return ParseResult(
                 movimientos=movimientos,
@@ -407,6 +411,20 @@ class ParserRouter:
 # ------------------------------------------------------------------
 # Helpers
 # ------------------------------------------------------------------
+
+# Inversion mapping for LLM subagent path (keep in sync with parser invertir_lado)
+_BANK_INVERTIR_LADO: dict[str, str] = {
+    "occidente": "extracto",
+    "banco_de_occidente": "extracto",
+    "fiduoccidente": "extracto",
+    "banco_popular": "extracto",
+    "popular": "extracto",
+    "bancoomeva": "extracto",
+    "itau": "extracto",
+    "banco_caja_social": "extracto",
+    "caja_social": "extracto",
+}
+
 
 def _resolve_bank_key(banco: str) -> str:
     """Normalize bank name to a registry key."""

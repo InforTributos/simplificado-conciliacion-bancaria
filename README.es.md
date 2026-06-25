@@ -39,7 +39,7 @@
 - **16 parsers bancarios especializados** — extracción con regex para bancos colombianos (BBVA, Davivienda, Bancolombia, Bogotá, Occidente, Itaú, Colpatria, Serfinanza, Banco GNB, Banco Popular, Bancoomeva, AV Villas, Banco Caja Social, Banco Agrario, Davibanck, FIC)
 - **Cascada LLM como fallback** — cuando los parsers regex fallan, una cascada basada en LiteLLM (Orquestador → Sub-agente → VisionParser) maneja PDFs complejos o escaneados
 - **VisionParser** — PyMuPDF renderiza PDFs escaneados/solo-imagen a PNG y los procesa con modelos VL
-- **Motor de matching de 5 niveles** — Inversión de naturaleza → Exacto → Fecha flexible → N:M grupal/subset-sum → Clasificación no conciliados + cuadre
+- **Motor de matching de 5 niveles** — Inversión de naturaleza (por banco) → Exacto → Fecha flexible → N:M grupal/subset-sum → Clasificación no conciliados + cuadre
 - **Sin base de datos** — puramente síncrono, sin persistencia
 - **Doble extracción de texto** — pdfplumber (rápido, preserva layout) + MarkItDown (optimizado para LLM)
 - **Errores estructurados** — códigos de error estandarizados para PDFs vacíos/corruptos/encriptados/solo-imagen/no-extracto
@@ -506,7 +506,7 @@ flowchart TB
     end
 
     subgraph match["MatchingEngine (5 niveles)"]
-        N0["Nivel 0: Invertir naturaleza"]
+        N0["Nivel 0: Invertir naturaleza (por banco)"]
         N1["Nivel 1: Match exacto"]
         N2["Nivel 2: Fecha flexible"]
         N3["Nivel 3: N:M grupal / subset-sum"]
@@ -547,7 +547,7 @@ simplificada-conciliacion-bancaria/
 │   │
 │   ├── matching/                    # Motor de conciliación en 5 niveles
 │   │   ├── engine.py                # Orquestador (niveles 0-4)
-│   │   ├── nivel0.py                # Inversión de naturaleza
+│   │   ├── nivel0.py                # Inversión de naturaleza (por banco)
 │   │   ├── nivel1.py                # Match exacto (fecha/monto/naturaleza)
 │   │   ├── nivel2.py                # Match con fecha flexible
 │   │   ├── nivel3.py                # Match grupal N:M / subset-sum

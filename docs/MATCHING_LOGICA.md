@@ -19,7 +19,8 @@ Los movimientos contables llegan con `conciliado: false` y el motor los marca co
 | `debito` | float | Monto del débito (si aplica) |
 | `credito` | float | Monto del crédito (si aplica) |
 | `saldo` | float | Saldo después del movimiento |
-| `naturaleza` | str | `"debito"` o `"credito"` |
+| `naturaleza` | str | `"debito"` o `"credito"` (original del extracto) |
+| `naturaleza_matching` | str \| None | Naturaleza alineada para matching (se asigna en Nivel 0 según `invertir_lado` del banco) |
 
 ### Contabilidad (`MovimientoContable`)
 
@@ -58,16 +59,31 @@ En contabilidad de doble entrada para cuentas de activo (PUC clase 1), el regist
 
 **Qué hace:**
 
-Invierte la naturaleza de los movimientos contables para que `naturaleza_matching` coincida con la naturaleza del extracto. Si un movimiento contable es `debito`, su `naturaleza_matching` será `credito`, y viceversa.
+El motor alinea las naturalezas antes del matching. El lado que se invierte depende del banco, configurado mediante `invertir_lado` en cada parser:
 
-**Configuración:** Se controla con `config.invertir_naturaleza` (default: `True`).
+| `invertir_lado` | Contabilidad | Extracto | Uso |
+|----------------|--------------|----------|-----|
+| `"contabilidad"` | Se invierte (débito↔crédito) | Se deja igual | **Default** — la mayoría de bancos |
+| `"extracto"` | Se deja igual | Se invierte (débito↔crédito) | Popular, Occidente, Bancoomeva, Itaú, Caja Social |
+| `"ninguno"` | Se deja igual | Se deja igual | Cuando naturalezas ya están alineadas |
 
-**Ejemplo:**
+El matching siempre compara `ctb.naturaleza_matching == ext.naturaleza_matching`, independientemente del lado que se haya invertido.
 
+**Configuración por banco:** Cada parser tiene el atributo `invertir_lado` que se propaga al `InfoExtracto` y el motor lo usa en Nivel 0. El `config.invertir_naturaleza` global es un respaldo para el caso `"contabilidad"`.
+
+**Ejemplo con `invertir_lado = "extracto"` (Occidente):**
+```
+Extracto:  "PAGO A TERCEROS AVAL" → columna DEBITOS → naturaleza: "debito"
+Inversión: naturaleza_matching: "credito"
+Contabilidad: "2025000145" → naturaleza: "credito" (valor negativo en JSON)
+→ Match posible (ambos "credito")
+```
+
+**Ejemplo con `invertir_lado = "contabilidad"` (default):**
 ```
 Contabilidad:  "Depósito proveedor" → naturaleza: "debito"
-Post-inversión: naturaleza_matching: "credito"
-Extracto:       "CONSIGNACION" → naturaleza: "credito"
+Inversión:     naturaleza_matching: "credito"
+Extracto:      "CONSIGNACION" → naturaleza: "credito"
 → Match posible (ambos "credito")
 ```
 
@@ -83,7 +99,7 @@ Extracto:       "CONSIGNACION" → naturaleza: "credito"
 |-----------|------------|
 | `fecha_contabilidad == fecha_extracto` | Exacta (0 días) |
 | `abs(valor_contabilidad - valor_extracto) <= tolerancia` | Default: $0.01 |
-| `naturaleza_matching == naturaleza_extracto` | Exacta |
+| `ctb.naturaleza_matching == ext.naturaleza_matching` | Exacta — ambos lados ya alineados por Nivel 0 |
 
 **Confianza:**
 - **0.95** — candidato único encontrado
@@ -93,7 +109,7 @@ Extracto:       "CONSIGNACION" → naturaleza: "credito"
 
 1. Para cada movimiento del extracto, buscar en la contabilidad:
    - Mismo valor (dentro de tolerancia)
-   - Misma naturaleza (post-inversión)
+   - Misma naturaleza (post-Nivel 0, segun invertir_lado del banco)
    - Misma fecha
 2. Si hay **1 candidato** → match directo
 3. Si hay **más de 1 candidato** → seleccionar el de mayor similitud de descripción
@@ -103,7 +119,7 @@ Extracto:       "CONSIGNACION" → naturaleza: "credito"
 
 ```
 Extracto:  01-03-2026 | $250,000 | credito | "CONSIGNACION"
-Contabilidad: 01-03-2026 | $250,000 | credito (post-inversión) | "Depósito cliente XYZ"
+Contabilidad: 01-03-2026 | $250,000 | credito | "Deposito cliente XYZ"
 → Match exacto, confianza 0.95
 ```
 
@@ -122,7 +138,7 @@ Muchas veces el banco registra un movimiento 1-3 días después de que la empres
 | Condición | Tolerancia |
 |-----------|------------|
 | `abs(valor_contabilidad - valor_extracto) <= tolerancia` | Default: $0.01 |
-| `naturaleza_matching == naturaleza_extracto` | Exacta |
+| `ctb.naturaleza_matching == ext.naturaleza_matching` | Exacta — ambos lados ya alineados por Nivel 0 |
 | `abs(fecha_contabilidad - fecha_extracto) <= max_dias` | Default: 5 días |
 | `fecha_contabilidad != fecha_extracto` | Se excluye el día 0 (ya cubierto por Nivel 1) |
 
@@ -152,7 +168,7 @@ confianza = max(0.10, 0.90 - (0.05 × días_diferencia))
 
 ```
 Extracto:     03-03-2026 | $150,000 | debito | "PAGO PROVEEDOR ABC"
-Contabilidad: 01-03-2026 | $150,000 | debito (post-inversión) | "Cheque #1234Proveedor"
+Contabilidad: 01-03-2026 | $150,000 | debito | "Cheque #1234Proveedor"
 → Match por fecha flexible, 2 días diferencia, confianza 0.80
 ```
 
@@ -188,7 +204,7 @@ Contabilidad: $200,000 | credito | "Cheque cliente A"
 Extracto:     $50,000  | debito | "COMISION BANCARIA"
               $30,000  | debito | "COMISION BANCARIA"
               $20,000  | debito | "COMISION BANCARIA"
-Contabilidad: $100,000 | debito (post-inversión) | "Total comisiones marzo"
+Contabilidad: $100,000 | debito | "Total comisiones marzo"
 → 3 extractos concilian con 1 movimiento contable (50K + 30K + 20K = 100K)
 ```
 
@@ -298,7 +314,7 @@ diferencia = abs(suma_iguales_libros - suma_iguales_extracto)
 │                                                               │
 │  3. MATCHING (5 niveles)                                      │
 │     ┌──────────────────────────────────────────────────┐     │
-│     │ Nivel 0: Invertir naturaleza contable             │     │
+│     │ Nivel 0: Invertir naturaleza (por banco)  │     │
 │     │ Nivel 1: Match exacto (fecha + valor + naturaleza)│     │
 │     │ Nivel 2: Match fecha flexible (ventana N días)    │     │
 │     │ Nivel 3: Match grupal N:M (subset-sum)            │     │
@@ -328,7 +344,7 @@ diferencia = abs(suma_iguales_libros - suma_iguales_extracto)
 |-----------|---------|-------------|
 | `tolerancia_monto` | 0.01 | Diferencia máxima aceptada entre montos |
 | `max_dias_diferencia` | 5 | Ventana de días para match flexible y grupal |
-| `invertir_naturaleza` | True | Invertir débito↔credito en contabilidad |
+| `invertir_naturaleza` | True | Respaldo global para bancos con `invertir_lado="contabilidad"` (default) |
 | `max_grupo_items` | 20 | Máximo elementos por grupo en Nivel 3 |
 | `forzar_llm` | False | Forzar parsing con LLM cuando regex falla |
 
@@ -343,7 +359,7 @@ diferencia = abs(suma_iguales_libros - suma_iguales_extracto)
 
 ### Proceso
 
-1. **Nivel 0:** Invertir naturaleza de 1,992 movimientos contables
+1. **Nivel 0:** Alinear naturalezas segun invertir_lado del banco
 2. **Nivel 1:** Buscar matches exactos (misma fecha + valor + naturaleza)
    - Resultado: ~1,800 matches (confianza 0.95)
 3. **Nivel 2:** Para los ~192 restantes, buscar con fecha flexible (±5 días)

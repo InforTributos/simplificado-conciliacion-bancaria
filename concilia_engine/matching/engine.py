@@ -2,11 +2,12 @@
 
 from __future__ import annotations
 
+import copy
 import logging
 import time
 
 from concilia_engine.config import MatchConfig
-from concilia_engine.matching.nivel0 import invertir_naturaleza
+from concilia_engine.matching.nivel0 import invertir_naturaleza, invertir_naturaleza_extracto
 from concilia_engine.matching.nivel1 import match_exacto
 from concilia_engine.matching.nivel2 import match_fecha_flexible
 from concilia_engine.matching.nivel3 import match_grupo
@@ -43,19 +44,40 @@ class MatchingEngine:
         """Execute full reconciliation pipeline."""
         start_time = time.time()
 
+        # Level 0: Nature inversion — per-bank (via info_extracto.invertir_lado)
+        invertir_lado = "contabilidad"
+        if info_extracto is not None:
+            invertir_lado = getattr(info_extracto, 'invertir_lado', 'contabilidad')
+
         logger.info(
             "Starting reconciliation: %d extracto, %d contabilidad, "
-            "max_dias=%d, tolerancia=%.2f, invertir=%s",
+            "max_dias=%d, tolerancia=%.2f, invertir_lado=%s",
             len(extracto), len(contabilidad),
             config.max_dias_diferencia, config.tolerancia_monto,
-            config.invertir_naturaleza,
+            invertir_lado,
         )
 
-        # Level 0: Nature inversion
-        ctb_prepared = invertir_naturaleza(contabilidad, config.invertir_naturaleza)
-        # Extracto doesn't need inversion — set naturaleza_matching = naturaleza
-        for ext in extracto:
-            ext.naturaleza_matching = ext.naturaleza
+        if invertir_lado == "extracto":
+            # Invert extracto side only (e.g., Occidente, Popular, ...)
+            ctb_prepared = []
+            for m in contabilidad:
+                c = copy.copy(m)
+                c.naturaleza_matching = c.naturaleza
+                ctb_prepared.append(c)
+            invertir_naturaleza_extracto(extracto, invertir=True)
+        elif invertir_lado == "ninguno":
+            # No inversion on either side
+            ctb_prepared = []
+            for m in contabilidad:
+                c = copy.copy(m)
+                c.naturaleza_matching = c.naturaleza
+                ctb_prepared.append(c)
+            for ext in extracto:
+                ext.naturaleza_matching = ext.naturaleza
+        else:  # "contabilidad" — current behavior
+            ctb_prepared = invertir_naturaleza(contabilidad, config.invertir_naturaleza)
+            for ext in extracto:
+                ext.naturaleza_matching = ext.naturaleza
 
         remaining_ext = list(extracto)
         remaining_ctb = list(ctb_prepared)

@@ -42,6 +42,7 @@ def _serialize_info_extracto(info: InfoExtracto) -> dict:
         "periodo_fin": info.periodo_fin.isoformat(),
         "saldo_anterior": info.saldo_anterior,
         "saldo_final": info.saldo_final,
+        "invertir_lado": info.invertir_lado,
     }
 
 

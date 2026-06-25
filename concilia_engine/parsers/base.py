@@ -20,6 +20,7 @@ class BankParser(ABC):
     """
 
     banco_nombre: str = ""
+    invertir_lado: str = "contabilidad"  # "contabilidad" | "extracto" | "ninguno"
 
     @abstractmethod
     def puede_parsear(self, texto: str) -> bool:

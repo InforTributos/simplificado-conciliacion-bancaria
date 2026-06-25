@@ -32,6 +32,7 @@ class BancoPopularParser(BankParser):
     """
 
     banco_nombre = "banco_popular"
+    invertir_lado = "extracto"
 
     def puede_parsear(self, texto: str) -> bool:
         texto_upper = texto.upper()

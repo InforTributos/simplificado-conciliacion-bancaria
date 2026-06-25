@@ -506,7 +506,7 @@ flowchart TB
     end
 
     subgraph match["MatchingEngine (5 levels)"]
-        N0["Nivel 0: Invertir naturaleza"]
+        N0["Nivel 0: Invertir naturaleza (por banco)"]
         N1["Nivel 1: Match exacto"]
         N2["Nivel 2: Fecha flexible"]
         N3["Nivel 3: N:M grupal / subset-sum"]

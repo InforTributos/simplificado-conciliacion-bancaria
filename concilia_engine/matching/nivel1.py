@@ -31,7 +31,7 @@ def match_exacto(
             if ctb.id not in matched_ctb_ids
             and ctb.fecha == ext.fecha
             and abs(ctb.valor - ext.valor) <= config.tolerancia_monto
-            and ctb.naturaleza_matching == ext.naturaleza
+            and ctb.naturaleza_matching == ext.naturaleza_matching
         ]
 
         if len(candidates) == 1:

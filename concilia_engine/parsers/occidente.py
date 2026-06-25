@@ -32,6 +32,7 @@ class OccidenteParser(BankParser):
     """
 
     banco_nombre = "occidente"
+    invertir_lado = "extracto"
 
     def puede_parsear(self, texto: str) -> bool:
         texto_upper = texto.upper()
