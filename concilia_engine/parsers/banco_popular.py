@@ -17,8 +17,11 @@ from concilia_engine.parsers.base import BankParser
 
 logger = logging.getLogger(__name__)
 
-# Split amounts: integer-part (comma thousands)  SPACE  decimal-cents (2 digits)
-_AMOUNT_RE = re.compile(r"\b([\d,]{2,})\s+(\d{2})\b")
+# Split amounts: integer-part (comma thousands or single digit like "0")  SPACE  decimal-cents (2 digits)
+# NOTE: changed {2,} to + so zero amounts ("0 00") are captured — without this,
+# lines with a single-digit integer in the debit/credit column shift the column
+# assignment and the date "MM DD" prefix gets misidentified as an amount.
+_AMOUNT_RE = re.compile(r"\b([\d,]+)\s+(\d{2})\b")
 
 
 class BancoPopularParser(BankParser):
@@ -42,6 +45,7 @@ class BancoPopularParser(BankParser):
         )
 
     def parsear(self, texto: str) -> list[MovimientoExtracto]:
+        logger.info("BancoPopular v2: usando parser corregido (fecha antes de amounts, regex {1,})")
         year = self._extract_year(texto)
         if year is None:
             logger.warning("BancoPopular: could not extract year from header")
@@ -130,8 +134,22 @@ class BancoPopularParser(BankParser):
         return False
 
     def _parse_line(self, line: str, year: int, seq: int) -> MovimientoExtracto | None:
-        # Extract all amounts (US format with space-separated decimal)
-        amounts = _AMOUNT_RE.findall(line)
+        # Date: MM DD at the start of the line — extract FIRST so the date
+        # prefix is never misidentified as a monetary amount.
+        m = re.match(r"(\d{2})\s+(\d{2})\b", line)
+        if not m:
+            return None
+        mes, dia = int(m.group(1)), int(m.group(2))
+        try:
+            fecha = date(year, mes, dia)
+        except ValueError:
+            return None
+
+        # Search for amounts ONLY in the rest of the line (after the date prefix).
+        # This prevents "01 16" (MM DD) from being captured as an amount, which
+        # would shift the débito/crédito/saldo column assignment.
+        rest = line[m.end():]
+        amounts = _AMOUNT_RE.findall(rest)
         if len(amounts) < 3:
             return None
 
@@ -162,25 +180,12 @@ class BancoPopularParser(BankParser):
             naturaleza = "credito"
             valor = credito_val
 
-        # Date: MM DD at the start of the line
-        m = re.match(r"(\d{2})\s+(\d{2})\b", line)
-        if not m:
-            return None
-        mes, dia = int(m.group(1)), int(m.group(2))
-        try:
-            fecha = date(year, mes, dia)
-        except ValueError:
-            return None
-
         # Description: everything between date and the first of the last 3 amounts
-        # Remove the date prefix
         desc_start_pos = m.end()
-        # Find where the first of the last 3 amounts starts
-        first_amount_start = _find_amount_position(line, amounts[-3])
-        if first_amount_start is None:
+        first_amount_start = rest.find(f"{amounts[-3][0]} {amounts[-3][1]}")
+        if first_amount_start == -1:
             return None
-
-        desc_raw = line[desc_start_pos:first_amount_start].strip()
+        desc_raw = rest[:first_amount_start].strip()
 
         return MovimientoExtracto(
             id=f"POP-{seq:04d}",
@@ -189,13 +194,3 @@ class BancoPopularParser(BankParser):
             naturaleza=naturaleza,
             descripcion=normalize_description(desc_raw),
         )
-
-
-def _find_amount_position(line: str, amount_tuple: tuple[str, str]) -> int | None:
-    """Find the position of an amount tuple in the line."""
-    pattern = re.escape(f"{amount_tuple[0]} {amount_tuple[1]}")
-    # Find the rightmost occurrence (each amount should be unique)
-    for m in re.finditer(pattern, line):
-        pass  # keep going to find the last
-    m = re.search(pattern, line)
-    return m.start() if m else None
