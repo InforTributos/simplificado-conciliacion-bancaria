@@ -45,6 +45,7 @@ class BancoPopularParser(BankParser):
         )
 
     def parsear(self, texto: str) -> list[MovimientoExtracto]:
+        logger.info("BancoPopular v2: usando parser corregido (fecha antes de amounts, regex {1,})")
         year = self._extract_year(texto)
         if year is None:
             logger.warning("BancoPopular: could not extract year from header")
